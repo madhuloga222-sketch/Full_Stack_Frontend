@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriDirect - Vendor Dashboard</title>
+    <link rel="stylesheet" href="/CSS/PRODUCTS-V.CSS">
+</head>
+<body>
+    <header>
+         <div class="logo"> 
+            <div class="logo-icon">
+                <a href="/INDEX.HTML"><img src="/ASSETS/image.png" width="60px" height="60px"></a>
+            </div>
+          <div class="logo-text">
+            <h1>AgriDirect</h1>  
+          </div>
+        </div>
+        <div class="user-section">
+            <div class="avatar">V</div>
+            <a href="/INDEX.HTML" class="logout-btn">Logout </a>
+                <span></span>
+        </div>
+    </header>
+
+    <nav>
+        <button class="nav-btn active">My Products</button>
+        <a href="/HTML/ORDERS-V.HTML"><button class="nav-btn"> Orders</button></a>
+        <a href="/HTML/SUPPLIERS-V.HTML"><button class="nav-btn"> Suppliers</button></a>
+    </nav>
+
+    <div class="search-section">
+        <div class="search-box">
+            <span></span>
+            <input type="text" placeholder="Search for products...">
+        </div>
+        <select class="category-dropdown">
+            <option>Category</option>
+            <option>Vegetables</option>
+            <option>Fruits</option>
+            <option>Grains</option>
+        </select>
+    </div>
+
+    <div class="products-grid">
+        <div class="product-card">
+            <div style="position: relative;">
+                <img src="/ASSETS/full stack img2.avif" alt="Fresh Tomatoes" class="product-image">
+                <span class="badge premium">Organic</span>
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Fresh Tomatoes</h2>
+                <p class="product-vendor">By Rajesh Kumar • Theni, Tamilnadu</p>
+                <div class="price-rating">
+                    <span class="price">₹45/kg</span>
+                    <div class="rating">
+                        <span></span>
+                        <span>4.8</span>
+                    </div>
+                </div>
+                <div class="market-info">
+                    <span class="market-price">Market: ₹52/kg</span>
+                    <span class="demand-badge high">High demand</span>
+                </div>
+                <p class="availability">200 kg available</p>
+                <!-- <div class="action-buttons">
+                    <button class="btn btn-outline">Contact Farmer</button>
+                    <button class="btn btn-primary"> Order</button>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div style="position: relative;">
+                <img src="/ASSETS/full stack img3.jpg" alt="Organic Potatoes" class="product-image">
+                <span class="badge organic">Organic</span>
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Fresh </h2>
+                <p class="product-vendor">By Ravi • Dindigul, Tamilnadu</p>
+                <div class="price-rating">
+                    <span class="price">₹35/kg</span>
+                    <div class="rating">
+                        <span></span>
+                        <span>4.9</span>
+                    </div>
+                </div>
+                <div class="market-info">
+                    <span class="market-price">Market: ₹42/kg</span>
+                    <span class="demand-badge medium">Medium demand</span>
+                </div>
+                <p class="availability">150 kg available</p>
+                <!-- <div class="action-buttons">
+                    <button class="btn btn-outline">Contact Farmer</button>
+                    <button class="btn btn-primary"> Order</button>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div style="position: relative;">
+                <img src="/ASSETS/full stack img4.webp" alt="Fresh Cauliflower" class="product-image">
+                <span class="badge premium">Organic</span>
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Fresh Carrot</h2>
+                <p class="product-vendor">By Arun • Karur, Tamilnadu</p>
+                <div class="price-rating">
+                    <span class="price">₹55/kg</span>
+                    <div class="rating">
+                        <span></span>
+                        <span>4.7</span>
+                    </div>
+                </div>
+                <div class="market-info">
+                    <span class="market-price">Market: ₹48/kg</span>
+                    <span class="demand-badge high">High demand</span>
+                </div>
+                <p class="availability">220 kg available</p>
+                <!-- <div class="action-buttons">
+                    <button class="btn btn-outline">Contact Farmer</button>
+                    <button class="btn btn-primary">Order</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #e8f5e9;
+}
+
+
+.header {
+    background-color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo svg {
+    width: 100%;
+    height: 100%;
+}
+
+.brand-text h1 {
+    font-size: 22px;
+    color: #4caf50;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.brand-text p {
+    font-size: 14px;
+    color: #757575;
+    font-weight: 400;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-section a{
+    text-decoration: none;
+}
+.user-avatar {
+    width: 48px;
+    height: 48px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    color: #4caf50;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.logout-btn:hover {
+    opacity: 0.7;
+}
+
+.logout-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+.nav-container {
+    padding: 20px 40px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 12px 24px;
+    background: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.nav-item:hover {
+    background-color: rgba(46, 125, 50, 0.1);
+}
+
+.nav-item.active {
+    background-color: #4caf50;
+    color: white;
+}
+
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.stat-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.stat-title {
+    font-size: 18px;
+    color: #424242;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight:24px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.stat-value.with-star {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.star-icon {
+    font-size: 36px;
+    color: #FFC107;
+}
+
+.stat-subtitle {
+    font-size: 15px;
+    color: #2e7d32;
+    font-weight: 500;
+}
+
+.card-title {
+    font-size: 18px;
+    color: #2d5f3f;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-value {
+    font-size: 36px;
+    font-weight: 700;
+    color: #8b4513;
+    line-height: 1.2;
+}
+
+.card-value.number {
+    color: #d84315;
+}
+
+.card-value.rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #8b4513;
+}
+
+.star {
+    font-size: 32px;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    color: #2e7d32;
+    font-weight: 500;
+}
+
+.card-subtitle.positive {
+    color: #2e7d32;
+}
+
+@media (max-width: 1200px) {
+.stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.header {
+    padding: 15px 20px;
+}
+
+.brand-text h1 {
+    font-size: 18px;
+}
+
+.brand-text p {
+    font-size: 12px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.nav-container {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+.container {
+    padding: 20px;
+}
+
+.stats-grid {
+    grid-template-columns: 1fr;
+}
+
+.stat-value {
+    font-size: 36px;
+}
+}

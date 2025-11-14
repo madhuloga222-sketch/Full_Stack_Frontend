@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriDirect - Farmer Dashboard</title>
+    <link rel="stylesheet" href="/CSS/ADDPRODUCT-F.CSS">
+</head>
+<body>
+  
+    <header class="header">
+        <div class="logo-section">
+            <div class="logo">
+                <a href="/INDEX.HTML"><img src="/ASSETS/image.png" width="60px" height="60px"></a>
+            </div>
+            <div class="brand-text">
+                <h1>AgriDirect</h1>
+            </div>
+        </div>
+        <div class="user-section">
+            <div class="user-avatar">F</div>
+            <a href="/INDEX.HTML"><button class="logout-btn">Logout</button></a>
+        </div>
+    </header>
+
+   
+    <nav class="nav-container">
+        <a href="/HTML/PRODUCTS-F.HTML"><button class="nav-item">My Products</button></a>
+        <a href="/HTML/ADDPRODUCT-F.HTML"><button class="nav-item active">Add Product</button></a>
+        <a href="/HTML/ORDERS-F.HTML"><button class="nav-item">Orders</button></a>
+        <a href="/HTML/ANALYTICS-F.HTML"><button class="nav-item">Analytics</button></a>
+    </nav>
+
+  
+    <div class="container">
+        <div class="form-card">
+            <div class="form-header">
+                <h2>Add New Product</h2>
+                <p>List your fresh produce for vendors to discover</p>
+            </div>
+
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="product-name">Product Name</label>
+                        <input type="text" id="product-name" placeholder="e.g., Fresh Tomatoes">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category">
+                            <option value="">Select category</option>
+                            <option value="vegetables">Vegetables</option>
+                            <option value="fruits">Fruits</option>
+                            <option value="grains">Grains</option>
+                            <option value="dairy">Dairy</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="quantity">Quantity Available</label>
+                        <input type="text" id="quantity" placeholder="e.g., 500 kg">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="price">Price per kg (₹)</label>
+                        <input type="text" id="price" placeholder="e.g., 45">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="quality">Quality Grade</label>
+                        <select id="quality">
+                            <option value="">Select quality grade</option>
+                            <option value="premium">Premium</option>
+                            <option value="grade-a">Grade A</option>
+                            <option value="grade-b">Grade B</option>
+                            <option value="standard">Standard</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="description">Description</label>
+                        <textarea id="description" placeholder="Describe your produce, farming methods, harvest date, etc."></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">List Product</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
