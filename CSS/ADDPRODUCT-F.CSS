@@ -45,12 +45,6 @@ body {
     margin-left: 20px;
 }
 
-.brand-text p {
-    font-size: 14px;
-    color: #757575;
-    font-weight: 400;
-}
-
 .user-section {
     display: flex;
     align-items: center;

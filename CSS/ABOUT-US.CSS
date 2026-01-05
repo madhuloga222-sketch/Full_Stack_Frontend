@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Header Navigation */
+header {
+    background: white;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo-text h1 {
+    font-size: 22px;
+    color: #4caF50;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.logo-text p {
+    font-size: 0.9rem;
+    color: #22c55e;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #334155;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #22c55e;
+}
+
+.btn-login {
+    background: #22c55e;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background: #16a34a;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+    color: white;
+    padding: 150px 5% 100px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.hero-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Story Section */
+.story-section {
+    padding: 100px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.story-content h3 {
+    font-size: 2rem;
+    color: #059669;
+    margin-bottom: 2rem;
+}
+
+.story-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #16a34a;
+    margin-bottom: 1.5rem;
+}
+
+.story-image {
+    width: 100%;
+    height: 500px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Mission & Vision Section */
+.mission-vision-section {
+    background: linear-gradient(to bottom, #f0fdf4, #dcfce7);
+    padding: 100px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.mission-card, .vision-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mission-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.vision-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.icon-circle {
+    margin: 0 auto 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-card h3, .vision-card h3 {
+    font-size: 1.75rem;
+    color: #059669;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.mission-card p, .vision-card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #16a34a;
+}
+
+/* Core Values Section */
+.core-values-section {
+    background: white;
+    padding: 100px 5%;
+    text-align: center;
+}
+
+.core-values-section h2 {
+    font-size: 2.5rem;
+    color: #059669;
+    margin-bottom: 4rem;
+    font-weight: 600;
+}
+
+.values-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-card {
+    text-align: center;
+    padding: 2rem;
+}
+
+.value-icon {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to bottom, #dcfce7, #bbf7d0);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: transform 0.3s;
+}
+
+.value-card:hover .value-icon {
+    transform: scale(1.1);
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    color: #059669;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.value-card p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #16a34a;
+}
+
+/* Impact Section */
+.impact-section {
+    background: linear-gradient(to bottom, #f0fdf4, #dcfce7);
+    padding: 100px 5%;
+}
+
+.impact-section h2 {
+    font-size: 2.5rem;
+    color: #059669;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 600;
+}
+
+.impact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.impact-image {
+    width: 100%;
+    height: 600px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.impact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.impact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.impact-item h3 {
+    font-size: 1.75rem;
+    color: #b45309;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+}
+
+.impact-item p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #16a34a;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #ffffff;
+    padding: 60px 20px 30px;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+.footer-brand {
+    max-width: 350px;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.brand-logo svg {
+    width: 35px;
+    height: 35px;
+    stroke: #059669;
+    stroke-width: 2;
+    fill: none;
+}
+
+.brand-name {
+    color: #4caF50;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.brand-description {
+    color: #059669;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-column h3 {
+    color: #2d5f4f;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column a {
+    color: #059669;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #047857;
+}
+
+.contact-info {
+    color: #059669;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.footer-bottom {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 25px;
+    text-align: center;
+    color: #059669;
+    font-size: 0.95rem;
+}
+
+.footer-bottom a {
+    color: #059669;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}

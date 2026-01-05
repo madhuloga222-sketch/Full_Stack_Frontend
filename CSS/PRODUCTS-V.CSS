@@ -260,6 +260,8 @@ nav {
 .action-buttons {
     display: flex;
     gap: 0.75rem;
+    list-style: none;
+    text-decoration: none;
 }
 
 .btn {
@@ -282,6 +284,11 @@ nav {
     color: #4caf50;
 }
 
+.btn-outline a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .btn-outline:hover {
     background-color: #e8f5e9;
 }
@@ -294,4 +301,10 @@ nav {
 
 .btn-primary:hover {
     background-color: #4caf50;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    align-items: right;
+    
 }

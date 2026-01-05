@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgriDirect - Farmer Dashboard</title>
-    <link rel="stylesheet" href="/CSS/ADDPRODUCT-F.CSS">
+    <link rel="stylesheet" href="/CSS/EDIT-F.CSS">
     <link rel="icon" href="/ASSETS/image.png">
 </head>
 <body>
@@ -13,37 +13,33 @@
             <div class="logo">
                 <a href="/INDEX.HTML"><img src="/ASSETS/image.png" width="60px" height="60px"></a>
             </div>
-            <div class="brand-text">
+            <div class="brand-info">
                 <h1>AgriDirect</h1>
+                <p>Farmer Dashboard</p>
             </div>
         </div>
         <div class="user-section">
             <div class="user-avatar">F</div>
-            <a href="/INDEX.HTML"><button class="logout-btn">Logout</button></a>
+            <a href="/INDEX.HTML" class="logout-btn">
+                <span>↗</span>
+                <span>Logout</span>
+            </a>
         </div>
     </header>
 
-    <nav class="nav-container">
-        <a href="/HTML/PRODUCTS-F.HTML"><button class="nav-item">My Products</button></a>
-        <a href="/HTML/ADDPRODUCT-F.HTML"><button class="nav-item active">Add Product</button></a>
-        <a href="/HTML/ORDERS-F.HTML"><button class="nav-item">Orders</button></a>
-        <a href="/HTML/ANALYTICS-F.HTML"><button class="nav-item">Analytics</button></a>
-    </nav>
-
-    <div class="container">
-        <div class="form-card">
+    <main class="main-content">
+        <div class="form-container">
             <div class="form-header">
-                <h2>Add New Product</h2>
-                <p>List your fresh produce for vendors to discover</p>
+                <h2>Edit Product</h2>
+                <p>Update your fresh produce details</p>
             </div>
 
             <form>
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="product-name">Product Name</label>
-                        <input type="text" id="product-name" placeholder="e.g., Fresh Tomatoes">
+                        <label for="productName">Product Name</label>
+                        <input type="text" id="productName" value="Fresh Tomatoes">
                     </div>
-
                     <div class="form-group">
                         <label for="category">Category</label>
                         <select id="category">
@@ -59,12 +55,11 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="quantity">Quantity Available</label>
-                        <input type="text" id="quantity" placeholder="e.g., 500 kg">
+                        <input type="text" id="quantity" value="500 kg">
                     </div>
-
                     <div class="form-group">
                         <label for="price">Price per kg (₹)</label>
-                        <input type="text" id="price" placeholder="e.g., 45">
+                        <input type="number" id="price" value="45">
                     </div>
                 </div>
 
@@ -88,9 +83,12 @@
                     </div>
                 </div>
 
-                <button type="submit" class="submit-btn">List Product</button>
+                <div class="button-group">
+                    <a href="/HTML/PRODUCTS-F.HTML"><button type="button" class="btn btn-cancel">Cancel</button></a>
+                    <button type="submit" class="btn btn-save">Save Changes</button>
+                </div>
             </form>
         </div>
-    </div>
+    </main>
 </body>
 </html>

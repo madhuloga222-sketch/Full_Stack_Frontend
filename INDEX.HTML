@@ -1,144 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FarmLink</title>
-  <link rel="stylesheet" href="INDEX.CSS">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriDirect - Your Direct Link to Fresh Produce</title>
+    <link rel="stylesheet" href="/INDEX.CSS">
+    <link rel="icon" href="/ASSETS/image.png">
 </head>
 <body>
-
-       <header>
-        <div class="logo"> 
-           <div class="logo-icon"><img src="/ASSETS/image.png" width="60px" height="60px"> </div>
-           AgriDirect
+    <header>
+        <div class="logo-section">
+            <div class="logo">
+                <a href="/INDEX.HTML"><img src="/ASSETS/image.png" width="60px" height="60px"></a>
+            </div>
+            <div class="logo-text">
+                <h1>AgriDirect</h1>
+            </div>
         </div>
-        <div class="nav-buttons">
-            <a href="/HTML/SIGIN.HTML" class="sign-in">Sign In</a>
-            <a href="/HTML/SIGIN.HTML" class="get-started">Get Started</a>
-        </div>
+        <nav>
+            <a href="/INDEX.HTML">Home</a>
+            <a href="/HTML/ABOUT-US.HTML">About Us</a>
+            <a href="/HTML/HOW-IT-WORKS.HTML">How It Works</a>
+            <a href="/HTML/CONTACT-US.HTML">Contact</a>
+            <a href="/HTML/SIGIN.HTML" class="btn-login">Login / Register</a>
+        </nav>
     </header>
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Direct Connection Between Farmers & Vendors</h1>
-            <p>Eliminate middlemen, get fair prices, and build transparent relationships in the agricultural supply chain.</p>
-            <div class="hero-buttons">
-                <a href="/HTML/SIGUP.HTML" class="btn-primary"> Selling</a>
-                <a href="/HTML/VENDOR.HTML" class="btn-secondary"> Buying</a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="/ASSETS/f-s 1.png" width="600" height="450">
+            <h2>Direct Farm-to-Market Platform</h2>
+            <h3>Eliminating Middlemen • Empowering Farmers • Connecting Markets</h3>
+            <p>Get fair prices, quick payments, and build direct relationships in the agricultural supply chain.</p>
+            <a href="/HTML/SIGIN.HTML"><button class="btn-cta">Get Started Today</button></a>
         </div>
     </section>
 
-    <section class="breaking-section">
-        <h2>Breaking the Middleman Chain</h2>
-        <p>Traditional agricultural supply chains hurt both farmers and vendors. We're changing that.</p>
-    </section>
-    <section class="problem-solution">
-        <div class="card problem">
-            <h3>Current Problems</h3>
-                <ul>
-                    <li>Farmers receive unfair prices due to broker control</li>
-                    <li>Delayed payments hurt farmer cash flow</li>
-                    <li>Vendors pay inflated prices for produce</li>
-                    <li>Lack of transparency in pricing and quality</li>
-                </ul>
+    <!-- <section class="stats">
+        <div class="stat-item">
+            <h4>10,000+</h4>
+            <p>Active Farmers</p>
         </div>
-
-        <div class="card solution">
-            <h3>Our Solution</h3>
-                <ul>
-                    <li>Direct farmer-vendor connections</li>
-                    <li>Fair, transparent pricing for all</li>
-                    <li>Secure, instant payment processing</li>
-                    <li>Trust-based rating and review system</li>
-                </ul>
+        <div class="stat-item">
+            <h4>5,000+</h4>
+            <p>Registered Vendors</p>
         </div>
-    </section>
+        <div class="stat-item">
+            <h4>₹50 Cr+</h4>
+            <p>Annual Transactions</p>
+        </div>
+        <div class="stat-item">
+            <h4>25+</h4>
+            <p>States Covered</p>
+        </div>
+    </section> -->
 
-    <section class="how-it-works">
-        <h2>How AgriDirect Works</h2>
-            <p class="subtitle">Simple, transparent, and fair for everyone</p>
-                <div class="features">
-                    <div class="feature-card">
-                        <div class="icon-container">
-                            <img src="/ASSETS/full stack img5.1.png " width="80" height="80">
+     <div class="features-section">
+        <h2 class="section-title">Why Choose AgriDirect?</h2>
+        
+        <div class="features-grid">
+            <!-- Fair Pricing -->
+            <div class="feature-card">
+                <div class="icon">
+                    <img src="/ASSETS/fair pricing.jpg1.png" width="100" height="100">
                 </div>
-                    <h3>List Your Produce</h3>
-                        <p>Farmers upload crop details, quantities, and set fair prices</p>
-                </div>
-
-                    <div class="feature-card">
-                        <div class="icon-container">
-                            <img src="/ASSETS/full stack img6.1.png " width="80" height="80">
-                        </div>
-                            <h3>Connect Directly</h3>
-                                <p>Vendors browse and connect directly with farmers</p>
-                    </div>
-
-                        <div class="feature-card">
-                            <div class="icon-container">
-                                <img src="/ASSETS/full stack img7.1.png " width="80" height="80">
-                            </div>
-                            <h3>Secure Transactions</h3>
-                                <p>Safe payments and delivery coordination</p>
-                        </div>
-                    </div>
-    </section>
-
-    <section class="benefits">
-        <div class="hero-image">
-            <img src="/ASSETS/f-s 2.jpg" width="600" height="450">
-        </div>
-        <div class="benefits-content">
-            <h2>Benefits for Everyone</h2>
-            
-            <div class="benefit-item">
-                <div class="benefit-text">
-                    <h3>Higher Profits for Farmers</h3>
-                        <p>Eliminate broker margins and get fair prices for your crops</p>
-                </div>
+                <h3 class="feature-title">Fair Pricing</h3>
+                <p class="feature-description">Transparent pricing without middleman margins. Farmers get fair value, vendors get competitive rates.</p>
             </div>
 
-            <div class="benefit-item">
-                <div class="benefit-text">
-                    <h3>Quality Assurance</h3>
-                        <p>Ratings and reviews ensure consistent quality</p>
+            <!-- Direct Connection -->
+            <div class="feature-card">
+                <div class="icon">
+                    <img src="/ASSETS/direct connection.png1.png" width="100" height="100">
                 </div>
+                <h3 class="feature-title">Direct Connection</h3>
+                <p class="feature-description">Build direct relationships between farmers and vendors, eliminating unnecessary intermediaries.</p>
             </div>
 
-            <div class="benefit-item">
-                <div class="benefit-text">
-                    <h3>Better Prices for Vendors</h3>
-                        <p>Access fresh produce at competitive rates without middlemen</p>
+            <!-- Quick Payments -->
+            <div class="feature-card">
+                <div class="icon">
+                    <img src="/ASSETS/quick payment.png1.png" width="100" height="100">
                 </div>
+                <h3 class="feature-title">Quick Payments</h3>
+                <p class="feature-description">Secure and fast payment processing to ensure farmers receive timely compensation for their produce.</p>
+            </div>
+
+            <!-- Real-time Pricing -->
+            <div class="feature-card">
+                <div class="icon">
+                    <img src="/ASSETS/real time pricing.png1.png" width="100" height="100">
+                </div>
+                <h3 class="feature-title">Real-time Pricing</h3>
+                <p class="feature-description">Transparent market prices updated in real-time based on supply and demand dynamics.</p>
+            </div>
+
+            <!-- Delivery Integration -->
+            <div class="feature-card">
+                <div class="icon">
+                    <img src="/ASSETS/delivery-intergation.png1.png" width="100" height="100">
+                </div>
+                <h3 class="feature-title">Delivery Integration</h3>
+                <p class="feature-description">Seamless logistics coordination with delivery tracking and pickup arrangements.</p>
+            </div>
+
+            <!-- Secure Platform -->
+            <div class="feature-card">
+                <div class="icon">
+                    <img src="/ASSETS/secure platform.png1.png" width="100" height="100">
+                </div>
+                <h3 class="feature-title">Secure Platform</h3>
+                <p class="feature-description">End-to-end security with verified profiles, secure transactions, and quality assurance.</p>
             </div>
         </div>
-    </section>
-
-    <section class="heros">
-    <div class="heros-content">
-      <h1>Ready to Transform Agriculture?</h1>
-      <p>Join thousands of farmers and vendors already using FarmLink</p>
-
-      <div class="button-group">
-        <a href="/HTML/SIGUP.HTML"><button class="btn primary">Join as Farmer</button></a>
-        <a href="/HTML/VENDOR.HTML"><button class="btn secondary">Join as Vendor</button></a>
-      </div>
     </div>
-  </section>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="logo">
-        <span class="icon"></span>
-        <h2>AgriDirect</h2>
-      </div>
-      <p>&copy; 2025 Connecting farmers and vendors for a more transparent agricultural future</p>
-    </div>
-  </footer>
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Brand Section -->
+            <div class="footer-brand">
+                <div class="brand-header">
+                    <div class="brand-icon">
+                        <a href="/INDEX.HTML"><img src="/ASSETS/image.png" width="60px" height="60px"></a>
+                    </div>
+                    <h2 class="brand-name">AgriDirect</h2>
+                </div>
+                <p class="brand-description">
+                    Connecting farmers directly with markets for fair prices and sustainable growth.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="/INDEX.HTML">Home</a></li>
+                    <li><a href="/HTML/ABOUT-US.HTML">About Us</a></li>
+                    <li><a href="/HTML/HOW-IT-WORKS.HTML">How It Works</a></li>
+                    <li><a href="/HTML/CONTACT-US.HTML">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- For Users -->
+            <div class="footer-column">
+                <h3>For Users</h3>
+                <ul class="footer-links">
+                    <li><a href="/HTML/SIGUP.HTML">Register as Farmer</a></li>
+                    <li><a href="/HTML/VENDOR.HTML">Register as Vendor</a></li>
+                    <li><a href="#faqs">FAQs</a></li>
+                    <li><a href="#support">Support</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul class="contact-info">
+                    <li>support@agridirect.com</li>
+                    <li>1800-XXX-XXXX</li>
+                    <li>Mumbai, Maharashtra</li>
+                    <li>India</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; 2025 AgriDirect. All rights reserved. | 
+                <a href="#terms">Terms & Conditions</a> | 
+                <a href="#privacy">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>

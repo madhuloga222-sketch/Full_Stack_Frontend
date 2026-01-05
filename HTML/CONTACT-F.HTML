@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriDirect - Vendor Dashboard</title>
+    <link rel="stylesheet" href="/CSS/CONTACT-F.CSS">
+    <link rel="icon" href="/ASSETS/image.png">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-section">
+            <div class="logo">
+                <a href="/INDEX.HTML"><img src="/ASSETS/image.png" width="60px" height="60px"></a>
+            </div>
+            <div class="brand-info">
+                <h1>AgriDirect</h1>
+                <p>Vendor Dashboard</p>
+            </div>
+        </div>
+        <div class="user-section">
+            <div class="user-avatar">V</div>
+            <a href="/INDEX.HTML" class="logout-btn">
+                <span>Logout</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Contact Farmer</h2>
+                <p>Send a message to Rajesh Kumar about Fresh Tomatoes</p>
+            </div>
+
+            <div class="product-details">
+                <h3>Product Details</h3>
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <label>Product:</label>
+                        <p>Fresh Tomatoes</p>
+                    </div>
+                    <div class="detail-item">
+                        <label>Farmer:</label>
+                        <p>Rajesh Kumar</p>
+                    </div>
+                    <div class="detail-item">
+                        <label>Location:</label>
+                        <p>Punjab, India</p>
+                    </div>
+                    <div class="detail-item">
+                        <label>Price:</label>
+                        <p>₹45/kg</p>
+                    </div>
+                    <div class="detail-item">
+                        <label>Available:</label>
+                        <p>500 kg</p>
+                    </div>
+                    <div class="detail-item">
+                        <label>Quality:</label>
+                        <p>Premium</p>
+                    </div>
+                </div>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="name">Your Name/Business Name</label>
+                    <input type="text" id="name" placeholder="Enter your name or business name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Your Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity Needed (kg)</label>
+                    <input type="text" id="quantity" placeholder="e.g., 100">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Enter your message or inquiry details..."></textarea>
+                </div>
+
+                <div class="button-group">
+                    <a href="/HTML/PRODUCTS-V.HTML"><button type="button" class="btn btn-cancel">Cancel</button></a>
+                    <button type="submit" class="btn btn-send">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

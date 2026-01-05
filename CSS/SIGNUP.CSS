@@ -14,15 +14,15 @@ body {
 }
 
 header .back-btn {
-    color: #4caF50;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 600;
-    padding: 8px 16px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    display: inline-block;
-    transition: 0.3s;
+  color: #4caF50;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: 0.3s;
 }
 
 .back-btn a{
@@ -168,8 +168,3 @@ input {
 .create-btn:hover {
   background: #4caF50;
 } 
-
-
-
-
- 
