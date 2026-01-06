@@ -257,7 +257,7 @@ nav {
     font-weight: 500;
 }
 
-.action-buttons {
+/* .action-buttons {
     display: flex;
     gap: 0.75rem;
     list-style: none;
@@ -307,4 +307,57 @@ a{
     text-decoration: none;
     align-items: right;
     
+} 
+  */
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    text-decoration: none;
+    max-width: 50%;
+}
+
+.btn {
+    flex: 1;
+    padding:  1rem 2.5rem;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    /* min-width: 250px; */
+    white-space: nowrap;
+}
+
+.btn-outline {
+    background-color: white;
+    border: 3px solid #4caf50;
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.btn-outline:hover {
+    background-color: #e8f5e9;
+}
+
+.btn-primary {
+    background-color: #4caf50;
+    border: 3px solid #4caf50;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
 }
