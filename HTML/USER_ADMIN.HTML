@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User_admin</title>
+    <link rel="stylesheet" href="/CSS/USER_ADMIN.CSS">
+    <link rel="icon" href="/ASSETS/image.png">
+</head>
+<body>
+    <header class="top-header">
+        <div class="logo-section">
+            <div class="logo">
+                <a href="/INDEX.HTML"><img src="/ASSETS/image.png" width="60px" height="60px"></a>
+            </div>
+            <div class="logo-text">
+                <h1>AgriDirect</h1>
+            </div>
+        </div>
+
+        <div class="user-section">
+            <a href="/INDEX.HTML" class="logout-btn"><span>Logout</span></a>
+          </div>
+    </header>
+
+    <main class="main-content">
+        <nav class="navbar">
+            <button class="nav-item">
+                <span></span>
+                <img src="/ASSETS/Data-Driven Insights1.png">
+                 <a href="/HTML/ADMIN_DASHBOARD.HTML"> Overview</a>
+            </button>
+            <button class="nav-item active">
+                <span></span>
+                <img src="/ASSETS/people-line (1).png">
+                <a href="/HTML/USER_ADMIN.HTML"> Users</a>
+            </button>
+            <button class="nav-item">
+                <span></span>
+                <img src="/ASSETS/box-open.png">
+                <a href="/HTML/PROUCTS_ADMIN.HTML"> Products</a>
+            </button>
+            <button class="nav-item">
+                <span></span>
+                <img src="/ASSETS/cart.png1.png">
+                <a href="/HTML/ORDERS_ADMIN.HTML">Orders</a>
+            </button>
+            <button class="nav-item">
+                <span></span>
+                <img src="/ASSETS/feedback.png">
+                <a href="/HTML/REVIEWS_ADMIN.HTML">Reviews</a>
+            </button>
+        </nav>
+
+    <!-- Header -->
+    <div class="header">
+      <div>
+        <h1>User Management</h1>
+      </div>
+      <div class="header-actions">
+        <button class="btn-outline">Filter</button>
+      </div>
+    </div>
+
+    <!-- User Card -->
+    <div class="user-card">
+      <div class="user-left">
+        <h2>Rajesh Kumar
+          <span class="badge green">Farmer</span>
+          <span class="badge dark">Active</span>
+        </h2>
+
+        <p><strong>Email:</strong> rajesh@example.com</p>
+        <p><strong>Joined:</strong> 15/01/2024</p>
+        <p class="stats">
+          Products: <span>12</span>
+          Orders: <span>45</span>
+          Revenue: <span>₹125,000</span>
+        </p>
+      </div>
+
+      <div class="user-right">
+        <p><strong>Location:</strong> Punjab, India</p>
+        <p><strong>Rating:</strong>
+          <img src="/ASSETS/rating.png"> 4.8</p>
+
+        <!-- <div class="actions">
+          <button class="btn-outline">View</button>
+          <button class="btn-outline">Edit</button>
+          <button class="btn-danger">✖</button>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- User Card -->
+    <div class="user-card">
+      <div class="user-left">
+        <h2>Metro Foods Pvt Ltd
+          <span class="badge blue">Vendor</span>
+          <span class="badge dark">Active</span>
+        </h2>
+
+        <p><strong>Email:</strong> metro@example.com</p>
+        <p><strong>Joined:</strong> 20/02/2024</p>
+        <p class="stats">
+          Products: <span>0</span>
+          Orders: <span>78</span>
+          Revenue: <span>₹456,000</span>
+        </p>
+      </div>
+
+      <div class="user-right">
+        <p><strong>Location:</strong> Mumbai, Maharashtra</p>
+        <p><strong>Rating:</strong> 
+          <img src="/ASSETS/rating.png">4.6</p>
+
+        <!-- <div class="actions">
+          <button class="btn-outline">View</button>
+          <button class="btn-outline">Edit</button>
+          <button class="btn-danger">✖</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>

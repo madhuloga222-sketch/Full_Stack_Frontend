@@ -1,129 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AgriDirect - Vendor Dashboard</title>
-    <link rel="stylesheet" href="/CSS/PRODUCTS-V.CSS">
-    <link rel="icon" href="/ASSETS/image.png">
-</head>
-<body>
+    <link rel="stylesheet" href="/CSS/PRODUCTS-V.CSS" />
+    <link rel="icon" href="/ASSETS/image.png" />
+  </head>
+  <body>
     <header>
-         <div class="logo"> 
-            <div class="logo-icon">
-                <a href="/INDEX.HTML"><img src="/ASSETS/image.png" width="60px" height="60px"></a>
-            </div>
-          <div class="logo-text">
-            <h1>AgriDirect</h1>  
-          </div>
+      <div class="logo">
+        <div class="logo-icon">
+          <a href="/INDEX.HTML"
+            ><img src="/ASSETS/image.png" width="60px" height="60px"
+          /></a>
         </div>
-        <div class="user-section">
-            <div class="avatar">V</div>
-            <a href="/INDEX.HTML" class="logout-btn">Logout </a>
-                <span></span>
+        <div class="logo-text">
+          <h1>AgriDirect</h1>
         </div>
+      </div>
+      <div class="user-section">
+        <div class="avatar">V</div>
+        <a href="/INDEX.HTML" class="logout-btn">Logout </a>
+        <span></span>
+      </div>
     </header>
 
-    <nav>
-        <button class="nav-btn active">My Products</button>
-        <a href="/HTML/ORDERS-V.HTML"><button class="nav-btn"> Orders</button></a>
-        <a href="/HTML/SUPPLIERS-V.HTML"><button class="nav-btn"> Suppliers</button></a>
-    </nav>
+    <!-- Cart -->
+    <div class="container">
+      <div class="nav-bar">
+        <div class="nav-links">
+          <button class="nav-btn active">My Products</button>
+          <a href="/HTML/ORDERS-V.HTML"
+            ><button class="nav-btn">My Orders</button></a
+          >
+          <a href="/HTML/SUPPLIERS-V.HTML"
+            ><button class="nav-btn">My Suppliers</button></a
+          >
+        </div>
+        <!-- <button class="cart-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <a href="/HTML/CART.HTML">Cart</a>
+            </button> -->
+      </div>
 
-    <div class="search-section">
-        <div class="search-box">
-            <span></span>
-            <input type="text" placeholder="Search for products...">
+      <div class="search-filter-section">
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-box"
+            placeholder="Search for products..."
+          />
         </div>
         <select class="category-dropdown">
-            <option>Category</option>
-            <option>Vegetables</option>
-            <option>Fruits</option>
-            <option>Grains</option>
+          <option>Category</option>
+          <option>Vegetables</option>
+          <option>Fruits</option>
+          <option>Grains</option>
+          <option>Dairy</option>
         </select>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1: Fresh Tomatoes -->
+        <div class="product-card">
+          <div class="product-image-container">
+            <img
+              src="/ASSETS/full stack img2.avif"
+              alt="Fresh Tomatoes"
+              class="product-image"
+            />
+            <div class="quality-badge premium">Premium</div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Fresh Tomatoes</h3>
+            <p class="product-supplier">By Rajesh Kumar Theni</p>
+
+            <div class="price-rating-section">
+              <div class="price">₹45/kg</div>
+              <div class="rating">
+                <span class="star">★</span>
+                <span>4.8</span>
+              </div>
+            </div>
+
+            <div class="market-demand-section">
+              <div class="market-price">Market: ₹52/kg</div>
+              <div class="demand-badge high">High demand</div>
+            </div>
+
+            <div class="availability">500 kg available</div>
+
+            <div class="action-buttons">
+              <a href="/HTML/CONTACT-F.HTML"
+                ><button class="contact-btn">Contact</button></a
+              >
+              <!-- <button class="cart-add-btn">
+                            <span>+</span>
+                            <a href="/HTML/CART.HTML"><span>Cart</span></a>
+                        </button> -->
+            </div>
+
+            <button class="order-now-btn">
+              <a href="/HTML/ORDERS-V.HTML">Order Now</a>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2: Organic Potatoes -->
+        <div class="product-card">
+          <div class="product-image-container">
+            <img
+              src="/ASSETS/full stack img3.jpg"
+              alt="Organic Potatoes"
+              class="product-image"
+            />
+            <div class="quality-badge organic">Organic</div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Organic Potatoes</h3>
+            <p class="product-supplier">By Ravi Dindigul</p>
+
+            <div class="price-rating-section">
+              <div class="price">₹35/kg</div>
+              <div class="rating">
+                <span class="star">★</span>
+                <span>4.9</span>
+              </div>
+            </div>
+
+            <div class="market-demand-section">
+              <div class="market-price">Market: ₹42/kg</div>
+              <div class="demand-badge medium">Medium demand</div>
+            </div>
+
+            <div class="availability">1000 kg available</div>
+
+            <div class="action-buttons">
+              <a href="/HTML/CONTACT-F.HTML"
+                ><button class="contact-btn">Contact</button></a
+              >
+              <!-- <button class="cart-add-btn">
+                            <span>+</span>
+                            <a href="/HTML/CART.HTML"><span>Cart</span></a>
+                        </button> -->
+            </div>
+
+            <button class="order-now-btn">
+              <a href="/HTML/ORDERS-V.HTML">Order Now</a>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3: Fresh Cauliflower -->
+        <div class="product-card">
+          <div class="product-image-container">
+            <img
+              src="/ASSETS/full stack img4.webp"
+              alt="Fresh Cauliflower"
+              class="product-image"
+            />
+            <div class="quality-badge premium">Premium</div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Fresh Carrot</h3>
+            <p class="product-supplier">By Arun Karur</p>
+
+            <div class="price-rating-section">
+              <div class="price">₹55/kg</div>
+              <div class="rating">
+                <span class="star">★</span>
+                <span>4.7</span>
+              </div>
+            </div>
+
+            <div class="market-demand-section">
+              <div class="market-price">Market: ₹48/kg</div>
+              <div class="demand-badge high">High demand</div>
+            </div>
+
+            <div class="availability">300 kg available</div>
+
+            <div class="action-buttons">
+              <a href="/HTML/CONTACT-F.HTML"
+                ><button class="contact-btn">Contact</button></a
+              >
+              <!-- <button class="cart-add-btn">
+                            <span>+</span>
+                            <a href="/HTML/CART.HTML"><span>Cart</span></a>
+                        </button> -->
+            </div>
+
+            <button class="order-now-btn">
+              <a href="/HTML/ORDERS-V.HTML">Order Now</a>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="products-grid">
-        <div class="product-card">
-            <div style="position: relative;">
-                <img src="/ASSETS/full stack img2.avif" alt="Fresh Tomatoes" class="product-image">
-                <span class="badge premium">Organic</span>
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Fresh Tomatoes</h2>
-                <p class="product-vendor">By Rajesh Kumar • Theni, Tamilnadu</p>
-                <div class="price-rating">
-                    <span class="price">₹45/kg</span>
-                    <div class="rating">
-                        <span></span>
-                        <span>4.8</span>
-                    </div>
-                </div>
-                <div class="market-info">
-                    <span class="market-price">Market: ₹52/kg</span>
-                    <span class="demand-badge high">High demand</span>
-                </div>
-                <p class="availability">200 kg available</p>
-                <div class="action-buttons">
-                   <a href="/HTML/CONTACT-F.HTML"><button class="btn btn-outline">Contact Farmer</button></a>
-                   <a href="/HTML/ORDERS-V.HTML"><button class="btn btn-primary"> Order</button></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <div style="position: relative;">
-                <img src="/ASSETS/full stack img3.jpg" alt="Organic Potatoes" class="product-image">
-                <span class="badge organic">Organic</span>
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Fresh </h2>
-                <p class="product-vendor">By Ravi • Dindigul, Tamilnadu</p>
-                <div class="price-rating">
-                    <span class="price">₹35/kg</span>
-                    <div class="rating">
-                        <span></span>
-                        <span>4.9</span>
-                    </div>
-                </div>
-                <div class="market-info">
-                    <span class="market-price">Market: ₹42/kg</span>
-                    <span class="demand-badge medium">Medium demand</span>
-                </div>
-                <p class="availability">150 kg available</p>
-                <div class="action-buttons">
-                    <a href="/HTML/CONTACT-F.HTML"><button class="btn btn-outline">Contact Farmer</button></a>
-                    <a href="/HTML/ORDERS-V.HTML"><button class="btn btn-primary"> Order</button></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <div style="position: relative;">
-                <img src="/ASSETS/full stack img4.webp" alt="Fresh Cauliflower" class="product-image">
-                <span class="badge premium">Organic</span>
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Fresh Carrot</h2>
-                <p class="product-vendor">By Arun • Karur, Tamilnadu</p>
-                <div class="price-rating">
-                    <span class="price">₹55/kg</span>
-                    <div class="rating">
-                        <span></span>
-                        <span>4.7</span>
-                    </div>
-                </div>
-                <div class="market-info">
-                    <span class="market-price">Market: ₹48/kg</span>
-                    <span class="demand-badge high">High demand</span>
-                </div>
-                <p class="availability">220 kg available</p>
-                <div class="action-buttons">
-                    <a href="/HTML/CONTACT-F.HTML"><button class="btn btn-outline">Contact Farmer</button></a>
-                    <a href="/HTML/ORDERS-V.HTML"><button class="btn btn-primary">Order</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+  </body>
 </html>

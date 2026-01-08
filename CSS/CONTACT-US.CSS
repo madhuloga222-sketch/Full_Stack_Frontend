@@ -1,11 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
 
 /* Header Styles */
@@ -108,329 +109,331 @@ nav {
 
 /* Header Navigation */
 header {
-    background: white;
-    padding: 1rem 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1000;
+  background: white;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .logo-section {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .logo-text h1 {
-    font-size: 1.5rem;
-    color: #4caf50;
-    font-weight: 700;
-    font-size: 22px;
+  font-size: 1.5rem;
+  color: #4caf50;
+  font-weight: 700;
+  font-size: 22px;
 }
 
 .logo-text p {
-    font-size: 0.9rem;
-    color: #22c55e;
+  font-size: 0.9rem;
+  color: #22c55e;
 }
 
 nav {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 nav a {
-    text-decoration: none;
-    color: #334155;
-    font-weight: 500;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: #334155;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #22c55e;
+  color: #22c55e;
 }
 
 .btn-login {
-    background: #22c55e;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: background 0.3s;
+  background: #22c55e;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s;
 }
 
 .btn-login:hover {
-    background: #16a34a;
+  background: #16a34a;
 }
 
 /* Mobile Menu Toggle */
 .menu-toggle {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    padding: 8px;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px;
 }
 
 .menu-toggle span {
-    width: 25px;
-    height: 3px;
-    background: #2d5a3d;
-    border-radius: 3px;
-    transition: 0.3s;
+  width: 25px;
+  height: 3px;
+  background: #2d5a3d;
+  border-radius: 3px;
+  transition: 0.3s;
 }
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(135deg, #00a651 0%, #00d66a 100%);
-    padding: 80px 40px;
-    text-align: center;
+  background: linear-gradient(135deg, #00a651 0%, #00d66a 100%);
+  padding: 80px 40px;
+  text-align: center;
 }
 
 .cta-container {
-    max-width: 900px;
-    margin: 0 auto;
-    margin-top: 100px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 .cta-section h2 {
-    color: white;
-    font-size: 2rem;
-    margin-bottom: 25px;
-    font-weight: 600;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  font-weight: 600;
 }
 
 .cta-section p {
-    color: white;
-    font-size: 1.3rem;
-    line-height: 1.7;
-    font-weight: 400;
+  color: white;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  font-weight: 400;
 }
 
 .contact-container {
-    display: flex;
-    gap: 40px;
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 50px;
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 50px;
 }
 
-.left, .right {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    flex: 1;
-    border: 1px solid #d7f3d7;
+.left,
+.right {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  flex: 1;
+  border: 1px solid #d7f3d7;
 }
 
 .left h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .left p {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .info-card {
-    display: flex;
-    gap: 20px;
-    padding: 18px;
-    border: 1px solid #c4eac4;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    align-items: center;
+  display: flex;
+  gap: 20px;
+  padding: 18px;
+  border: 1px solid #c4eac4;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  align-items: center;
 }
 
 .icon {
-    font-size: 28px;
-    background: #dfffe0;
-    padding: 12px;
-    border-radius: 50%;
+  font-size: 28px;
+  background: #dfffe0;
+  padding: 12px;
+  border-radius: 50%;
 }
 
 .right h3 {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-    margin: 12px 0 5px;
-    font-weight: bold;
+  margin: 12px 0 5px;
+  font-weight: bold;
 }
 
-input, select, textarea {
-    padding: 12px;
-    border: 1px solid #cce8cc;
-    border-radius: 8px;
-    outline: none;
-    font-size: 14px;
+input,
+select,
+textarea {
+  padding: 12px;
+  border: 1px solid #cce8cc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
 }
 
 textarea {
-    height: 120px;
+  height: 120px;
 }
 
 button {
-    margin-top: 20px;
-    padding: 14px;
-    background: #1ca33c;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 8px;
+  margin-top: 20px;
+  padding: 14px;
+  background: #1ca33c;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
 button:hover {
-    background: #148d32;
+  background: #148d32;
 }
 
 .business-hours {
-    width: 60%;
-    padding: 25px;
-    border: 1px solid #c4eac4;
-    border-radius: 16px;
-    margin: 40px 0;
-    display: flex;
-    gap: 25px;
-    background: #fff;
-    /* align-items: center; */
-    margin: 40px auto;
+  width: 60%;
+  padding: 25px;
+  border: 1px solid #c4eac4;
+  border-radius: 16px;
+  margin: 40px 0;
+  display: flex;
+  gap: 25px;
+  background: #fff;
+  /* align-items: center; */
+  margin: 40px auto;
 }
 
 .clock-icon {
-    font-size: 30px;
-    background: #dfffe0;
-    padding: 15px;
-    border-radius: 50%;
+  font-size: 30px;
+  background: #dfffe0;
+  padding: 15px;
+  border-radius: 50%;
 }
 
 .business-hours h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #0b7d31;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0b7d31;
 }
 
 .business-hours p {
-    margin: 4px 0;
-    color: #0b7d31;
-    font-size: 16px;
+  margin: 4px 0;
+  color: #0b7d31;
+  font-size: 16px;
 }
 
- /* Footer Section */
+/* Footer Section */
 .footer {
-    background-color: #ffffff;
-    padding: 60px 20px 30px;
+  background-color: #ffffff;
+  padding: 60px 20px 30px;
 }
 
 .footer-container {
-    max-width: 1400px;
-    margin: 0 auto;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .footer-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1.5fr;
-    gap: 60px;
-    margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 60px;
+  margin-bottom: 50px;
 }
 
 .footer-brand {
-    max-width: 350px;
+  max-width: 350px;
 }
 
 .brand-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .brand-logo svg {
-    width: 35px;
-    height: 35px;
-    stroke: #059669;
-    stroke-width: 2;
-    fill: none;
+  width: 35px;
+  height: 35px;
+  stroke: #059669;
+  stroke-width: 2;
+  fill: none;
 }
 
 .brand-name {
-    color: #4caf50;
-    font-size: 1.5rem;
-    font-weight: 700;
+  color: #4caf50;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .brand-description {
-    color: #2d5f4f;
-    font-size: 1rem;
-    line-height: 1.6;
+  color: #2d5f4f;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .footer-column h3 {
-    color: #2d5f4f;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 20px;
+  color: #2d5f4f;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .footer-column ul {
-    list-style: none;
+  list-style: none;
 }
 
 .footer-column ul li {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .footer-column a {
-    color: #059669;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s;
+  color: #059669;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
 }
 
 .footer-column a:hover {
-    color: #047857;
+  color: #047857;
 }
 
 .contact-info {
-    color: #059669;
-    font-size: 1rem;
-    line-height: 1.8;
+  color: #059669;
+  font-size: 1rem;
+  line-height: 1.8;
 }
 
 .footer-bottom {
-    border-top: 1px solid #e5e7eb;
-    padding-top: 25px;
-    text-align: center;
-    color: #059669;
-    font-size: 0.95rem;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 25px;
+  text-align: center;
+  color: #059669;
+  font-size: 0.95rem;
 }
 
 .footer-bottom a {
-    color: #059669;
-    text-decoration: none;
-    margin: 0 5px;
+  color: #059669;
+  text-decoration: none;
+  margin: 0 5px;
 }
 
 .footer-bottom a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
 
 /* Responsive */
 @media (max-width: 900px) {
-    .contact-container {
-        flex-direction: column;
-    }
+  .contact-container {
+    flex-direction: column;
+  }
 }

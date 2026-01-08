@@ -1,250 +1,247 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background-color: #e8f5e9;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  background-color: #e8f5e9;
 }
 
-
-.header{
-    background-color: white;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+.header {
+  background-color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .logo-section {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .logo {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo svg {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .brand-text h1 {
-    font-size: 22px;
-    color: #4caF50;
-    font-weight: 700;
-    margin-left: 20px;
+  font-size: 22px;
+  color: #4caf50;
+  font-weight: 700;
+  margin-left: 20px;
 }
 
 .brand-text p {
-    font-size: 14px;
-    color: #757575;
-    font-weight: 400;
+  font-size: 14px;
+  color: #757575;
+  font-weight: 400;
 }
 
 .user-section {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-.user-section a{
-    text-decoration: none;
+.user-section a {
+  text-decoration: none;
 }
 .user-avatar {
-    width: 48px;
-    height: 48px;
-    background-color: #4caF50;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
+  width: 48px;
+  height: 48px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .logout-btn {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
-    background: none;
-    border: none;
-    color: #4caF50;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: opacity 0.3s;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: none;
+  border: none;
+  color: #4caf50;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  text-decoration: none;
 }
 
 .logout-btn:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .logout-icon {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
-
 .nav-container {
-    padding: 20px 40px;
-    display: flex;
-    gap: 10px;
-    align-items: center;
+  padding: 20px 40px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .nav-item {
-    padding: 12px 24px;
-    background: white;
-    border: none;
-    font-size: 15px;
-    font-weight: 600;
-    color: #333;
-    cursor: pointer;
-    border-radius: 25px;
-    transition: all 0.3s;
+  padding: 12px 24px;
+  background: white;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s;
 }
 
 .nav-item:hover {
-    background-color: rgba(46, 125, 50, 0.1);
+  background-color: rgba(46, 125, 50, 0.1);
 }
 
 .nav-item.active {
-    background-color: #4caF50;
-    color: white;
+  background-color: #4caf50;
+  color: white;
 }
 
-
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 40px;
 }
 
 .page-title {
-    font-size: 28px;
-    color: #4caF50;
-    margin-bottom: 30px;
-    font-weight: 600;
+  font-size: 28px;
+  color: #4caf50;
+  margin-bottom: 30px;
+  font-weight: 600;
 }
 
-
 .order-card {
-    background: white;
-    border-radius: 12px;
-    padding: 24px 30px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: box-shadow 0.3s;
+  background: white;
+  border-radius: 12px;
+  padding: 24px 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s;
 }
 
 .order-card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .order-info {
-    flex: 1;
+  flex: 1;
 }
 
 .order-id {
-    font-size: 18px;
-    color: #424242;
-    font-weight: 600;
-    margin-bottom: 8px;
+  font-size: 18px;
+  color: #424242;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .order-product {
-    font-size: 16px;
-    color: #2e7d32;
-    margin-bottom: 6px;
-    font-weight: 500;
+  font-size: 16px;
+  color: #2e7d32;
+  margin-bottom: 6px;
+  font-weight: 500;
 }
 
 .order-price {
-    font-size: 24px;
-    color: #d84315;
-    font-weight: 700;
-    margin-bottom: 5px;
+  font-size: 24px;
+  color: #d84315;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
 .order-vendor {
-    font-size: 15px;
-    color: #2e7d32;
-    font-weight: 400;
+  font-size: 15px;
+  color: #2e7d32;
+  font-weight: 400;
 }
 
 .order-details {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .order-price {
-    font-size: 20px;
-    color: #d84315;
-    font-weight: 600;
+  font-size: 20px;
+  color: #d84315;
+  font-weight: 600;
 }
 
 .order-status {
-    background-color: #c8e6c9;
-    color: #1b5e20;
-    padding: 8px 20px;
-    border-radius: 6px;
-    font-size: 15px;
-    font-weight: 600;
+  background-color: #c8e6c9;
+  color: #1b5e20;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
-.header {
+  .header {
     padding: 15px 20px;
-}
+  }
 
-.brand-text h1 {
+  .brand-text h1 {
     font-size: 18px;
-}
+  }
 
-.brand-text p {
+  .brand-text p {
     font-size: 12px;
-}
+  }
 
-.user-avatar {
+  .user-avatar {
     width: 40px;
     height: 40px;
     font-size: 16px;
-}
+  }
 
-.nav-container {
+  .nav-container {
     padding: 15px 20px;
     flex-wrap: wrap;
-}
+  }
 
-.container {
+  .container {
     padding: 20px;
-}
+  }
 
-.order-card {
+  .order-card {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
-}
+  }
 
-.order-details {
+  .order-details {
     width: 100%;
     justify-content: space-between;
-}
+  }
 }

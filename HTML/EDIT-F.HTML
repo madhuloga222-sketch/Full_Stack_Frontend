@@ -1,94 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AgriDirect - Farmer Dashboard</title>
-    <link rel="stylesheet" href="/CSS/EDIT-F.CSS">
-    <link rel="icon" href="/ASSETS/image.png">
-</head>
-<body>
+    <link rel="stylesheet" href="/CSS/EDIT-F.CSS" />
+    <link rel="icon" href="/ASSETS/image.png" />
+  </head>
+  <body>
     <header class="header">
-        <div class="logo-section">
-            <div class="logo">
-                <a href="/INDEX.HTML"><img src="/ASSETS/image.png" width="60px" height="60px"></a>
-            </div>
-            <div class="brand-info">
-                <h1>AgriDirect</h1>
-                <p>Farmer Dashboard</p>
-            </div>
+      <div class="logo-section">
+        <div class="logo">
+          <a href="/INDEX.HTML"
+            ><img src="/ASSETS/image.png" width="60px" height="60px"
+          /></a>
         </div>
-        <div class="user-section">
-            <div class="user-avatar">F</div>
-            <a href="/INDEX.HTML" class="logout-btn">
-                <span>↗</span>
-                <span>Logout</span>
-            </a>
+        <div class="brand-info">
+          <h1>AgriDirect</h1>
+          <p>Farmer Dashboard</p>
         </div>
+      </div>
+      <div class="user-section">
+        <div class="user-avatar">F</div>
+        <a href="/INDEX.HTML" class="logout-btn">
+          <span>↗</span>
+          <span>Logout</span>
+        </a>
+      </div>
     </header>
 
     <main class="main-content">
-        <div class="form-container">
-            <div class="form-header">
-                <h2>Edit Product</h2>
-                <p>Update your fresh produce details</p>
-            </div>
-
-            <form>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="productName">Product Name</label>
-                        <input type="text" id="productName" value="Fresh Tomatoes">
-                    </div>
-                    <div class="form-group">
-                        <label for="category">Category</label>
-                        <select id="category">
-                            <option value="">Select category</option>
-                            <option value="vegetables">Vegetables</option>
-                            <option value="fruits">Fruits</option>
-                            <option value="grains">Grains</option>
-                            <option value="dairy">Dairy</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="quantity">Quantity Available</label>
-                        <input type="text" id="quantity" value="500 kg">
-                    </div>
-                    <div class="form-group">
-                        <label for="price">Price per kg (₹)</label>
-                        <input type="number" id="price" value="45">
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group full-width">
-                        <label for="quality">Quality Grade</label>
-                        <select id="quality">
-                            <option value="">Select quality grade</option>
-                            <option value="premium">Premium</option>
-                            <option value="grade-a">Grade A</option>
-                            <option value="grade-b">Grade B</option>
-                            <option value="standard">Standard</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group full-width">
-                        <label for="description">Description</label>
-                        <textarea id="description" placeholder="Describe your produce, farming methods, harvest date, etc."></textarea>
-                    </div>
-                </div>
-
-                <div class="button-group">
-                    <a href="/HTML/PRODUCTS-F.HTML"><button type="button" class="btn btn-cancel">Cancel</button></a>
-                    <button type="submit" class="btn btn-save">Save Changes</button>
-                </div>
-            </form>
+      <div class="form-container">
+        <div class="form-header">
+          <h2>Edit Product</h2>
+          <p>Update your fresh produce details</p>
         </div>
+
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="productName">Product Name</label>
+              <input type="text" id="productName" value="Fresh Tomatoes" />
+            </div>
+            <div class="form-group">
+              <label for="category">Category</label>
+              <select id="category">
+                <option value="">Select category</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="fruits">Fruits</option>
+                <option value="grains">Grains</option>
+                <option value="dairy">Dairy</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="quantity">Quantity Available</label>
+              <input type="text" id="quantity" value="500 kg" />
+            </div>
+            <div class="form-group">
+              <label for="price">Price per kg (₹)</label>
+              <input type="number" id="price" value="45" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="quality">Quality Grade</label>
+              <select id="quality">
+                <option value="">Select quality grade</option>
+                <option value="premium">Premium</option>
+                <option value="grade-a">Grade A</option>
+                <option value="grade-b">Grade B</option>
+                <option value="standard">Standard</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="description">Description</label>
+              <textarea
+                id="description"
+                placeholder="Describe your produce, farming methods, harvest date, etc."
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="button-group">
+            <a href="/HTML/PRODUCTS-F.HTML"
+              ><button type="button" class="btn btn-cancel">Cancel</button></a
+            >
+            <button type="submit" class="btn btn-save">Save Changes</button>
+          </div>
+        </form>
+      </div>
     </main>
-</body>
+  </body>
 </html>

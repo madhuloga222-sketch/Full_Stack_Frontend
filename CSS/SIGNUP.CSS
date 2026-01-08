@@ -14,7 +14,7 @@ body {
 }
 
 header .back-btn {
-  color: #4caF50;
+  color: #4caf50;
   text-decoration: none;
   font-size: 30px;
   font-weight: 600;
@@ -25,8 +25,8 @@ header .back-btn {
   transition: 0.3s;
 }
 
-.back-btn a{
-  color: #4caF50;
+.back-btn a {
+  color: #4caf50;
   text-decoration: none;
   font-size: 18px;
   position: absolute;
@@ -36,7 +36,7 @@ header .back-btn {
 }
 
 .back-btn a:hover {
-  color: #4caF50;
+  color: #4caf50;
 }
 
 .logo {
@@ -58,7 +58,7 @@ header .back-btn {
 
 .container h2 {
   margin-bottom: 5px;
-  color: #4caF50;
+  color: #4caf50;
 }
 
 .sub {
@@ -81,17 +81,17 @@ header .back-btn {
   cursor: pointer;
   border-radius: 5px;
   transition: 0.3s;
-  background: #4caF50;
+  background: #4caf50;
   color: white;
   text-decoration: none;
 }
 
 .tab.active {
   background: #fff;
-  color: #4caF50;
+  color: #4caf50;
 }
 .tab:hover {
-  background: #4caF50;
+  background: #4caf50;
   color: #fff;
 }
 
@@ -110,8 +110,8 @@ header .back-btn {
   cursor: pointer;
   transition: 0.3s;
   font-weight: 500;
-  color: #4caF50;
-  width:160px;
+  color: #4caf50;
+  width: 160px;
 }
 
 .role-btn-positive {
@@ -119,17 +119,17 @@ header .back-btn {
   padding: 0.6rem;
   border: 1.5px solid #f1f1f1;
   border-radius: 8px;
-  background: #4caF50;
+  background: #4caf50;
   cursor: pointer;
   transition: 0.3s;
   font-weight: 500;
   color: #f1f1f1;
-  width:160px;
+  width: 160px;
 }
 
 .role-btn:hover {
   background: #fff;
-  color: #4caF50;
+  color: #4caf50;
 }
 
 input {
@@ -144,7 +144,7 @@ input {
 .create-btn {
   width: 100%;
   padding: 10px;
-  background: #4caF50;
+  background: #4caf50;
   border: none;
   color: white;
   font-size: 16px;
@@ -153,12 +153,12 @@ input {
   transition: 0.3s;
 }
 
-.create-btn{
+.create-btn {
   width: 100%;
   padding: 0.8rem;
   border: none;
   border-radius: 6px;
-  background: #4caF50;
+  background: #4caf50;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
@@ -166,5 +166,5 @@ input {
 }
 
 .create-btn:hover {
-  background: #4caF50;
-} 
+  background: #4caf50;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDERS_ADMIN</title>
+    <link rel="stylesheet"  href="/CSS/ORDERS_ADMIN.CSS">
+    <link rel="stylesheet" href="/ASSETS/image.png">
+</head>
+<body>
+     <header class="top-header">
+        <div class="logo-section">
+            <div class="logo">
+                <a href="/INDEX.HTML"><img src="/ASSETS/image.png" width="60px" height="60px"></a>
+            </div>
+            <div class="logo-text">
+                <h1>AgriDirect</h1>
+            </div>
+        </div>
+
+        <div class="user-section">
+            <a href="/INDEX.HTML" class="logout-btn"><span>Logout</span></a>
+          </div>
+    </header>
+
+    <main class="main-content">
+        <nav class="navbar">
+            <button class="nav-item ">
+                <span></span>
+                <img src="/ASSETS/Data-Driven Insights1.png">
+                <a href="/HTML/ADMIN_DASHBOARD.HTML"> Overview</a>
+            </button>
+            <button class="nav-item ">
+                <span></span>
+                <img src="/ASSETS/people-line (1).png">
+                <a href="/HTML/USER_ADMIN.HTML"> Users</a>
+            </button>
+            <button class="nav-item">
+                <span></span>
+                <img src="/ASSETS/box-open.png">
+                <a href="/HTML/PROUCTS_ADMIN.HTML"> Products</a>
+            </button>
+            <button class="nav-item active">
+                <span></span>
+                <img src="/ASSETS/cart.png1.png">
+                <a href="/HTML/ORDERS_ADMIN.HTML">Orders</a>
+            </button>
+            <button class="nav-item">
+                <span></span>
+                <img src="/ASSETS/feedback.png">
+                <a href="/HTML/REVIEWS_ADMIN.HTML">Reviews</a>
+            </button>
+        </nav>
+
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <h1>Order Management</h1>
+                <p>Track and manage all platform orders</p>
+            </div>
+            <div class="header-actions">
+                <select class="filter-dropdown">
+                    <option>Filter by status</option>
+                    <option>Completed</option>
+                    <option>Pending</option>
+                    <option>Paid</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="order-card">
+            <div class="order-header">
+                <div class="order-title-section">
+                    <span class="cart-icon">
+                        <img src="/ASSETS/cart.png1.png">
+                    </span>
+                    <div>
+                        <span class="order-number">Order #AGD0001</span>
+                        <span class="badge completed">Completed</span>
+                        <span class="badge paid">Paid</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order-details">
+                <div class="detail-item">
+                    <span class="detail-label">Product:</span>
+                    <span class="detail-value">Fresh Tomatoes</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Quantity:</span>
+                    <span class="detail-value">100 kg</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Farmer:</span>
+                    <span class="detail-value">Rajesh Kumar</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Vendor:</span>
+                    <span class="detail-value">Metro Foods Pvt Ltd</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Date:</span>
+                    <span class="detail-value">20/01/2024</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Amount:</span>
+                    <span class="detail-value amount">₹4,500</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-card">
+            <div class="order-header">
+                <div class="order-title-section">
+                    <span class="cart-icon">
+                        <img src="/ASSETS/cart.png1.png">
+                    </span>
+                    <div>
+                        <span class="order-number">Order #AGD0002</span>
+                        <span class="badge pending">Pending</span>
+                        <span class="badge pending">Pending</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order-details">
+                <div class="detail-item">
+                    <span class="detail-label">Product:</span>
+                    <span class="detail-value">Organic Potatoes</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Quantity:</span>
+                    <span class="detail-value">200 kg</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Farmer:</span>
+                    <span class="detail-value">Priya Singh</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Vendor:</span>
+                    <span class="detail-value">Fresh Mart Wholesale</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Date:</span>
+                    <span class="detail-value">22/01/2024</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Amount:</span>
+                    <span class="detail-value amount">₹7,000</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
