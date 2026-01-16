@@ -322,6 +322,10 @@ header {
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
+  width: 50%;
+  gap: 98px;
+  margin-left: 3px;
+  margin-right: 80px;
 }
 
 .contact-btn:hover {
@@ -329,14 +333,21 @@ header {
 }
 
 .cart-add-btn {
-  flex: 1;
-  padding: 12px;
-  border: 2px solid #22a954;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px;
+  background-color: #ffffff;
+  color: #4caf50;
+  border: 2px solid #4caf50;
   border-radius: 8px;
   font-size: 15px;
   font-weight: 600;
+  text-decoration: none;
   cursor: pointer;
-  transition: all 0.3s;
+  margin-left: 100px;
+  margin-right: 80px;
+  
 }
 
 .cart-add-btn {
@@ -346,7 +357,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 9px;
 }
 
 .cart-add-btn a {

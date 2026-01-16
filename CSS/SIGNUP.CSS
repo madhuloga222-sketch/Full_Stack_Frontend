@@ -13,12 +13,12 @@ body {
   align-items: center;
 }
 
-header .back-btn {
+/* header .back-btn {
   color: #4caf50;
   text-decoration: none;
   font-size: 30px;
   font-weight: 600;
-  padding: 8px 16px;
+  padding: 8px;
   border-radius: 5px;
   margin-bottom: 20px;
   display: inline-block;
@@ -37,7 +37,7 @@ header .back-btn {
 
 .back-btn a:hover {
   color: #4caf50;
-}
+} */
 
 .logo {
   color: white;
