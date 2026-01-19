@@ -165,6 +165,10 @@ body {
   margin-bottom: 8px;
 }
 
+.order-info p{
+  margin-top: 19px;
+}
+
 .order-product {
   font-size: 16px;
   color: #2e7d32;
