@@ -8,15 +8,15 @@
     <link rel="icon" href="/ASSETS/image.png" />
   </head>
   <body>
-    <!-- <div class="back-btn"><a href="../INDEX.HTML">Back</a></div> -->
+    <!-- <div class="back-btn"><a href="../INDEX.HTML">Back</a></div>
     <div class="container">
       <div class="form-card">
         <h2>Join AgriDirect</h2>
         <p class="subtitle">Create your account to get started</p>
 
         <div class="toggle-buttons">
-          <!-- <button class="toggle active">Sign In</button> -->
-          <!-- <a href="SIGIN.HTML"><button class="toggle">Sign Up</button></a> -->
+          <button class="toggle active">Sign In</button>
+          <a href="SIGIN.HTML"><button class="toggle">Sign Up</button></a>
         </div>
 
         <div class="role-buttons">
@@ -38,8 +38,79 @@
             <option>Distributor</option>
           </select>
 
-          <!-- Fixed button -->
+          Fixed button
           <a href="/HTML/PRODUCTS-V.HTML" class="submit-btn">Create Account</a>
+        </form>
+      </div>
+    </div> -->
+
+    <div class="signup-page-wrapper">
+      <div class="signup-card-container">
+        <h1 class="join-heading-text">Join AgriDirect</h1>
+
+        <div class="user-type-toggle-wrapper">
+          <a href="/HTML/SIGUP.HTML"
+            ><button class="user-type-tab-button">Farmer</button></a
+          >
+          <button class="user-type-tab-button active-tab">Vendor</button>
+        </div>
+
+        <form id="registrationForm">
+          <div class="registration-form-group">
+            <label for="fullName" class="form-label-text">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              class="form-input-field"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="registration-form-group">
+            <label for="email" class="form-label-text">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form-input-field"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="registration-form-group">
+            <label for="phone" class="form-label-text">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              class="form-input-field"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+
+          <div class="registration-form-group">
+            <label for="location" class="form-label-text" id="locationLabel"
+              >Farm Location</label
+            >
+            <input
+              type="text"
+              id="location"
+              class="form-input-field"
+              placeholder="City,State"
+              required
+            />
+          </div>
+
+          <!-- <a href="/HTML/PRODUCTS-V.HTML"><button type="submit" class="register-submit-button"> Register as Vendor </button></a> -->
+          <a href="/HTML/PRODUCTS-V.HTML" class="register-submit-button">
+            Register as Vendor
+          </a>
+
+          <p class="login-redirect-section">
+            Already have a account?
+            <a href="/HTML/SIGIN.HTML" class="login-anchor-link">Login</a>
+          </p>
         </form>
       </div>
     </div>
