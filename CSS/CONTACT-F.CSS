@@ -18,6 +18,12 @@ body {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+   /* Sticky navbar */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo-section {
@@ -25,23 +31,11 @@ body {
   align-items: center;
   gap: 0.75rem;
 }
-/* 
-.logo {
-    width: 40px;
-    height: 40px;
-    background-color: #2e7d32;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.5rem;
-} */
 
 .brand-info h1 {
-  font-size: 1.25rem;
+  font-size:22px;
   color: #4caf50;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .brand-info p {
