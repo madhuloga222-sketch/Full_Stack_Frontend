@@ -67,6 +67,10 @@ header {
   font-weight: bold;
 }
 
+a{
+  text-decoration: none;
+}
+
 .logout-btn {
   display: flex;
   align-items: center;
