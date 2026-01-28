@@ -3,329 +3,176 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vendor-dashboard</title>
-    <link rel="stylesheet" href="/CSS/vendor-dashboard.css" />
-    <link rel="icon" href="/ASSETS/image.png" />
+    <title>Vendor Dashboard Edit</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/vendor-dashboard-edit.css" />
+    <link rel="icon" href="../ASSETS/image.png" />
   </head>
+
   <body>
+    <!-- ================= HEADER ================= -->
     <header>
       <div class="logo-section">
-        <div class="logo">
-          <a href="/INDEX.HTML"
-            ><img src="/ASSETS/image.png" width="60px" height="60px"
-          /></a>
-        </div>
-        <div class="logo-text">
-          <h1>AgriDirect</h1>
-        </div>
+        <a href="../index.html" class="logo">
+          <img
+            src="../ASSETS/image.png"
+            width="60"
+            height="60"
+            alt="AgriDirect Logo"
+          />
+        </a>
+        <h1 class="logo-text">AgriDirect</h1>
       </div>
+
       <nav>
-        <!-- <a href="/INDEX.HTML">Home</a>
-        <a href="/HTML/ABOUT-US.HTML">About Us</a>
-        <a href="/HTML/HOW-IT-WORKS.HTML">How It Works</a>
-        <a href="/HTML/CONTACT-US.HTML">Contact</a> -->
-        <a href="/HTML/SIGIN.HTML" class="btn-login">Logout</a>
+        <a href="sigin.html" class="btn-login">Logout</a>
       </nav>
     </header>
 
-    <div class="vendor-profile-container">
-      <a href="/HTML/products-v.html" class="dashboard-back-link"> ← Back to Dashboard </a>
-
-      <div class="vendor-profile-main-card">
-        <div class="vendor-header-section">
-          <div class="vendor-identity-info">
-            <div class="vendor-company-avatar">MF</div>
-            <div class="vendor-company-details">
-              <h1>Metro Foods Pvt Ltd</h1>
-              <div class="vendor-owner-name">Owner: Amit Verma</div>
-              <div class="vendor-info-badges">
-                <div class="vendor-rating-display">
-                  <span class="rating-star-icon">★</span>
-                  <span>4.7</span>
-                  <span class="review-count-text">(43 reviews)</span>
-                </div>
-                <span class="vendor-type-badge">Wholesaler</span>
-                <span class="vendor-type-badge order-count-badge"
-                  >156 Orders</span
-                >
-              </div>
-            </div>
-          </div>
-          <a href="/HTML/vendor-dashboard-edit.html"><button class="profile-edit-action-button">
-            <span>✎</span>
-            Edit Profile
-          </button></a>
+    <!-- ================= EDIT PROFILE ================= -->
+    <main class="vendor-edit-profile-wrapper">
+      <div class="vendor-profile-header-bar">
+        <div class="vendor-page-title-area">
+          <h1 class="vendor-edit-main-title">Edit Profile</h1>
+          <p class="vendor-profile-subtitle">
+            Update your business profile information
+          </p>
         </div>
 
-        <p class="vendor-business-description">
-          Leading wholesale distributor of fresh produce in Mumbai region. We
-          specialize in connecting with quality farmers and delivering fresh
-          vegetables and fruits to retail chains across the city.
+        <a href="vendor-dashboard.html" class="return-to-profile-link">
+          ← Back to Profile
+        </a>
+      </div>
+
+      <!-- ================= LOGO UPLOAD ================= -->
+      <section class="business-logo-upload-card">
+        <h2 class="logo-section-heading">Business Logo</h2>
+        <p class="logo-upload-instructions">
+          Upload your business logo or profile picture
         </p>
 
-        <div class="preferred-products-section">
-          <span class="products-label-text">Preferred Products:</span>
-          <div class="product-category-tag">Vegetables</div>
-          <div class="product-category-tag">Fruits</div>
-          <div class="product-category-tag">Organic Produce</div>
-        </div>
-      </div>
+        <div class="logo-display-upload-container">
+          <div class="business-logo-circle">MF</div>
 
-      <div class="vendor-statistics-grid">
-        <div class="statistics-display-card">
-          <div class="stat-icon-wrapper">🛒</div>
-          <div class="stat-category-label">Total Orders</div>
-          <div class="stat-number-value green-text">156</div>
-          <div class="stat-time-period">All time</div>
-        </div>
+          <div class="logo-upload-controls-area">
+            <p class="file-format-requirements">
+              Upload a business logo (PNG, JPG up to 5MB)
+            </p>
 
-        <div class="statistics-display-card">
-          <div class="stat-icon-wrapper">📈</div>
-          <div class="stat-category-label">Total Spent</div>
-          <div class="stat-number-value">₹8,45,000</div>
-          <div class="stat-time-period">This year</div>
-        </div>
+            <label for="businessLogoInput" class="logo-upload-trigger-button">
+              <span class="upload-arrow-icon">↑</span>
+              Upload Logo
+            </label>
 
-        <div class="statistics-display-card">
-          <div class="stat-icon-wrapper rating-star-icon">⭐</div>
-          <div class="stat-category-label">Rating</div>
-          <div class="stat-number-value rating-display">
-            <span class="rating-star-icon">★</span>
-            <span>4.7</span>
+            <input
+              type="file"
+              id="businessLogoInput"
+              class="file-input-hidden-element"
+              accept="image/png, image/jpeg"
+            />
           </div>
-          <div class="stat-time-period">43 reviews</div>
         </div>
+      </section>
+    </main>
 
-        <div class="statistics-display-card">
-          <div class="stat-category-label">Member Since</div>
-          <div class="stat-number-value">2021</div>
-          <div class="stat-time-period">Years on platform</div>
-        </div>
-      </div>
-    </div>
+    <!-- ================= FORM ================= -->
+    <section class="vendor-business-forms-container">
+      <div class="business-info-section-card">
+        <h2 class="business-section-title">Business Information</h2>
 
-    <div class="vendor-details-wrapper">
-      <!-- Contact Information Card -->
-      <div class="details-section-card">
-        <div class="section-title-header">
-          <svg
-            class="section-header-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-          </svg>
-          <h2 class="section-main-heading">Contact Information</h2>
-        </div>
-
-        <div class="contact-information-row">
-          <svg
-            class="contact-field-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-          </svg>
-          <div class="contact-text-content">
-            <div class="contact-field-heading">Email Address</div>
-            <div class="contact-field-information">contact@metrofoods.com</div>
+        <div class="vendor-form-fields-grid">
+          <div class="vendor-full-width-field">
+            <label class="vendor-field-label-text">
+              Business Name <span class="vendor-required-asterisk">*</span>
+            </label>
+            <input
+              type="text"
+              class="vendor-text-input-field"
+              value="Metro Foods Pvt Ltd"
+            />
           </div>
         </div>
 
-        <div class="contact-information-row">
-          <svg
-            class="contact-field-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path
-              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-            ></path>
-          </svg>
-          <div class="contact-text-content">
-            <div class="contact-field-heading">Phone Number</div>
-            <div class="contact-field-information">+91 98765 12345</div>
+        <div class="vendor-form-fields-grid">
+          <div class="vendor-full-width-field">
+            <label class="vendor-field-label-text">
+              Owner / Contact Person
+              <span class="vendor-required-asterisk">*</span>
+            </label>
+            <input
+              type="text"
+              class="vendor-text-input-field"
+              value="Amit Verma"
+            />
           </div>
         </div>
 
-        <div class="contact-information-row">
-          <svg
-            class="contact-field-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
-            <circle cx="12" cy="10" r="3"></circle>
-          </svg>
-          <div class="contact-text-content">
-            <div class="contact-field-heading">Business Address</div>
-            <div class="contact-field-information">
-              Shop No. 45, Andheri Market Complex, Mumbai - 400058
-            </div>
+        <div class="vendor-form-fields-grid">
+          <div class="vendor-input-field-wrapper">
+            <label class="vendor-field-label-text">
+              Email <span class="vendor-required-asterisk">*</span>
+            </label>
+            <input
+              type="email"
+              class="vendor-text-input-field"
+              value="contact@metrofoods.com"
+            />
+          </div>
+
+          <div class="vendor-input-field-wrapper">
+            <label class="vendor-field-label-text">
+              Phone <span class="vendor-required-asterisk">*</span>
+            </label>
+            <input
+              type="tel"
+              class="vendor-text-input-field"
+              value="+91 98765 12345"
+            />
+          </div>
+        </div>
+
+        <div class="vendor-form-fields-grid">
+          <div class="vendor-full-width-field">
+            <label class="vendor-field-label-text">
+              Business Type <span class="vendor-required-asterisk">*</span>
+            </label>
+            <select class="vendor-business-type-dropdown">
+              <option selected>Wholesaler</option>
+              <option>Retailer</option>
+              <option>Distributor</option>
+              <option>Processor</option>
+              <option>Exporter</option>
+              <option>Restaurant/Hotel</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="vendor-form-fields-grid">
+          <div class="vendor-full-width-field">
+            <label class="vendor-field-label-text">
+              GST Number <span class="vendor-required-asterisk">*</span>
+            </label>
+            <input
+              type="text"
+              class="vendor-text-input-field"
+              value="27AABCU9603R1ZM"
+            />
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Business Details Card -->
-      <div class="details-section-card">
-        <div class="section-title-header">
-          <svg
-            class="section-header-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
-            <path d="M3 6h18"></path>
-            <path d="M16 10a4 4 0 0 1-8 0"></path>
-          </svg>
-          <h2 class="section-main-heading">Business Details</h2>
-        </div>
+    <!-- ================= ACTION BUTTONS ================= -->
+    <div class="vendor-form-actions-container">
+      <a href="vendor-dashboard.html" class="cancel-vendor-form-btn">
+        Cancel
+      </a>
 
-        <div class="business-info-grid-layout">
-          <div class="business-detail-tile">
-            <div class="business-field-name">Business Type</div>
-            <div class="business-field-data">Wholesaler</div>
-          </div>
-
-          <div class="business-detail-tile">
-            <div class="business-field-name">Location</div>
-            <div class="business-field-data">Mumbai, Maharashtra</div>
-          </div>
-
-          <div class="business-detail-tile" style="grid-column: 1 / -1">
-            <div class="business-field-name">GST Number</div>
-            <div class="business-field-data">27AABCU9603R1ZM</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="order-activity-main-container">
-      <div class="order-activity-card-wrapper">
-        <h2 class="activity-section-title">Recent Order Activity</h2>
-
-        <div class="order-list-container">
-          <!-- Order 1 - Delivered -->
-          <div class="individual-order-item">
-            <div class="order-header-row">
-              <h3 class="order-id-text">Order #AGD0156</h3>
-              <span class="order-status-pill status-delivered">Delivered</span>
-            </div>
-            <div class="order-product-name">Fresh Tomatoes - 200 kg</div>
-            <div class="order-meta-information">
-              Farmer: Rajesh Kumar • 2024-01-18
-            </div>
-          </div>
-
-          <!-- Order 2 - In Transit -->
-          <div class="individual-order-item">
-            <div class="order-header-row">
-              <h3 class="order-id-text">Order #AGD0155</h3>
-              <span class="order-status-pill status-in-transit"
-                >In Transit</span
-              >
-            </div>
-            <div class="order-product-name">Organic Potatoes - 500 kg</div>
-            <div class="order-meta-information">
-              Farmer: Priya Singh • 2024-01-20
-            </div>
-          </div>
-
-          <!-- Order 3 - Pending (Additional Example) -->
-          <div class="individual-order-item">
-            <div class="order-header-row">
-              <h3 class="order-id-text">Order #AGD0154</h3>
-              <span class="order-status-pill status-pending">Pending</span>
-            </div>
-            <div class="order-product-name">Fresh Carrots - 150 kg</div>
-            <div class="order-meta-information">
-              Farmer: Amit Patel • 2024-01-22
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="farmer-reviews-main-wrapper">
-      <div class="reviews-content-card">
-        <div class="reviews-section-header">
-          <span class="header-star-icon">⭐</span>
-          <h2 class="reviews-page-title">Reviews from Farmers</h2>
-        </div>
-
-        <!-- Review 1 -->
-        <div class="farmer-review-item">
-          <div class="review-top-section">
-            <h3 class="farmer-reviewer-name">Rajesh Kumar</h3>
-            <div class="review-star-rating">
-              <span class="rating-star-symbol">⭐</span>
-              <span>5</span>
-            </div>
-          </div>
-          <p class="farmer-review-text">
-            Great buyer! Quick payments and professional dealings. Would love to
-            work again.
-          </p>
-          <div class="review-date-posted">12/01/2024</div>
-        </div>
-
-        <!-- Review 2 -->
-        <div class="farmer-review-item">
-          <div class="review-top-section">
-            <h3 class="farmer-reviewer-name">Priya Singh</h3>
-            <div class="review-star-rating">
-              <span class="rating-star-symbol">⭐</span>
-              <span>4.5</span>
-            </div>
-          </div>
-          <p class="farmer-review-text">
-            Reliable vendor with consistent orders. Payment process is smooth.
-          </p>
-          <div class="review-date-posted">08/01/2024</div>
-        </div>
-
-        <!-- Review 3 -->
-        <div class="farmer-review-item">
-          <div class="review-top-section">
-            <h3 class="farmer-reviewer-name">Amit Patel</h3>
-            <div class="review-star-rating">
-              <span class="rating-star-symbol">⭐</span>
-              <span>5</span>
-            </div>
-          </div>
-          <p class="farmer-review-text">
-            Excellent business partner. Fair pricing and timely communications.
-          </p>
-          <div class="review-date-posted">03/01/2024</div>
-        </div>
-      </div>
+      <a href="vendor-dashboard.html" class="save-vendor-changes-btn">
+        <span class="save-icon-graphic"></span>
+        Save
+      </a>
     </div>
   </body>
 </html>
