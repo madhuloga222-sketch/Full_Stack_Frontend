@@ -4,27 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vendor-dashboard-edit</title>
-    <link rel="stylesheet" href="/CSS/vendor-dashboard-edit.css" />
-    <link rel="icon" href="/ASSETS/image.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/vendor-dashboard-edit.css" />
+    <link rel="icon" href="../ASSETS/image.png" />
   </head>
+
   <body>
     <header>
       <div class="logo-section">
         <div class="logo">
-          <a href="/INDEX.HTML"
-            ><img src="/ASSETS/image.png" width="60px" height="60px"
-          /></a>
+          <a href="../index.html">
+            <img src="../ASSETS/image.png" width="60" height="60" />
+          </a>
         </div>
         <div class="logo-text">
           <h1>AgriDirect</h1>
         </div>
       </div>
+
       <nav>
-        <!-- <a href="/INDEX.HTML">Home</a>
-        <a href="/HTML/ABOUT-US.HTML">About Us</a>
-        <a href="/HTML/HOW-IT-WORKS.HTML">How It Works</a>
-        <a href="/HTML/CONTACT-US.HTML">Contact</a> -->
-        <a href="/HTML/SIGIN.HTML" class="btn-login">Logout</a>
+        <a href="SIGIN.HTML" class="btn-login">Logout</a>
       </nav>
     </header>
 
@@ -36,7 +36,8 @@
             Update your business profile information
           </p>
         </div>
-        <a href="/HTML/vendor-dashboard.html" class="return-to-profile-link">
+
+        <a href="vendor-dashboard.html" class="return-to-profile-link">
           <span>←</span>
           Back to Profile
         </a>
@@ -55,10 +56,12 @@
             <p class="file-format-requirements">
               Upload a business logo (PNG, JPG up to 5MB)
             </p>
+
             <button class="logo-upload-trigger-button">
               <span class="upload-arrow-icon">↑</span>
               Upload Logo
             </button>
+
             <input
               type="file"
               id="businessLogoInput"
@@ -71,7 +74,6 @@
     </div>
 
     <div class="vendor-business-forms-container">
-      <!-- Business Information Section -->
       <div class="business-info-section-card">
         <h2 class="business-section-title">Business Information</h2>
 
@@ -84,7 +86,6 @@
               type="text"
               class="vendor-text-input-field"
               value="Metro Foods Pvt Ltd"
-              placeholder="Enter business name"
             />
           </div>
         </div>
@@ -92,14 +93,13 @@
         <div class="vendor-form-fields-grid">
           <div class="vendor-full-width-field">
             <label class="vendor-field-label-text">
-              Owner/Contact Person Name
+              Owner / Contact Person
               <span class="vendor-required-asterisk">*</span>
             </label>
             <input
               type="text"
               class="vendor-text-input-field"
               value="Amit Verma"
-              placeholder="Enter owner/contact person name"
             />
           </div>
         </div>
@@ -107,25 +107,23 @@
         <div class="vendor-form-fields-grid">
           <div class="vendor-input-field-wrapper">
             <label class="vendor-field-label-text">
-              Email Address <span class="vendor-required-asterisk">*</span>
+              Email <span class="vendor-required-asterisk">*</span>
             </label>
             <input
               type="email"
               class="vendor-text-input-field"
               value="contact@metrofoods.com"
-              placeholder="Enter email address"
             />
           </div>
 
           <div class="vendor-input-field-wrapper">
             <label class="vendor-field-label-text">
-              Phone Number <span class="vendor-required-asterisk">*</span>
+              Phone <span class="vendor-required-asterisk">*</span>
             </label>
             <input
               type="tel"
               class="vendor-text-input-field"
               value="+91 98765 12345"
-              placeholder="Enter phone number"
             />
           </div>
         </div>
@@ -136,12 +134,12 @@
               Business Type <span class="vendor-required-asterisk">*</span>
             </label>
             <select class="vendor-business-type-dropdown">
-              <option value="wholesaler" selected>Wholesaler</option>
-              <option value="retailer">Retailer</option>
-              <option value="distributor">Distributor</option>
-              <option value="processor">Processor</option>
-              <option value="exporter">Exporter</option>
-              <option value="restaurant">Restaurant/Hotel</option>
+              <option selected>Wholesaler</option>
+              <option>Retailer</option>
+              <option>Distributor</option>
+              <option>Processor</option>
+              <option>Exporter</option>
+              <option>Restaurant/Hotel</option>
             </select>
           </div>
         </div>
@@ -155,126 +153,24 @@
               type="text"
               class="vendor-text-input-field"
               value="27AABCU9603R1ZM"
-              placeholder="Enter GST number"
-            />
-          </div>
-        </div>
-      </div>
-
-      <!-- Location Details Section -->
-      <div class="business-info-section-card">
-        <h2 class="business-section-title">Location Details</h2>
-
-        <div class="vendor-form-fields-grid">
-          <div class="vendor-full-width-field">
-            <label class="vendor-field-label-text">
-              Location (City, State)
-              <span class="vendor-required-asterisk">*</span>
-            </label>
-            <input
-              type="text"
-              class="vendor-text-input-field"
-              value="Mumbai, Maharashtra"
-              placeholder="Enter city and state"
-            />
-          </div>
-        </div>
-
-        <div class="vendor-form-fields-grid">
-          <div class="vendor-full-width-field">
-            <label class="vendor-field-label-text">
-              Complete Business Address
-              <span class="vendor-required-asterisk">*</span>
-            </label>
-            <input
-              type="text"
-              class="vendor-text-input-field"
-              value="Shop No. 45, Andheri Market Complex, Mumbai - 400058"
-              placeholder="Enter complete business address"
             />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="vendor-description-products-wrapper">
-      <!-- Business Description Section -->
-      <div class="business-description-card">
-        <h2 class="description-section-heading">Business Description</h2>
+    <!-- ACTION BUTTONS (FIXED PATHS) -->
+    <div class="vendor-form-actions-container">
+      <a href="vendor-dashboard.html">
+        <button class="cancel-vendor-form-btn">Cancel</button>
+      </a>
 
-        <label class="about-business-label">
-          About Your Business <span class="asterisk-required-symbol">*</span>
-        </label>
-        <textarea
-          class="business-description-textarea"
-          placeholder="Describe your business, specialization, and what you're looking for in suppliers"
-        >
-Leading wholesale distributor of fresh produce in Mumbai region. We specialize in connecting with quality farmers and delivering fresh vegetables and fruits to retail chains across the city.</textarea
-        >
-      </div>
-
-      <!-- Preferred Products Section -->
-      <div class="preferred-products-card">
-        <h2 class="products-section-main-title">Preferred Products</h2>
-        <p class="products-selection-instructions">
-          Select the types of products you're interested in purchasing
-        </p>
-
-        <!-- Selected Products Tags -->
-        <div class="selected-products-tags-list" id="selectedProductsList">
-          <div class="product-category-removable-tag">
-            <span>Vegetables</span>
-            <button
-              class="remove-product-tag-btn"
-            >
-              ×
-            </button>
-          </div>
-          <div class="product-category-removable-tag">
-            <span>Fruits</span>
-            <button
-              class="remove-product-tag-btn"
-            >
-              ×
-            </button>
-          </div>
-          <div class="product-category-removable-tag">
-            <span>Organic Produce</span>
-            <button
-              class="remove-product-tag-btn"
-            >
-              ×
-            </button>
-          </div>
-        </div>
-
-        <!-- Product Category Dropdown -->
-        <select
-          class="product-category-dropdown-field"
-          id="productDropdown"
-        >
-          <option value="" selected disabled>Select product category</option>
-          <option value="Vegetables">Vegetables</option>
-          <option value="Fruits">Fruits</option>
-          <option value="Organic Produce">Organic Produce</option>
-          <option value="Grains & Cereals">Grains & Cereals</option>
-          <option value="Dairy Products">Dairy Products</option>
-          <option value="Pulses & Legumes">Pulses</option>
-          <option value="Spices & Herbs">Spices</option>
-          <option value="Flowers">Flowers</option>
-        </select>
-      </div>
-
-      <!-- Action Buttons -->
-      <div class="vendor-form-actions-container">
-        <button class="cancel-vendor-form-btn">
-          Cancel
-        </button>
+      <a href="vendor-dashboard.html">
         <button class="save-vendor-changes-btn">
-          <span class="save-icon-graphic">💾</span>
-          Save Changes
+          <span class="save-icon-graphic"></span>
+          Save
         </button>
-      </div>
+      </a>
     </div>
   </body>
 </html>

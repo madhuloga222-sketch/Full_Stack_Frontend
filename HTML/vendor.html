@@ -1,11 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Farmer</title>
-    <link rel="stylesheet" href="/CSS/vendor.css"/>
-    <link rel="icon" href="/ASSETS/image.png" />
+    <title>Vendor - AgriDirect</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/vendor.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../ASSETS/image.png" />
   </head>
   <body>
     <div class="signup-page-wrapper">
@@ -13,15 +17,14 @@
         <h1 class="join-heading-text">Join AgriDirect</h1>
 
         <div class="user-type-toggle-wrapper">
-          <a href="/HTML/SIGUP.HTML"
-            ><button class="user-type-tab-button">Farmer</button></a
-          >
+          <a href="./sigup.html">
+            <button class="user-type-tab-button">Farmer</button>
+          </a>
           <button class="user-type-tab-button active-tab">Vendor</button>
         </div>
 
         <form id="registrationForm">
           <div class="registration-form-group">
-            <label for="fullName" class="form-label-text"></label>
             <input
               type="text"
               id="fullName"
@@ -32,7 +35,6 @@
           </div>
 
           <div class="registration-form-group">
-            <label for="email" class="form-label-text"></label>
             <input
               type="email"
               id="email"
@@ -43,7 +45,16 @@
           </div>
 
           <div class="registration-form-group">
-            <label for="phone" class="form-label-text"></label>
+            <input
+              type="email"
+              id="email"
+              class="form-input-field"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+
+          <div class="registration-form-group">
             <input
               type="tel"
               id="phone"
@@ -54,33 +65,29 @@
           </div>
 
           <div class="registration-form-group">
-            <label for="location" class="form-label-text" id="locationLabel"
-              ></label
-            >
             <input
               type="text"
               id="location"
               class="form-input-field"
-              placeholder="City,State"
+              placeholder="City, State"
               required
             />
           </div>
 
-           <select class="category-dropdown">
-            <option>Select Business type</option>
+          <select class="category-dropdown" required>
+            <option value="">Select Business Type</option>
             <option>Wholesale</option>
             <option>Market</option>
             <option>Primary Producers</option>
           </select>
 
-
-          <a href="/HTML/PRODUCTS-V.HTML" class="register-submit-button">
+          <a href="./products-v.html" class="register-submit-button">
             Register as Vendor
           </a>
 
           <p class="login-redirect-section">
-            Already have a account?
-            <a href="/HTML/SIGIN.HTML" class="login-anchor-link">Login</a>
+            Already have an account?
+            <a href="./sigin.html" class="login-anchor-link">Login</a>
           </p>
         </form>
       </div>

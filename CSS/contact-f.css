@@ -26,6 +26,10 @@ body {
   z-index: 1000;
 }
 
+.logo-text{
+  color: #4caf50;
+}
+
 .logo-section {
   display: flex;
   align-items: center;
@@ -212,20 +216,7 @@ textarea {
   background-color: #4caf50;
 }
 
-@media (max-width: 768px) {
-  .details-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .button-group {
-    grid-template-columns: 1fr;
-  }
-
-  .header {
-    padding: 1rem;
-  }
-
-  .form-container {
-    padding: 1.5rem;
-  }
+a{
+  text-decoration: none;
+  text-align: center;
 }

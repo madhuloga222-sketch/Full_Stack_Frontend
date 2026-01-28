@@ -397,9 +397,12 @@ a {
 }
 
 .order-activity-main-container {
+  /* max-width: 1400px;
+  margin-left: 305px;
+  margin-top: 30px; */
   max-width: 1400px;
-  margin-left: 105px;
   margin-top: 30px;
+  margin-left: 25px;
 }
 
 .order-activity-card-wrapper {
@@ -407,6 +410,7 @@ a {
   border-radius: 16px;
   padding: 40px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin: 0;
 }
 
 .activity-section-title {

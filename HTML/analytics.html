@@ -1,43 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AgriDirect - Analytics</title>
-    <link rel="stylesheet" href="/CSS/analytics-f.css"/>
-    <link rel="icon" href="./ASSETS/image.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/analytics-f.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../ASSETS/image.png" />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="logo-section">
         <div class="logo">
-          <a href="/index.html"
-            ><img src="./ASSETS/image.png" width="60px" height="60px"
-          /></a>
+          <a href="../index.html">
+            <img
+              src="../ASSETS/image.png"
+              width="60"
+              height="60"
+              alt="AgriDirect Logo"
+            />
+          </a>
         </div>
         <div class="brand-text">
           <h1>AgriDirect</h1>
         </div>
       </div>
+
       <div class="user-section">
-        <div class="user-avatar">F</div>
-        <a href="/index.html"><button class="logout-btn">Logout</button></a>
+        <a href="./farmer-dashboard.html">
+          <div class="user-avatar">F</div>
+        </a>
+        <a href="../index.html">
+          <button class="logout-btn">Logout</button>
+        </a>
       </div>
     </header>
 
+    <!-- Navigation -->
     <nav class="nav-container">
-      <a href="/HTML/products-f.html"
+      <a href="./products-f.html"
         ><button class="nav-item">My Products</button></a
       >
-      <a href="/HTML/addproduct-f.html"
+      <a href="./addproduct-f.html"
         ><button class="nav-item">Add Product</button></a
       >
-      <a href="/HTML/orders-f.html"><button class="nav-item">Orders</button></a>
-      <a href="/HTML/analytics.html"
+      <a href="./orders-f.html"><button class="nav-item">Orders</button></a>
+      <a href="./analytics-f.html"
         ><button class="nav-item active">Analytics</button></a
       >
     </nav>
 
+    <!-- Analytics Content -->
     <div class="container">
       <div class="stats-grid">
         <div class="stat-card">
@@ -59,7 +76,7 @@
         <div class="stat-card">
           <div class="stat-title">Customer Rating</div>
           <div class="card-content">
-            <p class="card-value rating"><span class="star"></span> 4.8</p>
+            <p class="card-value rating">⭐ 4.8</p>
             <p class="card-subtitle">Based on 67 reviews</p>
           </div>
         </div>

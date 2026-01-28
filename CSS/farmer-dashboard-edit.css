@@ -356,6 +356,7 @@ nav a:hover {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-top: 10px;
 }
 
 .cancel-changes-button:hover {
@@ -375,13 +376,20 @@ nav a:hover {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  width: 120px;
+  height: 50px;
+  margin-top: 10px;
 }
 
 .save-profile-changes-button:hover {
   background-color: #22c55e;
-  border-color:#22c55e;
+  border-color: #22c55e;
 }
 
 .save-icon-symbol {
   font-size: 20px;
+}
+
+a {
+  text-decoration: none;
 }

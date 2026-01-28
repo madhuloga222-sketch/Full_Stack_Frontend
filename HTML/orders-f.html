@@ -1,199 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AgriDirect - Orders</title>
-    <link rel="stylesheet" href="/CSS/orders-f.css"/>
-    <link rel="icon" href="/ASSETS/image.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/orders-f.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../ASSETS/image.png" />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="logo-section">
         <div class="logo">
-          <a href="/INDEX.HTML"
-            ><img src="/ASSETS/image.png" width="60px" height="60px"
-          /></a>
+          <a href="../index.html">
+            <img
+              src="../ASSETS/image.png"
+              width="60"
+              height="60"
+              alt="AgriDirect Logo"
+            />
+          </a>
         </div>
         <div class="brand-text">
           <h1>AgriDirect</h1>
         </div>
       </div>
+
       <div class="user-section">
-        <div class="user-avatar">F</div>
-        <a href="/INDEX.HTML"><button class="logout-btn">Logout</button></a>
+        <a href="./farmer-dashboard.html">
+          <div class="user-avatar">F</div>
+        </a>
+        <a href="../index.html">
+          <button class="logout-btn">Logout</button>
+        </a>
       </div>
     </header>
 
+    <!-- Navigation -->
     <nav class="nav-container">
-      <a href="/HTML/PRODUCTS-F.HTML"
+      <a href="./products-f.html"
         ><button class="nav-item">My Products</button></a
       >
-      <a href="/HTML/ADDPRODUCT-F.HTML"
+      <a href="./addproduct-f.html"
         ><button class="nav-item">Add Product</button></a
       >
-      <a href="/HTML/ORDERS-F.HTML"
+      <a href="./orders-f.html"
         ><button class="nav-item active">Orders</button></a
       >
-      <a href="/HTML/ANALYTICS-F.HTML"
-        ><button class="nav-item">Analytics</button></a
-      >
+      <a href="./analytics.html"><button class="nav-item">Analytics</button></a>
     </nav>
 
+    <!-- Orders -->
     <div class="container">
       <h2 class="page-title">Recent Orders</h2>
+
       <div class="order-card">
         <div class="order-info">
           <div class="order-id">Order #AGD0001</div>
-          <p>Vendor name:Arun</p>
-          <p>Fresh Tomatoes-100kg</p>
+          <p>Vendor Name: Arun</p>
+          <p>Fresh Tomatoes - 100 kg</p>
         </div>
         <div class="order-details">
-          <div class="order-price">Rs.3,000</div>
-          <div class="order-status">confirmed</div>
+          <div class="order-price">₹3,000</div>
+          <div class="order-status">Confirmed</div>
         </div>
       </div>
 
       <div class="order-card">
         <div class="order-info">
           <div class="order-id">Order #AGD0002</div>
-          <p>Vendor name:Arun</p>
-          <p>Fresh Potatoes-50kg</p>
+          <p>Vendor Name: Arun</p>
+          <p>Fresh Potatoes - 50 kg</p>
         </div>
         <div class="order-details">
-          <div class="order-price">Rs.4,500</div>
-          <div class="order-status">confirmed</div>
+          <div class="order-price">₹4,500</div>
+          <div class="order-status">Confirmed</div>
         </div>
       </div>
 
       <div class="order-card">
         <div class="order-info">
           <div class="order-id">Order #AGD0003</div>
-          <p>Vendor name:Arun</p>
-          <p>Fresh Carrot-90kg</p>
+          <p>Vendor Name: Arun</p>
+          <p>Fresh Carrot - 90 kg</p>
         </div>
         <div class="order-details">
-          <div class="order-price">Rs.3,400</div>
-          <div class="order-status">confirmed</div>
+          <div class="order-price">₹3,400</div>
+          <div class="order-status">Confirmed</div>
         </div>
       </div>
 
       <div class="order-card">
         <div class="order-info">
           <div class="order-id">Order #AGD0004</div>
-          <p>Vendor name:Arun</p>
-          <p>Fresh Radish-120kg</p>
+          <p>Vendor Name: Arun</p>
+          <p>Fresh Radish - 120 kg</p>
         </div>
         <div class="order-details">
-          <div class="order-price">Rs.4,600</div>
-          <div class="order-status">confirmed</div>
+          <div class="order-price">₹4,600</div>
+          <div class="order-status">Confirmed</div>
         </div>
       </div>
-
 
       <div class="order-card">
         <div class="order-info">
           <div class="order-id">Order #AGD0005</div>
-          <p>Vendor name:Arun</p>
-          <p>Fresh Radish-120kg</p>
+          <p>Vendor Name: Arun</p>
+          <p>Fresh Onion - 80 kg</p>
         </div>
         <div class="order-details">
-          <div class="order-price">Rs.4,600</div>
-          <div class="order-status">confirmed</div>
+          <div class="order-price">₹3,200</div>
+          <div class="order-status">Confirmed</div>
         </div>
       </div>
-
 
       <div class="order-card">
         <div class="order-info">
           <div class="order-id">Order #AGD0006</div>
-          <p>Vendor name:Arun</p>
-          <p>Fresh Radish-120kg</p>
+          <p>Vendor Name: Arun</p>
+          <p>Fresh Brinjal - 70 kg</p>
         </div>
         <div class="order-details">
-          <div class="order-price">Rs.4,600</div>
-          <div class="order-status">confirmed</div>
+          <div class="order-price">₹2,800</div>
+          <div class="order-status">Confirmed</div>
         </div>
       </div>
-
-
-      <div class="order-card">
-        <div class="order-info">
-          <div class="order-id">Order #AGD0007</div>
-          <p>Vendor name:Arun</p>
-          <p>Fresh Radish-120kg</p>
-        </div>
-        <div class="order-details">
-          <div class="order-price">Rs.4,600</div>
-          <div class="order-status">confirmed</div>
-        </div>
-      </div>
-
-
-      <div class="order-card">
-        <div class="order-info">
-          <div class="order-id">Order #AGD0008</div>
-          <p>Vendor name:Arun</p>
-          <p>Fresh Radish-120kg</p>
-        </div>
-        <div class="order-details">
-          <div class="order-price">Rs.4,600</div>
-          <div class="order-status">confirmed</div>
-        </div>
-      </div>
-
-
-      <div class="order-card">
-        <div class="order-info">
-          <div class="order-id">Order #AGD0009</div>
-          <p>Vendor name:Arun</p>
-          <p>Fresh Radish-120kg</p>
-        </div>
-        <div class="order-details">
-          <div class="order-price">Rs.4,600</div>
-          <div class="order-status">confirmed</div>
-        </div>
-      </div>
-
-
-      <div class="order-card">
-        <div class="order-info">
-          <div class="order-id">Order #AGD00010</div>
-          <p>Vendor name:Arun</p>
-          <p>Fresh Radish-120kg</p>
-        </div>
-        <div class="order-details">
-          <div class="order-price">Rs.4,600</div>
-          <div class="order-status">confirmed</div>
-        </div>
-      </div>
-
-
-      <div class="order-card">
-        <div class="order-info">
-          <div class="order-id">Order #AGD00011</div>
-          <p>Vendor name:Arun</p>
-          <p>Fresh Radish-120kg</p>
-        </div>
-        <div class="order-details">
-          <div class="order-price">Rs.4,600</div>
-          <div class="order-status">confirmed</div>
-        </div>
-      </div>
-
-
-      <div class="order-card">
-        <div class="order-info">
-          <div class="order-id">Order #AGD00012</div>
-          <p>Vendor name:Arun</p>
-          <p>Fresh Radish-120kg</p>
-        </div>
-        <div class="order-details">
-          <div class="order-price">Rs.4,600</div>
-          <div class="order-status">confirmed</div>
-        </div>
-      </div>
-
     </div>
   </body>
 </html>

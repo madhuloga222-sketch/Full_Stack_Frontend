@@ -464,8 +464,11 @@ nav a:hover {
   display: flex;
   justify-content: flex-end;
   gap: 16px;
-  max-width: 1400px;
-  margin: 0 auto;
+  /* max-width: 1400px;
+  margin: 0 auto; */
+  max-width: 1200px;
+  margin-left: 105px;
+  margin-top: 30px;
 }
 
 .cancel-vendor-form-btn {
@@ -478,6 +481,8 @@ nav a:hover {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+
+  margin-top: 10px;
 }
 
 .cancel-vendor-form-btn:hover {
@@ -497,6 +502,11 @@ nav a:hover {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+
+
+  width: 130px;
+  height: 50px;
+  margin-top: 10px;
 }
 
 .save-vendor-changes-btn:hover {

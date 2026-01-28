@@ -1,114 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AgriDirect - Vendor Dashboard</title>
-    <link rel="stylesheet" href="/CSS/orders-v.css">
-    <link rel="icon" href="/ASSETS/image.png">
-</head>
-<body>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/orders-v.css" />
+    <link rel="icon" href="../ASSETS/image.png" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
     <header class="header">
-        <div class="logo-section">
-            <div class="logo">
-                <a href="/INDEX.HTML"><img src="/ASSETS/image.png" width="60px" height="60px"></a>
-            </div>
-            <div class="brand">
-                <h1>AgriDirect</h1>
-            </div>
+      <div class="logo-section">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../ASSETS/image.png" width="60" height="60" />
+          </a>
         </div>
-        <div class="user-section">
-            <div class="user-avatar">V</div>
-            <a href="/INDEX.HTML" class="logout-btn">Logout</a>
-                <span></span>
-                <span></span>
+        <div class="brand">
+          <h1>AgriDirect</h1>
         </div>
+      </div>
+
+      <div class="user-section">
+        <a href="vendor-dashboard.html">
+          <div class="avatar">V</div>
+        </a>
+        <a href="../index.html" class="logout-btn">Logout</a>
+      </div>
     </header>
 
+    <!-- MAIN -->
     <main class="main-content">
-        <nav class="nav-tabs">
-            <a href="/HTML/PRODUCTS-V.HTML"><button class="nav-tab">My Products</button></a>
-            <a href="/HTML/ORDERS-V.HTML"><button class="nav-tab active"> Orders</button></a>
-            <a href="/HTML/SUPPLIERS-V.HTML"><button class="nav-tab"> Suppliers</button></a>
-        </nav>
+      <!-- NAV TABS -->
+      <nav class="nav-tabs">
+        <a href="products-v.html">
+          <button class="nav-tab">My Products</button>
+        </a>
 
-        <h1 class="page-title">My Purchase Orders</h1>
+        <a href="orders-v.html">
+          <button class="nav-tab active">Orders</button>
+        </a>
 
-        <div class="orders-container">
-            <div class="order-card">
-                <div class="order-info">
-                    <div class="order-id">Order #AGD0001</div>
-                    <div class="order-product">Fresh Tomatoes - 200 kg</div>
-                    <div class="order-farmer">Farmer: Rajesh Kumar, Theni</div>
-                </div>
-                <div class="order-right">
-                    <div class="order-price">₹1,200</div>
-                    <div class="order-status">In Transit</div>
-                </div>
-            </div>
+        <a href="suppliers-v.html">
+          <button class="nav-tab">Suppliers</button>
+        </a>
+      </nav>
 
-            <div class="order-card">
-                <div class="order-info">
-                    <div class="order-id">Order #AGD0002</div>
-                    <div class="order-product">Fresh Potatoes - 150 kg</div>
-                    <div class="order-farmer">Farmer: Ravi, Dindigul</div>
-                </div>
-                <div class="order-right">
-                    <div class="order-price">₹3,200</div>
-                    <div class="order-status">In Transit</div>
-                </div>
-            </div>
+      <h1 class="page-title">My Purchase Orders</h1>
 
-            <div class="order-card">
-                <div class="order-info">
-                    <div class="order-id">Order #AGD0003</div>
-                    <div class="order-product">Fresh Carrot - 220 kg</div>
-                    <div class="order-farmer">Farmer: Arun, Karur</div>
-                </div>
-                <div class="order-right">
-                    <div class="order-price">₹3,100</div>
-                    <div class="order-status">In Transit</div>
-                </div>
-            </div>
+      <!-- ORDERS -->
+      <div class="orders-container">
+        <div class="order-card">
+          <div class="order-info">
+            <div class="order-id">Order #AGD0001</div>
+            <div class="order-product">Fresh Tomatoes - 200 kg</div>
+            <div class="order-farmer">Farmer: Rajesh Kumar, Theni</div>
+          </div>
+          <div class="order-right">
+            <div class="order-price">₹1,200</div>
+            <div class="order-status">In Transit</div>
+          </div>
+        </div>
 
-            <div class="order-card">
-                <div class="order-info">
-                    <div class="order-id">Order #AGD0004</div>
-                    <div class="order-product">Fresh Carrot - 220 kg</div>
-                    <div class="order-farmer">Farmer: Arun, Karur</div>
-                </div>
-                <div class="order-right">
-                    <div class="order-price">₹3,100</div>
-                    <div class="order-status">In Transit</div>
-                </div>
-            </div>
+        <div class="order-card">
+          <div class="order-info">
+            <div class="order-id">Order #AGD0002</div>
+            <div class="order-product">Fresh Potatoes - 150 kg</div>
+            <div class="order-farmer">Farmer: Ravi, Dindigul</div>
+          </div>
+          <div class="order-right">
+            <div class="order-price">₹3,200</div>
+            <div class="order-status">In Transit</div>
+          </div>
+        </div>
 
-            <div class="order-card">
-                <div class="order-info">
-                    <div class="order-id">Order #AGD0005</div>
-                    <div class="order-product">Fresh Carrot - 220 kg</div>
-                    <div class="order-farmer">Farmer: Arun, Karur</div>
-                </div>
-                <div class="order-right">
-                    <div class="order-price">₹3,100</div>
-                    <div class="order-status">In Transit</div>
-                </div>
-            </div>
+        <div class="order-card">
+          <div class="order-info">
+            <div class="order-id">Order #AGD0003</div>
+            <div class="order-product">Fresh Carrot - 220 kg</div>
+            <div class="order-farmer">Farmer: Arun, Karur</div>
+          </div>
+          <div class="order-right">
+            <div class="order-price">₹3,100</div>
+            <div class="order-status">In Transit</div>
+          </div>
+        </div>
 
-            <div class="order-card">
-                <div class="order-info">
-                    <div class="order-id">Order #AGD0006</div>
-                    <div class="order-product">Fresh Carrot - 220 kg</div>
-                    <div class="order-farmer">Farmer: Arun, Karur</div>
-                </div>
-                <div class="order-right">
-                    <div class="order-price">₹3,100</div>
-                    <div class="order-status">In Transit</div>
-                </div>
-            </div>
+        <div class="order-card">
+          <div class="order-info">
+            <div class="order-id">Order #AGD0004</div>
+            <div class="order-product">Fresh Carrot - 220 kg</div>
+            <div class="order-farmer">Farmer: Arun, Karur</div>
+          </div>
+          <div class="order-right">
+            <div class="order-price">₹3,100</div>
+            <div class="order-status">In Transit</div>
+          </div>
+        </div>
 
-           
+        <div class="order-card">
+          <div class="order-info">
+            <div class="order-id">Order #AGD0005</div>
+            <div class="order-product">Fresh Carrot - 220 kg</div>
+            <div class="order-farmer">Farmer: Arun, Karur</div>
+          </div>
+          <div class="order-right">
+            <div class="order-price">₹3,100</div>
+            <div class="order-status">In Transit</div>
+          </div>
+        </div>
 
+        <div class="order-card">
+          <div class="order-info">
+            <div class="order-id">Order #AGD0006</div>
+            <div class="order-product">Fresh Carrot - 220 kg</div>
+            <div class="order-farmer">Farmer: Arun, Karur</div>
+          </div>
+          <div class="order-right">
+            <div class="order-price">₹3,100</div>
+            <div class="order-status">In Transit</div>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>

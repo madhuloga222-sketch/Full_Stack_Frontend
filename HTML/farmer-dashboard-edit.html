@@ -4,30 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>farmer-dashboard-edit</title>
-    <link rel="stylesheet" href="/CSS/farmer-dashboard-edit.css" />
-    <link rel="icon" href="/ASSETS/image.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/farmer-dashboard-edit.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../ASSETS/image.png" />
   </head>
   <body>
-
-     <header>
+    <header>
       <div class="logo-section">
         <div class="logo">
-          <a href="/INDEX.HTML"
-            ><img src="/ASSETS/image.png" width="60px" height="60px"
-          /></a>
+          <a href="../index.html">
+            <img src="../ASSETS/image.png" width="60px" height="60px" />
+          </a>
         </div>
         <div class="logo-text">
           <h1>AgriDirect</h1>
         </div>
       </div>
       <nav>
-        <!-- <a href="/INDEX.HTML">Home</a>
-        <a href="/HTML/ABOUT-US.HTML">About Us</a>
-        <a href="/HTML/HOW-IT-WORKS.HTML">How It Works</a>
-        <a href="/HTML/CONTACT-US.HTML">Contact</a> -->
-        <a href="/HTML/SIGIN.HTML" class="btn-login">Logout</a>
+        <a href="./sigin.html" class="btn-login">Logout</a>
       </nav>
     </header>
+
     <div class="edit-profile-main-wrapper">
       <div class="profile-edit-header-bar">
         <div class="page-title-section">
@@ -36,7 +36,7 @@
             Update your farming profile information
           </p>
         </div>
-        <a href="/HTML/farmer-dashboard.html" class="back-to-profile-button">
+        <a href="./farmer-dashboard.html" class="back-to-profile-button">
           <span>←</span>
           Back to Profile
         </a>
@@ -55,9 +55,7 @@
             <p class="upload-file-format-text">
               Upload a profile picture (PNG, JPG up to 5MB)
             </p>
-            <button
-              class="photo-upload-action-button"
-            >
+            <button class="photo-upload-action-button">
               <span class="upload-icon-symbol">↑</span>
               Upload Photo
             </button>
@@ -73,149 +71,154 @@
     </div>
 
     <div class="farmer-profile-form-container">
-        <!-- Basic Information Section -->
-        <div class="form-section-card">
-            <h2 class="form-section-heading">Basic Information</h2>
-            
-            <div class="form-fields-grid">
-                <div class="single-form-field">
-                    <label class="input-field-label">
-                        Full Name <span class="required-field-asterisk">*</span>
-                    </label>
-                    <input 
-                        type="text" 
-                        class="text-input-box" 
-                        value="Rajesh Kumar"
-                        placeholder="Enter your full name"
-                    />
-                </div>
+      <!-- Basic Information Section -->
+      <div class="form-section-card">
+        <h2 class="form-section-heading">Basic Information</h2>
 
-                <div class="single-form-field">
-                    <label class="input-field-label">
-                        Phone Number <span class="required-field-asterisk">*</span>
-                    </label>
-                    <input 
-                        type="tel" 
-                        class="text-input-box" 
-                        value="+91 98765 43210"
-                        placeholder="Enter phone number"
-                    />
-                </div>
-            </div>
+        <div class="form-fields-grid">
+          <div class="single-form-field">
+            <label class="input-field-label">
+              Full Name <span class="required-field-asterisk">*</span>
+            </label>
+            <input
+              type="text"
+              class="text-input-box"
+              value="Rajesh Kumar"
+              placeholder="Enter your full name"
+            />
+          </div>
 
-            <div class="form-fields-grid">
-                <div class="full-width-form-field">
-                    <label class="input-field-label">
-                        Email Address <span class="required-field-asterisk">*</span>
-                    </label>
-                    <input 
-                        type="email" 
-                        class="text-input-box" 
-                        value="rajesh.kumar@farm.com"
-                        placeholder="Enter email address"
-                    />
-                </div>
-            </div>
-
-            <div class="form-fields-grid">
-                <div class="full-width-form-field">
-                    <label class="input-field-label">
-                        Location (City, State) <span class="required-field-asterisk">*</span>
-                    </label>
-                    <input 
-                        type="text" 
-                        class="text-input-box" 
-                        value="Punjab, India"
-                        placeholder="Enter city and state"
-                    />
-                </div>
-            </div>
-
-            <div class="form-fields-grid">
-                <div class="full-width-form-field">
-                    <label class="input-field-label">
-                        Complete Farm Address <span class="required-field-asterisk">*</span>
-                    </label>
-                    <input 
-                        type="text" 
-                        class="text-input-box" 
-                        value="Village Khanna, District Ludhiana, Punjab - 141401"
-                        placeholder="Enter complete farm address"
-                    />
-                </div>
-            </div>
+          <div class="single-form-field">
+            <label class="input-field-label">
+              Phone Number <span class="required-field-asterisk">*</span>
+            </label>
+            <input
+              type="tel"
+              class="text-input-box"
+              value="+91 98765 43210"
+              placeholder="Enter phone number"
+            />
+          </div>
         </div>
 
-        <!-- Farm Details Section -->
-        <div class="form-section-card">
-            <h2 class="form-section-heading">Farm Details</h2>
-            
-            <div class="form-fields-grid">
-                <div class="single-form-field">
-                    <label class="input-field-label">
-                        Farm Size (in acres) <span class="required-field-asterisk">*</span>
-                    </label>
-                    <input 
-                        type="number" 
-                        class="text-input-box" 
-                        value="25"
-                        placeholder="Enter farm size"
-                    />
-                </div>
-
-                <div class="single-form-field">
-                    <label class="input-field-label">
-                        Farming Experience (in years) <span class="required-field-asterisk">*</span>
-                    </label>
-                    <input 
-                        type="number" 
-                        class="text-input-box" 
-                        value="15"
-                        placeholder="Enter years of experience"
-                    />
-                </div>
-            </div>
-
-            <div class="form-fields-grid">
-                <div class="full-width-form-field">
-                    <label class="input-field-label">
-                        Specialization <span class="required-field-asterisk">*</span>
-                    </label>
-                    <select class="dropdown-select-field">
-                        <option value="vegetables-fruits" selected>Vegetables & Fruits</option>
-                        <option value="grains">Grains & Cereals</option>
-                        <option value="dairy">Dairy Products</option>
-                        <option value="organic">Organic Farming</option>
-                        <option value="floriculture">Floriculture</option>
-                        <option value="mixed">Mixed Farming</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-fields-grid">
-                <div class="full-width-form-field">
-                    <label class="input-field-label">
-                        Farm Description <span class="required-field-asterisk">*</span>
-                    </label>
-                    <textarea 
-                        class="multiline-textarea-field"
-                        placeholder="Describe your farming practices, specialties, and what makes your farm unique"
-                    >Experienced farmer specializing in high-quality vegetables and fruits. Using sustainable farming practices and organic methods to deliver the best produce to our customers.</textarea>
-                </div>
-            </div>
+        <div class="form-fields-grid">
+          <div class="full-width-form-field">
+            <label class="input-field-label">
+              Email Address <span class="required-field-asterisk">*</span>
+            </label>
+            <input
+              type="email"
+              class="text-input-box"
+              value="rajesh.kumar@farm.com"
+              placeholder="Enter email address"
+            />
+          </div>
         </div>
 
+        <div class="form-fields-grid">
+          <div class="full-width-form-field">
+            <label class="input-field-label">
+              Location (City, State)
+              <span class="required-field-asterisk">*</span>
+            </label>
+            <input
+              type="text"
+              class="text-input-box"
+              value="Punjab, India"
+              placeholder="Enter city and state"
+            />
+          </div>
+        </div>
+
+        <div class="form-fields-grid">
+          <div class="full-width-form-field">
+            <label class="input-field-label">
+              Complete Farm Address
+              <span class="required-field-asterisk">*</span>
+            </label>
+            <input
+              type="text"
+              class="text-input-box"
+              value="Village Khanna, District Ludhiana, Punjab - 141401"
+              placeholder="Enter complete farm address"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Farm Details Section -->
+      <div class="form-section-card">
+        <h2 class="form-section-heading">Farm Details</h2>
+
+        <div class="form-fields-grid">
+          <div class="single-form-field">
+            <label class="input-field-label">
+              Farm Size (in acres)
+              <span class="required-field-asterisk">*</span>
+            </label>
+            <input
+              type="number"
+              class="text-input-box"
+              value="25"
+              placeholder="Enter farm size"
+            />
+          </div>
+
+          <div class="single-form-field">
+            <label class="input-field-label">
+              Farming Experience (in years)
+              <span class="required-field-asterisk">*</span>
+            </label>
+            <input
+              type="number"
+              class="text-input-box"
+              value="15"
+              placeholder="Enter years of experience"
+            />
+          </div>
+        </div>
+
+        <div class="form-fields-grid">
+          <div class="full-width-form-field">
+            <label class="input-field-label">
+              Specialization <span class="required-field-asterisk">*</span>
+            </label>
+            <select class="dropdown-select-field">
+              <option value="vegetables-fruits" selected>
+                Vegetables & Fruits
+              </option>
+              <option value="grains">Grains & Cereals</option>
+              <option value="dairy">Dairy Products</option>
+              <option value="organic">Organic Farming</option>
+              <option value="floriculture">Floriculture</option>
+              <option value="mixed">Mixed Farming</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-fields-grid">
+          <div class="full-width-form-field">
+            <label class="input-field-label">
+              Farm Description <span class="required-field-asterisk">*</span>
+            </label>
+            <textarea
+              class="multiline-textarea-field"
+              placeholder="Describe your farming practices, specialties, and what makes your farm unique"
+            >
+Experienced farmer specializing in high-quality vegetables and fruits. Using sustainable farming practices and organic methods to deliver the best produce to our customers.</textarea
+            >
+          </div>
+        </div>
+      </div>
     </div>
 
-        <!-- Action Buttons -->
-        <div class="form-action-buttons-container">
-            <button class="cancel-changes-button">Cancel</button>
-            <button class="save-profile-changes-button">
-                <span class="save-icon-symbol">💾</span>
-                Save Changes
-            </button>
-        </div>
-
+    <!-- Action Buttons -->
+    <div class="form-action-buttons-container">
+      <a href="/HTML/farmer-dashboard.html"><button class="cancel-changes-button">Cancel</button></a>
+      <a href="/HTML/farmer-dashboard.html"><button class="save-profile-changes-button">
+        <span class="save-icon-symbol"></span>
+        Save 
+      </button></a>
     </div>
   </body>
 </html>
