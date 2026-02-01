@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AgriDirect - Vendor Dashboard</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="../CSS/suppliers-v.css" />
     <link rel="icon" href="../ASSETS/image.png" />
   </head>
@@ -32,94 +30,112 @@
       </div>
     </header>
 
-    <!-- MAIN CONTENT -->
-    <main class="content">
-      <!-- TABS -->
-      <div class="tabs">
-        <a href="products-v.html">
-          <button class="tab">My Products</button>
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar">
+      <nav class="dashboard-sidebar__nav">
+        <a href="../HTML/vendor_md.html" class="dashboard-sidebar__nav-item">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+            />
+          </svg>
+          <span>Dashboard</span>
         </a>
+        <a href="../HTML/products-v.html" class="dashboard-sidebar__nav-item">
+          <img src="../ASSETS/box-open.png" width="22px" height="22px" />
+          <span>Browse Products</span>
+        </a>
+        <a href="../HTML/orders-v.html" class="dashboard-sidebar__nav-item">
+          <img src="../ASSETS/cart.png1.png" width="22px" height="22px" />
+          <span>My Orders</span>
+        </a>
+        <a
+          href="../HTML/suppliers-v.html"
+          class="dashboard-sidebar__nav-item dashboard-sidebar__nav-item--active"
+        >
+          <img src="../ASSETS/feedback.png" width="22px" height="22px" />
+          <span>Write Reviews</span>
+        </a>
+        <a
+          href="../HTML/vendor-dashboard.html"
+          class="dashboard-sidebar__nav-item"
+        >
+          <img src="../ASSETS/user.png" width="22px" height="22px" />
+          <span>Profile</span>
+        </a>
+      </nav>
+    </aside>
 
-        <a href="orders-v.html">
-          <button class="tab">Orders</button>
-        </a>
-
-        <a href="suppliers-v.html">
-          <button class="tab active">Suppliers</button>
-        </a>
+    <!-- Main Content -->
+    <main class="reviews-main-content">
+      <!-- Page Header -->
+      <div class="reviews-page-header">
+        <div class="reviews-page-header__title-section">
+          <h1>Reviews</h1>
+          <p class="reviews-page-header__subtitle">
+            Rate your experience with farmers
+          </p>
+        </div>
+        <button class="reviews-page-header__write-btn">
+          <span class="reviews-page-header__write-btn-icon">+</span>
+          <span>Write Review</span>
+        </button>
       </div>
 
-      <h2>Trusted Suppliers</h2>
+      <!-- Reviews Container -->
+      <div class="reviews-container">
+        <h2 class="reviews-container__title">My Reviews</h2>
 
-      <!-- SUPPLIER 1 -->
-      <div class="supplier-card">
-        <div class="supplier-info">
-          <div class="supplier-avatar" style="background-color: #4caf50">
-            RK
-          </div>
-
-          <div class="supplier-details">
-            <h3>Rajesh Kumar</h3>
-            <div class="supplier-location">Theni</div>
-            <div class="supplier-stats">
-              <span class="star"></span>
-              <span>• 1 product</span>
+        <div class="reviews-list">
+          <!-- Review Item 1 -->
+          <div class="review-item-card">
+            <div class="review-item-card__avatar">R</div>
+            <div class="review-item-card__content">
+              <div class="review-item-card__header">
+                <h3 class="review-item-card__reviewer-name">Rajesh Kumar</h3>
+              </div>
+              <div class="review-item-card__rating-section">
+                <div class="review-item-card__stars">
+                  <span class="review-item-card__star">⭐</span>
+                  <span class="review-item-card__star">⭐</span>
+                  <span class="review-item-card__star">⭐</span>
+                  <span class="review-item-card__star">⭐</span>
+                  <span class="review-item-card__star">⭐</span>
+                </div>
+                <span class="review-item-card__date">25 Jan 2026</span>
+              </div>
+              <p class="review-item-card__text">
+                Excellent quality produce! Always fresh and delivered on time.
+                Highly recommended!
+              </p>
             </div>
           </div>
-        </div>
 
-        <div class="supplier-actions">
-          <a href="contact-f.html">
-            <button class="btn btn-solid">Contact</button>
-          </a>
-        </div>
-      </div>
-
-      <!-- SUPPLIER 2 -->
-      <div class="supplier-card">
-        <div class="supplier-info">
-          <div class="supplier-avatar" style="background-color: #4caf50">
-            PS
-          </div>
-
-          <div class="supplier-details">
-            <h3>Ravi</h3>
-            <div class="supplier-location">Dindigul</div>
-            <div class="supplier-stats">
-              <span class="star"></span>
-              <span>• 1 product</span>
+          <!-- Review Item 2 -->
+          <div class="review-item-card">
+            <div class="review-item-card__avatar">L</div>
+            <div class="review-item-card__content">
+              <div class="review-item-card__header">
+                <h3 class="review-item-card__reviewer-name">Lakshmi Farms</h3>
+              </div>
+              <div class="review-item-card__rating-section">
+                <div class="review-item-card__stars">
+                  <span class="review-item-card__star">⭐</span>
+                  <span class="review-item-card__star">⭐</span>
+                  <span class="review-item-card__star">⭐</span>
+                  <span class="review-item-card__star">⭐</span>
+                  <span class="review-item-card__star">⭐</span>
+                </div>
+                <span class="review-item-card__date">26 Jan 2026</span>
+              </div>
+              <p class="review-item-card__text">
+                Best mangoes I have purchased. Great taste and quality.
+              </p>
             </div>
           </div>
-        </div>
-
-        <div class="supplier-actions">
-          <a href="contact-f.html">
-            <button class="btn btn-solid">Contact</button>
-          </a>
-        </div>
-      </div>
-
-      <!-- SUPPLIER 3 -->
-      <div class="supplier-card">
-        <div class="supplier-info">
-          <div class="supplier-avatar" style="background-color: #4caf50">
-            AP
-          </div>
-
-          <div class="supplier-details">
-            <h3>Arun</h3>
-            <div class="supplier-location">Karur</div>
-            <div class="supplier-stats">
-              <span class="star"></span>
-              <span>• 1 product</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="supplier-actions">
-          <a href="contact-f.html">
-            <button class="btn btn-solid">Contact</button>
-          </a>
         </div>
       </div>
     </main>

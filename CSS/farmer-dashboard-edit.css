@@ -8,7 +8,7 @@ body {
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
     Cantarell, sans-serif;
-  background-color: #e8f5e9;
+  background-color: #f5f5f5;
   padding: 40px 20px;
 }
 
@@ -76,320 +76,264 @@ nav a:hover {
   background: #16a34a;
 }
 
-.edit-profile-main-wrapper {
-  max-width: 1200px;
-  margin: 0 110px;
-  margin-top: 100px;
-}
-
-.profile-edit-header-bar {
+.container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 32px;
-  gap: 20px;
+  min-height: 100vh;
 }
 
-.page-title-section {
-  flex: 1;
+/* Sticky Sidebar */
+.sidebar {
+  width: 280px;
+  background-color: #ffffff;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid #e0e0e0;
+
+  overflow-y: auto;
+  z-index: 100;
 }
 
-.edit-profile-main-heading {
-  font-size: 40px;
-  font-weight: 700;
-  color: #4caf50;
-  margin-bottom: 8px;
-}
-
-.profile-edit-subtitle {
-  font-size: 18px;
-  color: #4caf50;
-  font-weight: 400;
-}
-
-.back-to-profile-button {
-  display: inline-flex;
+.nav-item {
+  display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
-  background-color: white;
-  color: #4caf50;
-  border: 2px solid #4caf50;
+  padding: 14px 16px;
+  margin-bottom: 8px;
   border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: #333;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
+}
+
+.nav-item:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-item.active {
+  background-color: #c8f4d9;
+  color: #059669;
   font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  white-space: nowrap;
 }
 
-.back-to-profile-button:hover {
-  background-color: #f1f8f4;
+.nav-item svg {
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
 }
 
-.profile-picture-upload-card {
-  background-color: white;
-  border-radius: 16px;
+.nav-item img {
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 30px;
+  flex: 1;
   padding: 40px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.picture-section-title {
-  font-size: 24px;
-  font-weight: 600;
-  color: #4caf50;
-  margin-bottom: 8px;
-}
-
-.picture-upload-description {
-  font-size: 16px;
-  color: #757575;
+/* Page Header */
+.page-header {
   margin-bottom: 32px;
 }
 
-.avatar-upload-container {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  flex-wrap: wrap;
+.page-header h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+  font-weight: 700;
 }
 
-.current-profile-avatar {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  background-color: #4caf50;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 56px;
-  font-weight: 600;
-  flex-shrink: 0;
-}
-
-.upload-instructions-wrapper {
-  flex: 1;
-  min-width: 300px;
-}
-
-.upload-file-format-text {
-  font-size: 15px;
-  color: #4caf50;
-  margin-bottom: 16px;
-  font-weight: 500;
-}
-
-.photo-upload-action-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
-  background-color: white;
-  color: #4caf50;
-  border: 2px solid #4caf50;
-  border-radius: 8px;
+.page-header p {
+  color: #666;
   font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 
-.photo-upload-action-button:hover {
-  background-color: #22c55e;
-  color: white;
-}
-
-.upload-icon-symbol {
-  font-size: 20px;
-}
-
-/* Hidden file input */
-.hidden-file-input {
-  display: none;
-}
-
-.farmer-profile-form-container {
-  max-width: 1200px;
-  margin-left: 105px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-top: 30px;
-}
-
-.form-section-card {
-  background-color: white;
-  border-radius: 16px;
-  padding: 40px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-.form-section-heading {
-  font-size: 24px;
-  font-weight: 600;
-  color: #4caf50;
-  margin-bottom: 28px;
-}
-
-.form-fields-grid {
+/* Profile Grid */
+.profile-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 2fr;
   gap: 24px;
   margin-bottom: 24px;
 }
 
-.form-fields-grid:last-child {
-  margin-bottom: 0;
+/* Profile Card */
+.profile-card {
+  background: white;
+  border-radius: 16px;
+  padding: 48px 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.single-form-field {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.full-width-form-field {
-  grid-column: 1 / -1;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.input-field-label {
-  font-size: 15px;
-  font-weight: 500;
-  color: #4caf50;
-}
-
-.required-field-asterisk {
-  color: #d32f2f;
-}
-
-.text-input-box {
-  padding: 14px 16px;
-  font-size: 16px;
-  color: #4caf50;
-  background-color: #f5f5f5;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  outline: none;
-  transition: all 0.3s ease;
-}
-
-.text-input-box:focus {
-  background-color: white;
-  border-color: #4caf50;
-}
-
-.text-input-box:hover {
-  background-color: #eeeeee;
-}
-
-.dropdown-select-field {
-  padding: 14px 16px;
-  font-size: 16px;
-  color: #4caf50;
-  background-color: #f5f5f5;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  appearance: none;
-  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%232d5016' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E"); */
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  background-size: 20px;
-  padding-right: 40px;
-}
-
-.dropdown-select-field:focus {
-  background-color: white;
-  border-color: #4caf50;
-}
-
-.dropdown-select-field:hover {
-  background-color: #eeeeee;
-}
-
-.multiline-textarea-field {
-  padding: 14px 16px;
-  font-size: 16px;
-  color: #4caf50;
-  background-color: #f5f5f5;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  outline: none;
-  font-family: inherit;
-  resize: vertical;
-  min-height: 120px;
-  transition: all 0.3s ease;
-}
-
-.multiline-textarea-field:focus {
-  background-color: white;
-  border-color: #4caf50;
-}
-
-.multiline-textarea-field:hover {
-  background-color: #eeeeee;
-}
-
-.form-action-buttons-container {
-  display: flex;
-  justify-content: flex-end;
-  gap: 16px;
-  max-width: 1200px;
-  margin-left: 105px;
-  margin-top: 30px;
-}
-
-.cancel-changes-button {
-  padding: 14px 32px;
-  background-color: white;
-  color: #4caf50;
-  border: 2px solid #4caf50;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 10px;
-}
-
-.cancel-changes-button:hover {
-  background-color: #f1f8f4;
-}
-
-.save-profile-changes-button {
-  padding: 14px 32px;
-  background-color: #4caf50;
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #10b981;
   color: white;
-  border: 2px solid #4caf50;
-  border-radius: 8px;
-  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 56px;
+  font-weight: 700;
+  margin: 0 auto 24px;
+}
+
+.profile-name {
+  font-size: 24px;
   font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.profile-email {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.profile-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  width: 120px;
-  height: 50px;
-  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #d1fae5;
+  color: #059669;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.save-profile-changes-button:hover {
-  background-color: #22c55e;
-  border-color: #22c55e;
+.profile-badge svg {
+  width: 16px;
+  height: 16px;
 }
 
-.save-icon-symbol {
+/* Account Details Card */
+.details-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.details-card h2 {
   font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
 }
 
-a {
-  text-decoration: none;
+.edit-btn {
+  padding: 10px 24px;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
 }
+
+.edit-btn:hover {
+  background-color: #059669;
+}
+
+.detail-item {
+  margin-bottom: 28px;
+}
+
+.detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.detail-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.detail-label svg {
+  width: 18px;
+  height: 18px;
+  stroke: #666;
+}
+
+.detail-value {
+  font-size: 15px;
+  color: #666;
+  padding-left: 26px;
+}
+
+/* Statistics Section */
+.statistics-section {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.statistics-section h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.stat-value.green {
+  color: #10b981;
+}
+
+.stat-value.blue {
+  color: #2563eb;
+}
+
+.stat-value.orange {
+  color: #d97706;
+}
+
+.stat-value.black {
+  color: #1a1a1a;
+}
+
+.stat-label {
+  font-size: 15px;
+  color: #666;
+}
+
+

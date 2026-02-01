@@ -40,19 +40,6 @@
       </div>
     </header>
 
-    <!-- Navigation -->
-    <nav class="nav-container">
-      <a href="./products-f.html"
-        ><button class="nav-item">My Products</button></a
-      >
-      <a href="./addproduct-f.html"
-        ><button class="nav-item active">Add Product</button></a
-      >
-      <a href="./orders-f.html"><button class="nav-item">Orders</button></a>
-      <a href="./analytics.html"><button class="nav-item">Analytics</button></a>
-    </nav>
-
-    <!-- Form Container -->
     <div class="container">
       <div class="form-card">
         <div class="form-header">
@@ -61,21 +48,19 @@
         </div>
 
         <form>
-          <!-- Row 1 -->
           <div class="form-row">
             <div class="form-group">
-              <label for="productName">Product Name</label>
+              <label for="product-name">Product Name</label>
               <input
                 type="text"
-                id="productName"
+                id="product-name"
                 placeholder="e.g., Fresh Tomatoes"
-                required
               />
             </div>
 
             <div class="form-group">
               <label for="category">Category</label>
-              <select id="category" required>
+              <select id="category">
                 <option value="">Select category</option>
                 <option value="vegetables">Vegetables</option>
                 <option value="fruits">Fruits</option>
@@ -85,48 +70,45 @@
             </div>
           </div>
 
-          <!-- Row 2 -->
           <div class="form-row">
             <div class="form-group">
-              <label for="quantity">Quantity Available (kg)</label>
-              <input
-                type="number"
-                id="quantity"
-                placeholder="e.g., 500"
-                required
-              />
+              <label for="quantity">Quantity Available</label>
+              <input type="text" id="quantity" placeholder="e.g., 500 kg" />
             </div>
 
             <div class="form-group">
-              <label for="price">Your Price per kg (₹)</label>
-              <input type="number" id="price" placeholder="e.g., 45" required />
+              <label for="price">Price per kg (₹)</label>
+              <input type="text" id="price" placeholder="e.g., 45" />
             </div>
 
             <div class="form-group">
-              <label for="marketPrice">Market Price per kg (₹)</label>
-              <input
-                type="number"
-                id="marketPrice"
-                placeholder="e.g., 52"
-                required
-              />
+              <label for="price">Market per kg (₹)</label>
+              <input type="text" id="price" placeholder="e.g., 52" />
             </div>
           </div>
 
-          <!-- Row 3 -->
           <div class="form-row">
             <div class="form-group full-width">
               <label for="quality">Quality Grade</label>
-              <select id="quality" required>
+              <select id="quality">
                 <option value="">Select quality grade</option>
-                <option value="high">High</option>
-                <option value="medium">Medium</option>
+                <option value="premium">High</option>
+                <option value="grade-a">Medium</option>
                 <option value="standard">Standard</option>
               </select>
             </div>
           </div>
 
-          <!-- Submit -->
+          <!-- <div class="form-row">
+            <div class="form-group full-width">
+              <label for="description">Description</label>
+              <textarea
+                id="description"
+                placeholder="Describe your produce, farming methods, harvest date, etc."
+              ></textarea>
+            </div>
+          </div> -->
+
           <button type="submit" class="submit-btn">List Product</button>
         </form>
       </div>

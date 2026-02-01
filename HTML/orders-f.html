@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AgriDirect - Orders</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="../CSS/orders-f.css" />
-
-    <!-- Favicon -->
     <link rel="icon" href="../ASSETS/image.png" />
   </head>
   <body>
@@ -40,95 +36,132 @@
       </div>
     </header>
 
-    <!-- Navigation -->
-    <nav class="nav-container">
-      <a href="./products-f.html"
-        ><button class="nav-item">My Products</button></a
-      >
-      <a href="./addproduct-f.html"
-        ><button class="nav-item">Add Product</button></a
-      >
-      <a href="./orders-f.html"
-        ><button class="nav-item active">Orders</button></a
-      >
-      <a href="./analytics.html"><button class="nav-item">Analytics</button></a>
-    </nav>
-
-    <!-- Orders -->
     <div class="container">
-      <h2 class="page-title">Recent Orders</h2>
+      <!-- Sticky Sidebar -->
+      <aside class="sidebar">
+        <nav>
+          <a href="../HTML/farmer.html" class="nav-item">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+              />
+            </svg>
+            Dashboard
+          </a>
+          <a href="../HTML/products-f.html" class="nav-item">
+            <img src="../ASSETS/box-open.png" width="22px" height="22px" />
+            My Products
+          </a>
+          <a href="../HTML/orders-f.html" class="nav-item active">
+            <img src="../ASSETS/cart.png1.png" width="22px" height="22px" />
+            Orders
+          </a>
+          <a href="../HTML/analytics.html" class="nav-item">
+            <img
+              src="../ASSETS/Data-Driven Insights1.png"
+              width="22px"
+              height="22px"
+            />
+            Earnings
+          </a>
+          <a href="../HTML/reviews-f.html" class="nav-item">
+            <img src="../ASSETS/feedback.png" width="22px" height="22px" />
+            Reviews
+          </a>
+          <a href="../HTML/farmer-dashboard.html" class="nav-item">
+            <img src="../ASSETS/user.png" width="22px" height="22px" />
+            Profile
+          </a>
+        </nav>
+      </aside>
 
-      <div class="order-card">
-        <div class="order-info">
-          <div class="order-id">Order #AGD0001</div>
-          <p>Vendor Name: Arun</p>
-          <p>Fresh Tomatoes - 100 kg</p>
-        </div>
-        <div class="order-details">
-          <div class="order-price">₹3,000</div>
-          <div class="order-status">Confirmed</div>
-        </div>
-      </div>
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Page Header -->
+        <div class="page-header">
+          <div class="page-title-section">
+            <h1>Orders</h1>
+            <p>Manage incoming orders from vendors</p>
+          </div>
+          <div class="filter-dropdown">
+            <button class="dropdown-btn">
+              All Orders
+              <svg
+                class="chevron"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
 
-      <div class="order-card">
-        <div class="order-info">
-          <div class="order-id">Order #AGD0002</div>
-          <p>Vendor Name: Arun</p>
-          <p>Fresh Potatoes - 50 kg</p>
+            <div class="dropdown-menu" id="dropdownMenu">
+              <div class="dropdown-item selected" data-value="all">
+                All Orders
+              </div>
+              <div class="dropdown-item" data-value="pending">
+                Pending Orders
+              </div>
+              <div class="dropdown-item" data-value="confirmed">
+                Confirmed Orders
+              </div>
+              <div class="dropdown-item" data-value="delivered">
+                Delivered Orders
+              </div>
+              <div class="dropdown-item" data-value="cancelled">
+                Cancelled Orders
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="order-details">
-          <div class="order-price">₹4,500</div>
-          <div class="order-status">Confirmed</div>
-        </div>
-      </div>
 
-      <div class="order-card">
-        <div class="order-info">
-          <div class="order-id">Order #AGD0003</div>
-          <p>Vendor Name: Arun</p>
-          <p>Fresh Carrot - 90 kg</p>
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number black">23</div>
+            <div class="stat-label">Total Orders</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number orange">12</div>
+            <div class="stat-label">Pending</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number blue">4</div>
+            <div class="stat-label">Confirmed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number green">8</div>
+            <div class="stat-label">Delivered</div>
+          </div>
         </div>
-        <div class="order-details">
-          <div class="order-price">₹3,400</div>
-          <div class="order-status">Confirmed</div>
-        </div>
-      </div>
 
-      <div class="order-card">
-        <div class="order-info">
-          <div class="order-id">Order #AGD0004</div>
-          <p>Vendor Name: Arun</p>
-          <p>Fresh Radish - 120 kg</p>
+        <!-- Orders Section -->
+        <div class="orders-section">
+          <div class="empty-state">
+            <div class="empty-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                />
+              </svg>
+            </div>
+            <h2>No orders found</h2>
+            <p>You haven't received any orders yet</p>
+          </div>
         </div>
-        <div class="order-details">
-          <div class="order-price">₹4,600</div>
-          <div class="order-status">Confirmed</div>
-        </div>
-      </div>
-
-      <div class="order-card">
-        <div class="order-info">
-          <div class="order-id">Order #AGD0005</div>
-          <p>Vendor Name: Arun</p>
-          <p>Fresh Onion - 80 kg</p>
-        </div>
-        <div class="order-details">
-          <div class="order-price">₹3,200</div>
-          <div class="order-status">Confirmed</div>
-        </div>
-      </div>
-
-      <div class="order-card">
-        <div class="order-info">
-          <div class="order-id">Order #AGD0006</div>
-          <p>Vendor Name: Arun</p>
-          <p>Fresh Brinjal - 70 kg</p>
-        </div>
-        <div class="order-details">
-          <div class="order-price">₹2,800</div>
-          <div class="order-status">Confirmed</div>
-        </div>
-      </div>
+      </main>
     </div>
   </body>
 </html>

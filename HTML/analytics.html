@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AgriDirect - Analytics</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="../CSS/analytics-f.css" />
-
-    <!-- Favicon -->
     <link rel="icon" href="../ASSETS/image.png" />
   </head>
   <body>
@@ -40,55 +36,158 @@
       </div>
     </header>
 
-    <!-- Navigation -->
-    <nav class="nav-container">
-      <a href="./products-f.html"
-        ><button class="nav-item">My Products</button></a
-      >
-      <a href="./addproduct-f.html"
-        ><button class="nav-item">Add Product</button></a
-      >
-      <a href="./orders-f.html"><button class="nav-item">Orders</button></a>
-      <a href="./analytics-f.html"
-        ><button class="nav-item active">Analytics</button></a
-      >
-    </nav>
-
-    <!-- Analytics Content -->
+   
     <div class="container">
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="stat-title">Total Sales</div>
-          <div class="card-content">
-            <p class="card-value">₹1,24,500</p>
-            <p class="card-subtitle positive">This month (+18%)</p>
-          </div>
-        </div>
+      <!-- Sticky Sidebar -->
+      <aside class="sidebar">
+        <nav>
+          <a href="../HTML/farmer.html" class="nav-item ">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+              />
+            </svg>
+            Dashboard
+          </a>
+          <a href="../HTML/products-f.html" class="nav-item">
+             <img src="../ASSETS/box-open.png" width="22px" height="22px" />
+            My Products
+          </a>
+          <a href="../HTML/orders-f.html" class="nav-item">
+            <img src="../ASSETS/cart.png1.png" width="22px" height="22px" />
+            Orders
+          </a>
+          <a href="../HTML/analytics.html" class="nav-item active">
+            <img src="../ASSETS/Data-Driven Insights1.png" width="22px" height="22px">
+            Earnings
+          </a>
+          <a href="../HTML/reviews-f.html" class="nav-item">
+             <img src="../ASSETS/feedback.png" width="22px" height="22px">
+            Reviews
+          </a>
+          <a href="../HTML/farmer-dashboard.html" class="nav-item">
+            <img src="../ASSETS/user.png" width="22px" height="22px">
+            Profile
+          </a>
+        </nav>
+      </aside>
 
-        <div class="stat-card">
-          <div class="stat-title">Products Listed</div>
-          <div class="card-content">
-            <p class="card-value number">12</p>
-            <p class="card-subtitle">Active listings</p>
-          </div>
-        </div>
+       <!-- Main Content -->
+        <main class="main-content">
+            <!-- Page Header -->
+            <div class="page-header">
+                <div class="page-title-section">
+                    <h1>Earnings</h1>
+                    <p>Track your income and payments</p>
+                </div>
+                <button class="export-btn">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    Export Report
+                </button>
+            </div>
 
-        <div class="stat-card">
-          <div class="stat-title">Customer Rating</div>
-          <div class="card-content">
-            <p class="card-value rating">⭐ 4.8</p>
-            <p class="card-subtitle">Based on 67 reviews</p>
-          </div>
-        </div>
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <!-- Total Earnings Card -->
+                <div class="stat-card green-border">
+                    <div class="stat-header">
+                        <div class="stat-label">Total Earnings</div>
+                        <div class="stat-icon green">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="stat-amount green">₹8,000</div>
+                    <div class="stat-info green">From 2 completed orders</div>
+                </div>
 
-        <div class="stat-card">
-          <div class="stat-title">Avg. Payment Time</div>
-          <div class="card-content">
-            <p class="card-value number">2.3 days</p>
-            <p class="card-subtitle positive">Faster than market avg</p>
-          </div>
-        </div>
-      </div>
-    </div>
+                <!-- This Month Card -->
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-label default">This Month</div>
+                        <div class="stat-icon blue">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="stat-amount default">₹8,000</div>
+                    <div class="stat-growth">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                        </svg>
+                        +15% from last month
+                    </div>
+                </div>
+
+                <!-- Pending Payments Card -->
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-label default">Pending Payments</div>
+                        <div class="stat-icon orange">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="stat-amount orange">₹0</div>
+                    <div class="stat-info">0 pending orders</div>
+                </div>
+            </div>
+
+            <!-- Recent Transactions -->
+            <div class="transactions-section">
+                <h2>Recent Transactions</h2>
+                <div class="transaction-list">
+                    <!-- Transaction 1 -->
+                    <div class="transaction-item">
+                        <div class="transaction-left">
+                            <div class="transaction-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div class="transaction-details">
+                                <h3>Fresh Tomatoes</h3>
+                                <div class="transaction-meta">Suresh Traders • 100 kg</div>
+                                <div class="transaction-date">28 Jan 2026</div>
+                            </div>
+                        </div>
+                        <div class="transaction-right">
+                            <div class="transaction-amount">+₹3,000</div>
+                            <div class="transaction-status">Completed</div>
+                        </div>
+                    </div>
+
+                    <!-- Transaction 2 -->
+                    <div class="transaction-item">
+                        <div class="transaction-left">
+                            <div class="transaction-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div class="transaction-details">
+                                <h3>Organic Potatoes</h3>
+                                <div class="transaction-meta">Suresh Traders • 200 kg</div>
+                                <div class="transaction-date">27 Jan 2026</div>
+                            </div>
+                        </div>
+                        <div class="transaction-right">
+                            <div class="transaction-amount">+₹5,000</div>
+                            <div class="transaction-status">Completed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        
   </body>
 </html>

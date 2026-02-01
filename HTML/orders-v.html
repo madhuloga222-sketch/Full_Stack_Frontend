@@ -32,99 +32,160 @@
       </div>
     </header>
 
-    <!-- MAIN -->
-    <main class="main-content">
-      <!-- NAV TABS -->
-      <nav class="nav-tabs">
-        <a href="products-v.html">
-          <button class="nav-tab">My Products</button>
-        </a>
+    <div class="container">
+      <!-- Sticky Sidebar -->
+      <aside class="sidebar">
+        <nav>
+          <a href="../HTML/vendor_md.html" class="nav-item">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+              />
+            </svg>
+            Dashboard
+          </a>
+          <a href="../HTML/products-v.html" class="nav-item">
+            <img src="../ASSETS/box-open.png" width="22px" height="22px" />
+            Browse Products
+          </a>
+          <a href="../HTML/orders-f.html" class="nav-item active">
+            <img src="../ASSETS/cart.png1.png" width="22px" height="22px" />
+            Orders
+          </a>
+          <a href="../HTML/suppliers-v.html" class="nav-item">
+            <img src="../ASSETS/feedback.png" width="22px" height="22px" />
+            Write Reviews
+          </a>
+          <a href="../HTML/farmer-dashboard.html" class="nav-item">
+            <img src="../ASSETS/user.png" width="22px" height="22px" />
+            Profile
+          </a>
+        </nav>
+      </aside>
 
-        <a href="orders-v.html">
-          <button class="nav-tab active">Orders</button>
-        </a>
+      <!-- Main Content -->
+      <main class="content-area">
+        <header class="page-header">
+          <div>
+            <h1>My Orders</h1>
+            <p>Track your purchases and deliveries</p>
+          </div>
 
-        <a href="suppliers-v.html">
-          <button class="nav-tab">Suppliers</button>
-        </a>
-      </nav>
+          <select class="order-filter">
+            <option>All Orders</option>
+            <option>Pending</option>
+            <option>Shipped</option>
+            <option>Delivered</option>
+          </select>
+        </header>
 
-      <h1 class="page-title">My Purchase Orders</h1>
+        <!-- Stats Cards -->
+        <section class="stats-grid">
+          <div class="stat-box">
+            <h2>3</h2>
+            <p>Total Orders</p>
+          </div>
+          <div class="stat-box-p">
+            <h2>1</h2>
+            <p>Pending</p>
+          </div>
+          <div class="stat-box-t">
+            <h2>1</h2>
+            <p>In Transit</p>
+          </div>
+          <div class="stat-box-d">
+            <h2>0</h2>
+            <p>Delivered</p>
+          </div>
+        </section>
 
-      <!-- ORDERS -->
-      <div class="orders-container">
-        <div class="order-card">
-          <div class="order-info">
-            <div class="order-id">Order #AGD0001</div>
-            <div class="order-product">Fresh Tomatoes - 200 kg</div>
-            <div class="order-farmer">Farmer: Rajesh Kumar, Theni</div>
-          </div>
-          <div class="order-right">
-            <div class="order-price">₹1,200</div>
-            <div class="order-status">In Transit</div>
-          </div>
-        </div>
+        <!-- Order Cards -->
+        <section class="orders-stack">
+          <!-- Order 1 -->
+          <div class="order-card">
+            <div class="order-top">
+              <div>
+                <h3>
+                  Fresh Tomatoes <span class="badge confirmed">CONFIRMED</span>
+                </h3>
+                <p>Order ID: ORD001</p>
+              </div>
+              <h2 class="price">₹3,000</h2>
+            </div>
 
-        <div class="order-card">
-          <div class="order-info">
-            <div class="order-id">Order #AGD0002</div>
-            <div class="order-product">Fresh Potatoes - 150 kg</div>
-            <div class="order-farmer">Farmer: Ravi, Dindigul</div>
-          </div>
-          <div class="order-right">
-            <div class="order-price">₹3,200</div>
-            <div class="order-status">In Transit</div>
-          </div>
-        </div>
+            <div class="order-details">
+              <div><strong>Farmer:</strong> Rajesh Kumar</div>
+              <div><strong>Quantity:</strong> 100 kg</div>
+              <div><strong>Order Date:</strong> 28/01/2026</div>
+              <div><strong>Expected:</strong> 01/02/2026</div>
+            </div>
 
-        <div class="order-card">
-          <div class="order-info">
-            <div class="order-id">Order #AGD0003</div>
-            <div class="order-product">Fresh Carrot - 220 kg</div>
-            <div class="order-farmer">Farmer: Arun, Karur</div>
+            <div class="progress-line">
+              <span class="done">Placed</span>
+              <span class="done">Confirmed</span>
+              <span>Shipped</span>
+              <span>Delivered</span>
+            </div>
           </div>
-          <div class="order-right">
-            <div class="order-price">₹3,100</div>
-            <div class="order-status">In Transit</div>
-          </div>
-        </div>
 
-        <div class="order-card">
-          <div class="order-info">
-            <div class="order-id">Order #AGD0004</div>
-            <div class="order-product">Fresh Carrot - 220 kg</div>
-            <div class="order-farmer">Farmer: Arun, Karur</div>
-          </div>
-          <div class="order-right">
-            <div class="order-price">₹3,100</div>
-            <div class="order-status">In Transit</div>
-          </div>
-        </div>
+          <!-- Order 2 -->
+          <div class="order-card">
+            <div class="order-top">
+              <div>
+                <h3>
+                  Organic Potatoes <span class="badge shipped">SHIPPED</span>
+                </h3>
+                <p>Order ID: ORD002</p>
+              </div>
+              <h2 class="price">₹5,000</h2>
+            </div>
 
-        <div class="order-card">
-          <div class="order-info">
-            <div class="order-id">Order #AGD0005</div>
-            <div class="order-product">Fresh Carrot - 220 kg</div>
-            <div class="order-farmer">Farmer: Arun, Karur</div>
-          </div>
-          <div class="order-right">
-            <div class="order-price">₹3,100</div>
-            <div class="order-status">In Transit</div>
-          </div>
-        </div>
+            <div class="order-details">
+              <div><strong>Farmer:</strong> Rajesh Kumar</div>
+              <div><strong>Quantity:</strong> 200 kg</div>
+              <div><strong>Order Date:</strong> 27/01/2026</div>
+              <div><strong>Expected:</strong> 31/01/2026</div>
+            </div>
 
-        <div class="order-card">
-          <div class="order-info">
-            <div class="order-id">Order #AGD0006</div>
-            <div class="order-product">Fresh Carrot - 220 kg</div>
-            <div class="order-farmer">Farmer: Arun, Karur</div>
+            <div class="progress-line">
+              <span class="done">Placed</span>
+              <span class="done">Confirmed</span>
+              <span class="done">Shipped</span>
+              <span>Delivered</span>
+            </div>
           </div>
-          <div class="order-right">
-            <div class="order-price">₹3,100</div>
-            <div class="order-status">In Transit</div>
+
+          <!-- Order 3 -->
+          <div class="order-card">
+            <div class="order-top">
+              <div>
+                <h3>
+                  Fresh Mangoes <span class="badge pending">PENDING</span>
+                </h3>
+                <p>Order ID: ORD003</p>
+              </div>
+              <h2 class="price">₹4,000</h2>
+            </div>
+
+            <div class="order-details">
+              <div><strong>Farmer:</strong> Lakshmi Farms</div>
+              <div><strong>Quantity:</strong> 50 kg</div>
+              <div><strong>Order Date:</strong> 29/01/2026</div>
+              <div><strong>Expected:</strong> TBD</div>
+            </div>
+
+            <div class="progress-line">
+              <span class="done">Placed</span>
+              <span>Confirmed</span>
+              <span>Shipped</span>
+              <span>Delivered</span>
+            </div>
           </div>
-        </div>
-      </div>
-    </main>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

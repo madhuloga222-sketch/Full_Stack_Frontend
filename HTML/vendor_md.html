@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vendor Dashboard</title>
+    <link rel="stylesheet" href="../CSS/vendor_md.css" />
+    <link rel="icon" href="../ASSETS/image.png" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-section">
+        <div class="logo-icon">
+          <a href="../index.html"
+            ><img src="../ASSETS/image.png" width="60px" height="60px"
+          /></a>
+        </div>
+        <div class="logo-text">
+          <h1>AgriDirect</h1>
+        </div>
+      </div>
+      <div class="user-section">
+        <a href="../HTML/farmer-dashboard.html"
+          ><div class="user-avatar">V</div></a
+        >
+        <a href="../index.html" class="logout-btn"><span>Logout</span></a>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <nav class="nav-menu">
+          <a href="../HTML/vendor_md.html" class="nav-item active">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+              />
+            </svg>
+            <span>Dashboard</span>
+          </a>
+          <a href="../HTML/products-v.html" class="nav-item">
+            <img src="../ASSETS/box-open.png" width="22px" height="22px" />
+            <span>Browse Products</span>
+          </a>
+          <a href="../HTML/orders-v.html" class="nav-item">
+            <img
+              src="../ASSETS/cart.png1.png"
+              width="22px"
+              height="22px"
+            />
+            <span>My Orders</span>
+          </a>
+          <a href="../HTML/suppliers-v.html" class="nav-item">
+            <img src="../ASSETS/feedback.png" width="22px" height="22px" />
+            <span>Write Reviews</span>
+          </a>
+          <a href="../HTML/vendor-dashboard.html" class="nav-item">
+            <img src="../ASSETS/user.png" width="22px" height="22px" />
+            <span>Profile</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <header class="header">
+          <h1>Welcome back, Suresh Traders! 👋</h1>
+          <p class="subtitle">Discover fresh produce from local farmers</p>
+        </header>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-content">
+              <h3>Total Orders</h3>
+              <p class="stat-number">3</p>
+            </div>
+            <!-- <div class="stat-icon blue">
+              <i class="fas fa-shopping-bag"></i>
+            </div> -->
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-content">
+              <h3>Active Orders</h3>
+              <p class="stat-number">3</p>
+            </div>
+            <!-- <div class="stat-icon orange">
+              <i class="fas fa-box"></i>
+            </div> -->
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-content">
+              <h3>Total Spent</h3>
+              <p class="stat-number">₹8,000</p>
+            </div>
+            <!-- <div class="stat-icon green">
+              <i class="fas fa-dollar-sign"></i>
+            </div> -->
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-content">
+              <h3>Saved on Costs</h3>
+              <p class="stat-number">25%</p>
+            </div>
+            <!-- <div class="stat-icon purple">
+              <i class="fas fa-chart-line"></i>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <section class="quick-actions">
+          <h2>Quick Actions</h2>
+
+          <div class="action-buttons">
+            <a href="../HTML/products-v.html"><button class="btn btn-primary">
+              <i class="fas fa-box"></i>
+              Browse Products
+            </button></a>
+
+            <a href="../HTML/orders-v.html"><button class="btn btn-secondary">
+              <i class="fas fa-clipboard-list"></i>
+              View Orders
+            </button></a>
+
+            <a href="../HTML/suppliers-v.html"><button class="btn btn-secondary">
+              <i class="fas fa-star"></i>
+              Write Review
+            </button>
+          </div>
+        </section>
+
+        <!-- Recent Orders -->
+        <section class="recent-orders">
+          <div class="section-header">
+            <h2>Recent Orders</h2>
+            <a href="#" class="view-all">View All</a>
+          </div>
+
+          <div class="orders-list">
+            <div class="order-item">
+              <div class="order-info">
+                <h3>Fresh Tomatoes</h3>
+                <p class="order-details">Rajesh Kumar • 100 kg</p>
+              </div>
+              <div class="order-price-status">
+                <p class="order-price">₹3,000</p>
+                <span class="status status-confirmed">CONFIRMED</span>
+              </div>
+            </div>
+
+            <div class="order-item">
+              <div class="order-info">
+                <h3>Organic Potatoes</h3>
+                <p class="order-details">Rajesh Kumar • 200 kg</p>
+              </div>
+              <div class="order-price-status">
+                <p class="order-price">₹5,000</p>
+                <span class="status status-shipped">SHIPPED</span>
+              </div>
+            </div>
+
+            <div class="order-item">
+              <div class="order-info">
+                <h3>Fresh Mangoes</h3>
+                <p class="order-details">Lakshmi Farms • 50 kg</p>
+              </div>
+              <div class="order-price-status">
+                <p class="order-price">₹4,000</p>
+                <span class="status status-pending">PENDING</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

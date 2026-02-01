@@ -8,7 +8,7 @@ body {
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
     Cantarell, sans-serif;
-  background-color: #e8f5e9;
+  background-color: #f5f5f5;
   padding: 20px;
   color: #2d5016;
 }
@@ -77,498 +77,201 @@ nav a:hover {
   background: #16a34a;
 }
 
-.vendor-profile-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  margin-top: 120px;
-}
-
-.dashboard-back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
-  background-color: white;
-  color: #4caf50;
-  border: 2px solid #4caf50;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 24px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.dashboard-back-link:hover {
-  background-color: #f1f8f4;
-}
-
-.vendor-profile-main-card {
-  background-color: white;
-  border-radius: 16px;
-  padding: 40px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  margin-bottom: 24px;
-}
-
-.vendor-header-section {
+.layout {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 32px;
+  min-height: 100vh;
+  left: 0;
+  margin-left: 0px;
+  margin-top: 60px;
 }
 
-.vendor-identity-info {
-  display: flex;
-  gap: 24px;
-  align-items: center;
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  padding: 30px;
+  left: 0;
 }
 
-.vendor-company-avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background-color: #1976d2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 48px;
-  font-weight: 600;
-  flex-shrink: 0;
-}
-
-.vendor-company-details h1 {
-  font-size: 36px;
-  color: #4caf50;
-  margin-bottom: 8px;
-}
-
-.vendor-owner-name {
-  font-size: 20px;
-  color: #4caf50;
-  margin-bottom: 16px;
-}
-
-.vendor-info-badges {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.vendor-rating-display {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.rating-star-icon {
-  color: #ffa000;
-  font-size: 24px;
-}
-
-.review-count-text {
-  color: #4caf50;
-  font-weight: 400;
-}
-
-.vendor-type-badge {
-  padding: 8px 16px;
-  background-color: #1976d2;
-  color: white;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.order-count-badge {
-  background-color: white;
-  color: #4caf50;
-  border: 2px solid #4caf50;
-}
-
-.profile-edit-action-button {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-a {
-  text-decoration: none;
-}
-
-.profile-edit-action-button:hover {
-  background-color: #22c55e;
-}
-
-.vendor-business-description {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #4caf50;
-  margin-bottom: 24px;
-}
-
-.preferred-products-section {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.products-label-text {
-  font-size: 16px;
-  color: #4caf50;
-  font-weight: 600;
-}
-
-.product-category-tag {
-  padding: 8px 18px;
-  background-color: white;
-  color: #4caf50;
-  border: 2px solid #4caf50;
-  border-radius: 20px;
-  font-size: 15px;
-  font-weight: 500;
-}
-
-.vendor-statistics-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.statistics-display-card {
-  background-color: white;
-  border-radius: 16px;
-  padding: 32px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  text-align: center;
-}
-
-.stat-icon-wrapper {
-  font-size: 48px;
-  margin-bottom: 16px;
-  color: #4caf50;
-}
-
-.stat-category-label {
-  font-size: 18px;
-  color: #4caf50;
-  margin-bottom: 12px;
-  font-weight: 500;
-}
-
-.stat-number-value {
-  font-size: 40px;
-  font-weight: 700;
-  color: #bf360c;
-  margin-bottom: 8px;
-}
-
-.stat-number-value.green-text {
-  color: #4caf50;
-}
-
-.stat-number-value.rating-display {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.stat-number-value.rating-display .rating-star-icon {
-  font-size: 36px;
-}
-
-.stat-time-period {
-  font-size: 14px;
-  color: #4caf50;
-}
-
-.vendor-details-wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 24px;
-  margin-top: 30px;
-}
-
-.details-section-card {
-  background-color: white;
-  border-radius: 16px;
-  padding: 32px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-.section-title-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 28px;
-}
-
-.section-header-icon {
-  width: 28px;
-  height: 28px;
-  color: #4caf50;
-}
-
-.section-main-heading {
-  font-size: 24px;
-  font-weight: 600;
-  color: #4caf50;
-}
-
-.contact-information-row {
-  background-color: #f1f8f4;
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 16px;
-  display: flex;
-  gap: 16px;
-}
-
-.contact-information-row:last-child {
-  margin-bottom: 0;
-}
-
-.contact-field-icon {
-  width: 24px;
-  height: 24px;
-  color: #4caf50;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.contact-text-content {
-  flex: 1;
-}
-
-.contact-field-heading {
-  font-size: 14px;
-  color: #4caf50;
-  font-weight: 500;
-  margin-bottom: 4px;
-}
-
-.contact-field-information {
-  font-size: 18px;
-  color: #4caf50;
-  font-weight: 600;
-}
-
-.business-info-grid-layout {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-}
-
-.business-detail-tile {
-  background-color: #f1f8f4;
-  border-radius: 12px;
-  padding: 20px;
-}
-
-.business-field-name {
-  font-size: 14px;
-  color: #4caf50;
-  font-weight: 500;
-  margin-bottom: 8px;
-}
-
-.business-field-data {
-  font-size: 22px;
-  color: #4caf50;
-  font-weight: 600;
-}
-
-.order-activity-main-container {
-  /* max-width: 1400px;
-  margin-left: 305px;
-  margin-top: 30px; */
-  max-width: 1400px;
-  margin-top: 30px;
-  margin-left: 25px;
-}
-
-.order-activity-card-wrapper {
-  background-color: white;
-  border-radius: 16px;
-  padding: 40px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  margin: 0;
-}
-
-.activity-section-title {
-  font-size: 28px;
-  font-weight: 600;
-  color: #4caf50;
-  margin-bottom: 28px;
-}
-
-.order-list-container {
+.menu {
+  list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 14px;
+  left: 0;
+  margin-left: 0px;
 }
 
-.individual-order-item {
-  background-color: #f1f8f4;
-  border-radius: 12px;
-  padding: 24px;
-  border-left: 4px solid #4caf50;
-}
-
-.order-header-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
-  flex-wrap: wrap;
-}
-
-.order-id-text {
-  font-size: 22px;
-  font-weight: 600;
-  color: #4caf50;
-}
-
-.order-status-pill {
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 600;
-  border: none;
-}
-
-.status-delivered {
-  background-color: #4caf50;
-  color: white;
-}
-
-.status-in-transit {
-  background-color: #f57c00;
-  color: white;
-}
-
-.status-pending {
-  background-color: #ffa726;
-  color: white;
-}
-
-.status-cancelled {
-  background-color: #d32f2f;
-  color: white;
-}
-
-.order-product-name {
-  font-size: 18px;
-  color: #4caf50;
-  font-weight: 500;
-  margin-bottom: 8px;
-}
-
-.order-meta-information {
-  font-size: 15px;
-  color: #4caf50;
+.menu li {
+  padding: 12px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #374151;
   font-weight: 500;
 }
 
-.farmer-reviews-main-wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
-  margin-top: 30px;
+.menu li.active {
+  background: #dcfce7;
+  color: #16a34a;
 }
 
-.reviews-content-card {
-  background-color: white;
-  border-radius: 16px;
-  padding: 40px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+.icon svg{
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
 }
 
-.reviews-section-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 32px;
+.icon img{
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
 }
 
-.header-star-icon {
-  font-size: 32px;
-  color: #ffa000;
+a{
+  text-decoration: none;
 }
 
-.reviews-page-title {
+/* Main */
+.main {
+  flex: 1;
+  padding: 32px;
+}
+
+.title {
   font-size: 28px;
-  font-weight: 600;
-  color: #4caf50;
+  font-weight: 700;
 }
 
-.farmer-review-item {
-  background-color: #f1f8f4;
-  border-radius: 12px;
+.subtitle {
+  color: #6b7280;
+  margin-top: 4px;
+  margin-bottom: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 14px;
   padding: 24px;
-  margin-bottom: 20px;
-  border-left: 4px solid #4caf50;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
 }
 
-.farmer-review-item:last-child {
-  margin-bottom: 0;
+/* Profile card */
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 auto 16px;
 }
 
-.review-top-section {
+.name {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.email {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.badge {
+  display: inline-block;
+  margin: 14px auto 0;
+  padding: 6px 14px;
+  background: #e0edff;
+  color: #2563eb;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Account details */
+.card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px;
-  flex-wrap: wrap;
-  gap: 12px;
+  margin-bottom: 20px;
 }
 
-.farmer-reviewer-name {
-  font-size: 22px;
+.edit-btn {
+  background: #16a34a;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
   font-weight: 600;
-  color: #4caf50;
+  cursor: pointer;
 }
 
-.review-star-rating {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #2d5016;
+.field {
+  margin-bottom: 18px;
 }
 
-.rating-star-symbol {
-  color: #ffa000;
-  font-size: 24px;
-}
-
-.farmer-review-text {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #4caf50;
-  margin-bottom: 12px;
-}
-
-.review-date-posted {
+.label {
   font-size: 14px;
-  color: #4caf50;
+  color: #374151;
+  margin-bottom: 6px;
+  display: block;
   font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  color: #6b7280;
+}
+
+/* Stats */
+.stats {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.stat {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+.stat h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.stat p {
+  color: #6b7280;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.blue {
+  color: #2563eb;
+}
+.green {
+  color: #16a34a;
+}
+.purple {
+  color: #7c3aed;
 }

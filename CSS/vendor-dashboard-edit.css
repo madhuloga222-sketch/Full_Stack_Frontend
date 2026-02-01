@@ -517,3 +517,7 @@ nav a:hover {
 .save-icon-graphic {
   font-size: 20px;
 }
+
+a{
+  text-decoration: none;
+}

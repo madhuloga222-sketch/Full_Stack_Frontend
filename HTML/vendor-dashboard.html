@@ -4,14 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vendor Dashboard Edit</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="../CSS/vendor-dashboard-edit.css" />
+    <link rel="stylesheet" href="../CSS/vendor-dashboard.css" />
     <link rel="icon" href="../ASSETS/image.png" />
   </head>
 
   <body>
-    <!-- ================= HEADER ================= -->
     <header>
       <div class="logo-section">
         <a href="../index.html" class="logo">
@@ -30,149 +27,114 @@
       </nav>
     </header>
 
-    <!-- ================= EDIT PROFILE ================= -->
-    <main class="vendor-edit-profile-wrapper">
-      <div class="vendor-profile-header-bar">
-        <div class="vendor-page-title-area">
-          <h1 class="vendor-edit-main-title">Edit Profile</h1>
-          <p class="vendor-profile-subtitle">
-            Update your business profile information
-          </p>
-        </div>
+    <div class="layout">
+      <aside class="sidebar">
+        <ul class="menu">
+          <a href="../HTML/vendor_md.html"><li class="menu-item">
+            <span class="icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+                />
+              </svg>
+            </span>
+            Dashboard
+          </li></a>
 
-        <a href="vendor-dashboard.html" class="return-to-profile-link">
-          ← Back to Profile
-        </a>
-      </div>
+          <a href="../HTML/products-v.html"><li class="menu-item">
+            <span class="icon">
+              <img src="../ASSETS/box-open.png" width="22px" height="22px" />
+            </span>
+            Browse Products
+          </li></a>
 
-      <!-- ================= LOGO UPLOAD ================= -->
-      <section class="business-logo-upload-card">
-        <h2 class="logo-section-heading">Business Logo</h2>
-        <p class="logo-upload-instructions">
-          Upload your business logo or profile picture
-        </p>
+          <a href="../HTML/orders-v.html"><li class="menu-item">
+            <span class="icon">
+              <img src="../ASSETS/cart.png1.png" width="22px" height="22px" />
+            </span>
+            My Orders
+          </li></a>
 
-        <div class="logo-display-upload-container">
-          <div class="business-logo-circle">MF</div>
+          <a href="../HTML/suppliers-v.html"><li class="menu-item">
+            <span class="icon">
+              <img src="../ASSETS/feedback.png" width="22px" height="22px" />
+            </span>
+           Write Reviews
+          </li></a>
 
-          <div class="logo-upload-controls-area">
-            <p class="file-format-requirements">
-              Upload a business logo (PNG, JPG up to 5MB)
-            </p>
+          <a href="../HTML/vendor-dashboard.html"><li class="menu-item active">
+            <span class="icon">
+              <img src="../ASSETS/user.png" width="22px" height="22px" />
+            </span>
+            Profile
+          </li></a>
+        </ul>
+      </aside>
 
-            <label for="businessLogoInput" class="logo-upload-trigger-button">
-              <span class="upload-arrow-icon">↑</span>
-              Upload Logo
-            </label>
+      <main class="main">
+        <h1 class="title">Profile</h1>
+        <p class="subtitle">Manage your account information</p>
 
-            <input
-              type="file"
-              id="businessLogoInput"
-              class="file-input-hidden-element"
-              accept="image/png, image/jpeg"
-            />
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- ================= FORM ================= -->
-    <section class="vendor-business-forms-container">
-      <div class="business-info-section-card">
-        <h2 class="business-section-title">Business Information</h2>
-
-        <div class="vendor-form-fields-grid">
-          <div class="vendor-full-width-field">
-            <label class="vendor-field-label-text">
-              Business Name <span class="vendor-required-asterisk">*</span>
-            </label>
-            <input
-              type="text"
-              class="vendor-text-input-field"
-              value="Metro Foods Pvt Ltd"
-            />
-          </div>
-        </div>
-
-        <div class="vendor-form-fields-grid">
-          <div class="vendor-full-width-field">
-            <label class="vendor-field-label-text">
-              Owner / Contact Person
-              <span class="vendor-required-asterisk">*</span>
-            </label>
-            <input
-              type="text"
-              class="vendor-text-input-field"
-              value="Amit Verma"
-            />
-          </div>
-        </div>
-
-        <div class="vendor-form-fields-grid">
-          <div class="vendor-input-field-wrapper">
-            <label class="vendor-field-label-text">
-              Email <span class="vendor-required-asterisk">*</span>
-            </label>
-            <input
-              type="email"
-              class="vendor-text-input-field"
-              value="contact@metrofoods.com"
-            />
+        <div class="grid">
+          <div class="card">
+            <div class="avatar">S</div>
+            <div class="name">Suresh Traders</div>
+            <div class="email">vendor@test.com</div>
+            <div style="text-align: center">
+              <span class="badge">Vendor</span>
+            </div>
           </div>
 
-          <div class="vendor-input-field-wrapper">
-            <label class="vendor-field-label-text">
-              Phone <span class="vendor-required-asterisk">*</span>
-            </label>
-            <input
-              type="tel"
-              class="vendor-text-input-field"
-              value="+91 98765 12345"
-            />
+          <div class="card">
+            <div class="card-header">
+              <h3>Account Details</h3>
+              <button class="edit-btn">Edit Profile</button>
+            </div>
+
+            <div class="field">
+              <label class="label">Full Name</label>
+              <input class="input" value="Suresh Traders" disabled />
+            </div>
+
+            <div class="field">
+              <label class="label">Email Address</label>
+              <input class="input" value="vendor@test.com" disabled />
+            </div>
+
+            <div class="field">
+              <label class="label">Phone Number</label>
+              <input class="input" value="+91 98765 43211" disabled />
+            </div>
+
+            <div class="field">
+              <label class="label">Location</label>
+              <input class="input" value="Mumbai, India" disabled />
+            </div>
           </div>
         </div>
 
-        <div class="vendor-form-fields-grid">
-          <div class="vendor-full-width-field">
-            <label class="vendor-field-label-text">
-              Business Type <span class="vendor-required-asterisk">*</span>
-            </label>
-            <select class="vendor-business-type-dropdown">
-              <option selected>Wholesaler</option>
-              <option>Retailer</option>
-              <option>Distributor</option>
-              <option>Processor</option>
-              <option>Exporter</option>
-              <option>Restaurant/Hotel</option>
-            </select>
+        <div class="stats">
+          <div class="stat">
+            <h2 class="blue">3</h2>
+            <p>Total Orders</p>
+          </div>
+          <div class="stat">
+            <h2 class="green">₹12,000</h2>
+            <p>Total Spent</p>
+          </div>
+          <div class="stat">
+            <h2 class="purple">₹3,000</h2>
+            <p>Total Saved</p>
+          </div>
+          <div class="stat">
+            <h2>2 Months</h2>
+            <p>Member Since</p>
           </div>
         </div>
-
-        <div class="vendor-form-fields-grid">
-          <div class="vendor-full-width-field">
-            <label class="vendor-field-label-text">
-              GST Number <span class="vendor-required-asterisk">*</span>
-            </label>
-            <input
-              type="text"
-              class="vendor-text-input-field"
-              value="27AABCU9603R1ZM"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= ACTION BUTTONS ================= -->
-    <div class="vendor-form-actions-container">
-      <a href="vendor-dashboard.html" class="cancel-vendor-form-btn">
-        Cancel
-      </a>
-
-      <a href="vendor-dashboard.html" class="save-vendor-changes-btn">
-        <span class="save-icon-graphic"></span>
-        Save
-      </a>
+      </main>
     </div>
   </body>
 </html>
