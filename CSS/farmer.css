@@ -251,7 +251,7 @@ a {
 }
 
 .btn-primary {
-  background-color: #059669;
+  background-color: #4caf50;
   color: white;
 }
 
@@ -269,125 +269,140 @@ a {
   background-color: #f9f9f9;
 }
 
-/* Recent Orders */
-.recent-orders {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.recent-orders-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.recent-orders h2 {
-  font-size: 20px;
-  color: #1a1a1a;
-}
-
-.view-all {
-  color: #059669;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.empty-state {
-  text-align: center;
-  padding: 60px 20px;
-  color: #999;
-}
-
-.empty-state svg {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 16px;
-  opacity: 0.3;
-}
-
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+.dashboard {
   max-width: 1400px;
-  margin-top: 30px;
+  margin: auto;
 }
 
 .card {
-  background-color: #ffffff;
-  border-radius: 16px;
-  padding: 32px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  min-height: 280px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  gap:10px;
 }
 
-.card h2 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin-bottom: 24px;
+.full {
+  width: 100%;
 }
 
-/* Top Selling Products Card */
-.empty-state {
+.card-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  height: 200px;
-  color: #999;
-  font-size: 15px;
 }
 
-/* Market Insights Card */
-.insights-list {
+.card-header a {
+  color: green;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.order {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.order h4 {
+  margin-bottom: 5px;
+}
+
+.order p {
+  color: gray;
+  font-size: 14px;
+}
+
+.order-right {
+  text-align: right;
+}
+
+.price {
+  display: block;
+  font-weight: bold;
+}
+
+.status {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.confirmed {
+  color: blue;
+}
+
+.shipped {
+  color: gray;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
-.insight-item {
+/* Products */
+.product {
   display: flex;
-  align-items: flex-start;
-  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
 }
 
-.insight-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
+.product img {
+  border-radius: 5px;
+}
+
+.product div {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.product p {
+  color: gray;
+}
+
+.rank {
+  color: #ccc;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Insights */
+.insight {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  font-size: 24px;
+  font-weight: bold;
+  margin-right: 15px;
 }
 
-.insight-icon.green {
-  background-color: #d1fae5;
-  color: #059669;
+.green {
+  background: #e6fff1;
+  color: #008000;
 }
 
-.insight-icon.blue {
-  background-color: #dbeafe;
-  color: #2563eb;
+.blue {
+  background: #e6f0ff;
+  color: #0000ff;
 }
 
-.insight-content {
-  flex: 1;
-}
-
-.insight-title {
-  font-size: 18px;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin-bottom: 4px;
-}
-
-.insight-description {
-  font-size: 15px;
-  color: #666;
-  line-height: 1.5;
+.insight p {
+  color: gray;
+  font-size: 14px;
 }

@@ -4,15 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add Product - AgriDirect</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="../CSS/addproduct-f.css" />
-
-    <!-- Favicon -->
     <link rel="icon" href="../ASSETS/image.png" />
   </head>
+
   <body>
-    <!-- Header -->
     <header class="header">
       <div class="logo-section">
         <div class="logo">
@@ -22,6 +18,7 @@
               width="60"
               height="60"
               alt="AgriDirect Logo"
+              onerror="this.style.display = 'none'"
             />
           </a>
         </div>
@@ -29,7 +26,6 @@
           <h1>AgriDirect</h1>
         </div>
       </div>
-
       <div class="user-section">
         <a href="">
           <div class="user-avatar">F</div>
@@ -42,76 +38,63 @@
 
     <div class="container">
       <div class="form-card">
-        <div class="form-header">
-          <h2>Add New Product</h2>
-          <p>List your fresh produce for vendors to discover</p>
-        </div>
-
-        <form>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="product-name">Product Name</label>
-              <input
-                type="text"
-                id="product-name"
-                placeholder="e.g., Fresh Tomatoes"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="category">Category</label>
-              <select id="category">
-                <option value="">Select category</option>
-                <option value="vegetables">Vegetables</option>
-                <option value="fruits">Fruits</option>
-                <option value="grains">Grains</option>
-                <option value="dairy">Dairy</option>
-              </select>
-            </div>
+        <form id="productForm">
+          <div class="form-group">
+            <label>Product Name</label>
+            <input type="text" id="product-name" required />
           </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="quantity">Quantity Available</label>
-              <input type="text" id="quantity" placeholder="e.g., 500 kg" />
-            </div>
-
-            <div class="form-group">
-              <label for="price">Price per kg (₹)</label>
-              <input type="text" id="price" placeholder="e.g., 45" />
-            </div>
-
-            <div class="form-group">
-              <label for="price">Market per kg (₹)</label>
-              <input type="text" id="price" placeholder="e.g., 52" />
-            </div>
+          <div class="form-group">
+            <label>Category</label>
+            <select id="category" required>
+              <option value="">Select</option>
+              <option value="vegetables">Vegetables</option>
+              <option value="fruits">Fruits</option>
+              <option value="grains">Grains</option>
+              <option value="dairy">Dairy</option>
+            </select>
           </div>
 
-          <div class="form-row">
-            <div class="form-group full-width">
-              <label for="quality">Quality Grade</label>
-              <select id="quality">
-                <option value="">Select quality grade</option>
-                <option value="premium">High</option>
-                <option value="grade-a">Medium</option>
-                <option value="standard">Standard</option>
-              </select>
-            </div>
+          <div class="form-group">
+            <label>Quantity (kg)</label>
+            <input type="number" id="quantity" placeholder="e.g., 500 kg" />
           </div>
 
-          <!-- <div class="form-row">
-            <div class="form-group full-width">
-              <label for="description">Description</label>
-              <textarea
-                id="description"
-                placeholder="Describe your produce, farming methods, harvest date, etc."
-              ></textarea>
-            </div>
-          </div> -->
+          <div class="form-group">
+            <label>Price per kg (₹)</label>
+            <input type="number" id="price" placeholder="e.g., 45" />
+          </div>
 
-          <button type="submit" class="submit-btn">List Product</button>
+          <div class="form-group">
+            <label>Market price per kg (₹)</label>
+            <input type="number" id="market-price"  placeholder="e.g., 52" />
+          </div>
+
+          <div class="form-group">
+            <label>Product Image URL</label>
+            <input
+              type="url"
+              id="image_url"
+              placeholder="https://example.com/image.jpg"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Quality Grade</label>
+            <select id="quality_grade" required>
+              <option value="">Select</option>
+              <option value="High">High</option>
+              <option value="Medium">Medium</option>
+              <option value="Standard">Standard</option>
+            </select>
+          </div>
+
+          <button type="submit" class="submit-btn">Add Product</button>
         </form>
       </div>
     </div>
+
+    <script src="../JS/addproduct-f.js"></script>
   </body>
 </html>

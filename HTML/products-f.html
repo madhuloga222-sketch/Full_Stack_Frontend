@@ -31,7 +31,7 @@
       <!-- Sticky Sidebar -->
       <aside class="sidebar">
         <nav>
-          <a href="../HTML/farmer.html" class="nav-item ">
+          <a href="../HTML/farmer.html" class="nav-item">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
                 stroke-linecap="round"
@@ -47,325 +47,352 @@
             My Products
           </a>
           <a href="../HTML/orders-f.html" class="nav-item">
-           <img src="../ASSETS/cart.png1.png" width="22px" height="22px" />
+            <img src="../ASSETS/cart.png1.png" width="22px" height="22px" />
             Orders
           </a>
           <a href="/HTML/analytics.html" class="nav-item">
-           <img src="../ASSETS/Data-Driven Insights1.png" width="22px" height="22px">
+            <img
+              src="../ASSETS/Data-Driven Insights1.png"
+              width="22px"
+              height="22px"
+            />
             Earnings
           </a>
           <a href="/HTML/reviews-f.html" class="nav-item">
-            <img src="../ASSETS/feedback.png" width="22px" height="22px">
+            <img src="../ASSETS/feedback.png" width="22px" height="22px" />
             Reviews
           </a>
           <a href="../HTML/farmer-dashboard.html" class="nav-item">
-            <img src="../ASSETS/user.png" width="22px" height="22px">
+            <img src="../ASSETS/user.png" width="22px" height="22px" />
             Profile
           </a>
         </nav>
       </aside>
-  
-     <main class="product-container">
-      <div class="product-card">
-        <div class="image">
-          <img src="../ASSETS/fs1.jpg" alt="Tomato" />
-          <span class="tag premium">Fresh</span>
+
+    <section class="main-content">
+      <div class="content-wrapper">
+      <div class="top-bar">
+        <div class="top-left">
+          <h1>My Products</h1>
+          <input type="search" id="searchInput" placeholder="Search" />
+          <button type="button" id="btnId">Search</button>
         </div>
-        <div class="content">
-          <h3>Fresh Tomatoes</h3>
-          <p>500 kg available</p>
-          <p class="price">₹45/kg</p>
-          <p class="market">Market: ₹52/kg</p>
-          <div class="rating">
-            <span class="demand high">High </span>
-          </div>
-          <p class="harvest">Category:Vegetables</p>
-          <div class="buttons">
-            <a href="../HTML/edit-f.html"
-              ><button class="edit-btn">Edit</button></a
-            >
-            <a href="../HTML/orders-f.html"
-              ><button class="view-btn">View Orders</button></a
-            >
-          </div>
-        </div>
+
+        <!-- RIGHT -->
+        <!-- <div class="top-right">
+          <select class="add-dropdown">
+            <option value="filter">Filter</option>
+            <option value="veg">Vegetable</option>
+            <option value="fruit">Fruit</option>
+            <option value="grain">Grain</option>
+          </select>
+        </div> -->
       </div>
 
-      <div class="product-card">
-        <div class="image">
-          <img src="../ASSETS/fs2.jpeg" alt="Potatoes" />
-          <span class="tag organic">Fresh </span>
-        </div>
-        <div class="content">
-          <h3>Fresh Potatoes</h3>
-          <p>1000 kg available</p>
-          <p class="price">₹35/kg</p>
-          <p class="market">Market: ₹42/kg</p>
-          <div class="rating">
-            <span class="demand medium">Medium </span>
-          </div>
-          <p class="harvest">Category:Vegetables</p>
-          <div class="buttons">
-            <a href="../HTML/edit-f.html"
-              ><button class="edit-btn">Edit</button></a
-            >
-            <a href="../HTML/orders-f.html"
-              ><button class="view-btn">View Orders</button></a
-            >
-          </div>
-        </div>
-      </div>
 
-      <div class="product-card">
-        <div class="image">
-          <img src="../ASSETS/full stack img4.webp" alt="Cauliflower" />
-          <span class="tag premium">Fresh</span>
-        </div>
-        <div class="content">
-          <h3>Fresh Carrot</h3>
-          <p>300 kg available</p>
-          <p class="price">₹55/kg</p>
-          <p class="market">Market: ₹48/kg</p>
-          <div class="rating">
-            <span class="demand high">High </span>
+      <main class="product-container" id="products"> 
+        <!-- <div class="product-card">
+          <div class="image">
+            <img src="../ASSETS/fs1.jpg" alt="Tomato" />
+            <span class="tag premium">Fresh</span>
           </div>
-          <p class="harvest">Category:Vegetables</p>
-          <div class="buttons">
-            <a href="../HTML/edit-f.html"
-              ><button class="edit-btn">Edit</button></a
-            >
-            <a href="../HTML/orders-f.html"
-              ><button class="view-btn">View Orders</button></a
-            >
+          <div class="content">
+            <h3>Fresh Tomatoes</h3>
+            <p>500 kg available</p>
+            <p class="price">₹45/kg</p>
+            <p class="market">Market: ₹52/kg</p>
+            <div class="rating">
+              <span class="demand high">High </span>
+            </div>
+            <p class="harvest">Category:Vegetables</p>
+            <div class="buttons">
+              <a href="../HTML/edit-f.html"
+                ><button class="edit-btn" >Edit</button></a
+              >
+              <a href="../HTML/orders-f.html"
+                ><button class="delete-btn">Delete Orders</button></a
+              >
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="product-card">
-        <div class="image">
-          <img src="../ASSETS/full stack img8.webp" />
-          <span class="tag premium">Fresh</span>
-        </div>
-        <div class="content">
-          <h3>Fresh Radish</h3>
-          <p>300 kg available</p>
-          <p class="price">₹55/kg</p>
-          <p class="market">Market: ₹48/kg</p>
-          <div class="rating">
-            <span class="demand high">High </span>
+        <div class="product-card">
+          <div class="image">
+            <img src="../ASSETS/fs2.jpeg" alt="Potatoes" />
+            <span class="tag organic">Fresh </span>
           </div>
-          <p class="harvest">Category:Vegetables</p>
-          <div class="buttons">
-            <a href="../HTML/edit-f.html"
-              ><button class="edit-btn">Edit</button></a
-            >
-            <a href="../HTML/orders-f.html"
-              ><button class="view-btn">View Orders</button></a
-            >
+          <div class="content">
+            <h3>Fresh Potatoes</h3>
+            <p>1000 kg available</p>
+            <p class="price">₹35/kg</p>
+            <p class="market">Market: ₹42/kg</p>
+            <div class="rating">
+              <span class="demand medium">Medium </span>
+            </div>
+            <p class="harvest">Category:Vegetables</p>
+            <div class="buttons">
+              <a href="../HTML/edit-f.html"
+                ><button class="edit-btn">Edit</button></a
+              >
+              <a href="../HTML/orders-f.html"
+                ><button class="delete-btn">Delete Orders</button></a
+              >
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="product-card">
-        <div class="image">
-          <img src="../ASSETS/mango.jpg" />
-          <span class="tag premium">Fresh</span>
-        </div>
-        <div class="content">
-          <h3>Mango</h3>
-          <p>400 kg available</p>
-          <p class="price">₹35/kg</p>
-          <p class="market">Market: ₹50/kg</p>
-          <div class="rating">
-            <span class="demand high">High </span>
+        <div class="product-card">
+          <div class="image">
+            <img src="../ASSETS/full stack img4.webp" alt="Cauliflower" />
+            <span class="tag premium">Fresh</span>
           </div>
-          <p class="harvest">Category: Fruits</p>
-          <div class="buttons">
-            <a href="../HTML/edit-f.html"
-              ><button class="edit-btn">Edit</button></a
-            >
-            <a href="../HTML/orders-f.html"
-              ><button class="view-btn">View Orders</button></a
-            >
+          <div class="content">
+            <h3>Fresh Carrot</h3>
+            <p>300 kg available</p>
+            <p class="price">₹55/kg</p>
+            <p class="market">Market: ₹48/kg</p>
+            <div class="rating">
+              <span class="demand high">High </span>
+            </div>
+            <p class="harvest">Category:Vegetables</p>
+            <div class="buttons">
+              <a href="../HTML/edit-f.html"
+                ><button class="edit-btn">Edit</button></a
+              >
+              <a href="../HTML/orders-f.html"
+                ><button class="delete-btn">Delete Orders</button></a
+              >
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="product-card">
-        <div class="image">
-          <img src="../ASSETS/banana.webp" />
-          <span class="tag premium">Fresh</span>
-        </div>
-        <div class="content">
-          <h3>Fresh Banana</h3>
-          <p>600 kg available</p>
-          <p class="price">₹60/kg</p>
-          <p class="market">Market: ₹90/kg</p>
-          <div class="rating">
-            <span class="demand high">High </span>
+        <div class="product-card">
+          <div class="image">
+            <img src="../ASSETS/full stack img8.webp" />
+            <span class="tag premium">Fresh</span>
           </div>
-          <p class="harvest">Category: Fruits</p>
-          <div class="buttons">
-            <a href="../HTML/edit-f.html"
-              ><button class="edit-btn">Edit</button></a
-            >
-            <a href="../HTML/orders-f.html"
-              ><button class="view-btn">View Orders</button></a
-            >
+          <div class="content">
+            <h3>Fresh Radish</h3>
+            <p>300 kg available</p>
+            <p class="price">₹55/kg</p>
+            <p class="market">Market: ₹48/kg</p>
+            <div class="rating">
+              <span class="demand high">High </span>
+            </div>
+            <p class="harvest">Category:Vegetables</p>
+            <div class="buttons">
+              <a href="../HTML/edit-f.html"
+                ><button class="edit-btn">Edit</button></a
+              >
+              <a href="../HTML/orders-f.html"
+                ><button class="delete-btn">Delete Orders</button></a
+              >
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="product-card">
-        <div class="image">
-          <img src="../ASSETS/papaya.png" />
-          <span class="tag premium">Fresh</span>
-        </div>
-        <div class="content">
-          <h3>Fresh Papaya</h3>
-          <p>300 kg available</p>
-          <p class="price">₹55/kg</p>
-          <p class="market">Market: ₹48/kg</p>
-          <div class="rating">
-            <span class="demand high">High </span>
+        <div class="product-card">
+          <div class="image">
+            <img src="../ASSETS/mango.jpg" />
+            <span class="tag premium">Fresh</span>
           </div>
-          <p class="harvest">Category: Fruits</p>
-          <div class="buttons">
-            <a href="../HTML/edit-f.html"
-              ><button class="edit-btn">Edit</button></a
-            >
-            <a href="../HTML/orders-f.html"
-              ><button class="view-btn">View Orders</button></a
-            >
+          <div class="content">
+            <h3>Mango</h3>
+            <p>400 kg available</p>
+            <p class="price">₹35/kg</p>
+            <p class="market">Market: ₹50/kg</p>
+            <div class="rating">
+              <span class="demand high">High </span>
+            </div>
+            <p class="harvest">Category: Fruits</p>
+            <div class="buttons">
+              <a href="../HTML/edit-f.html"
+                ><button class="edit-btn">Edit</button></a
+              >
+              <a href="../HTML/orders-f.html"
+                ><button class="delete-btn">Delete Orders</button></a
+              >
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="product-card">
-        <div class="image">
-          <img src="../ASSETS/Pineapple.jpg" />
-          <span class="tag premium">Fresh</span>
-        </div>
-        <div class="content">
-          <h3>Fresh Pineapple</h3>
-          <p>800 kg available</p>
-          <p class="price">₹60/kg</p>
-          <p class="market">Market: ₹110/kg</p>
-          <div class="rating">
-            <span class="demand high">High </span>
+        <div class="product-card">
+          <div class="image">
+            <img src="../ASSETS/banana.webp" />
+            <span class="tag premium">Fresh</span>
           </div>
-          <p class="harvest">Category: Fruits</p>
-          <div class="buttons">
-            <a href="../HTML/edit-f.html"
-              ><button class="edit-btn">Edit</button></a
-            >
-            <a href="../HTML/orders-f.html"
-              ><button class="view-btn">View Orders</button></a
-            >
+          <div class="content">
+            <h3>Fresh Banana</h3>
+            <p>600 kg available</p>
+            <p class="price">₹60/kg</p>
+            <p class="market">Market: ₹90/kg</p>
+            <div class="rating">
+              <span class="demand high">High </span>
+            </div>
+            <p class="harvest">Category: Fruits</p>
+            <div class="buttons">
+              <a href="../HTML/edit-f.html"
+                ><button class="edit-btn">Edit</button></a
+              >
+              <a href="../HTML/orders-f.html"
+                ><button class="delete-btn">Delete Orders</button></a
+              >
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="product-card">
-        <div class="image">
-          <img src="../ASSETS/pearl millet.jpg" />
-          <span class="tag premium">Fresh</span>
-        </div>
-        <div class="content">
-          <h3>Pearl Millet (Kambu)</h3>
-          <p>600 kg available</p>
-          <p class="price">₹90/kg</p>
-          <p class="market">Market: ₹120/kg</p>
-          <div class="rating">
-            <span class="demand high">High </span>
+        <div class="product-card">
+          <div class="image">
+            <img src="../ASSETS/papaya.png" />
+            <span class="tag premium">Fresh</span>
           </div>
-          <p class="harvest">Category:Grains</p>
-          <div class="buttons">
-            <a href="../HTML/edit-f.html"
-              ><button class="edit-btn">Edit</button></a
-            >
-            <a href="../HTML/orders-f.html"
-              ><button class="view-btn">View Orders</button></a
-            >
+          <div class="content">
+            <h3>Fresh Papaya</h3>
+            <p>300 kg available</p>
+            <p class="price">₹55/kg</p>
+            <p class="market">Market: ₹100/kg</p>
+            <div class="rating">
+              <span class="demand high">High </span>
+            </div>
+            <p class="harvest">Category: Fruits</p>
+            <div class="buttons">
+              <a href="../HTML/edit-f.html"
+                ><button class="edit-btn">Edit</button></a
+              >
+              <a href="../HTML/orders-f.html"
+                ><button class="delete-btn">Delete Orders</button></a
+              >
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="product-card">
-        <div class="image">
-          <img src="../ASSETS/Foxtail millet (thinai).avif" />
-          <span class="tag premium">Fresh</span>
-        </div>
-        <div class="content">
-          <h3>Foxtail millet (Thinai)</h3>
-          <p>800 kg available</p>
-          <p class="price">₹75/kg</p>
-          <p class="market">Market: ₹55/kg</p>
-          <div class="rating">
-            <span class="demand high">High </span>
+        <div class="product-card">
+          <div class="image">
+            <img src="../ASSETS/Pineapple.jpg" />
+            <span class="tag premium">Fresh</span>
           </div>
-          <p class="harvest">Category:Grains</p>
-          <div class="buttons">
-            <a href="../HTML/edit-f.html"
-              ><button class="edit-btn">Edit</button></a
-            >
-            <a href="../HTML/orders-f.html"
-              ><button class="view-btn">View Orders</button></a
-            >
+          <div class="content">
+            <h3>Fresh Pineapple</h3>
+            <p>800 kg available</p>
+            <p class="price">₹60/kg</p>
+            <p class="market">Market: ₹110/kg</p>
+            <div class="rating">
+              <span class="demand high">High </span>
+            </div>
+            <p class="harvest">Category: Fruits</p>
+            <div class="buttons">
+              <a href="../HTML/edit-f.html"
+                ><button class="edit-btn">Edit</button></a
+              >
+              <a href="../HTML/orders-f.html"
+                ><button class="delete-btn">Delete Orders</button></a
+              >
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="product-card">
-        <div class="image">
-          <img src="../ASSETS/Kodo Millet (Varagu).jpg" />
-          <span class="tag premium">Fresh</span>
-        </div>
-        <div class="content">
-          <h3>Kodo Millet (Varagu)</h3>
-          <p>400 kg available</p>
-          <p class="price">₹80/kg</p>
-          <p class="market">Market: ₹120/kg</p>
-          <div class="rating">
-            <span class="demand high">High </span>
+        <div class="product-card">
+          <div class="image">
+            <img src="../ASSETS/pearl millet.jpg" />
+            <span class="tag premium">Fresh</span>
           </div>
-          <p class="harvest">Category: Grains</p>
-          <div class="buttons">
-            <a href="../HTML/edit-f.html"
-              ><button class="edit-btn">Edit</button></a
-            >
-            <a href="../HTML/orders-f.html"
-              ><button class="view-btn">View Orders</button></a
-            >
+          <div class="content">
+            <h3>Pearl Millet (Kambu)</h3>
+            <p>600 kg available</p>
+            <p class="price">₹90/kg</p>
+            <p class="market">Market: ₹120/kg</p>
+            <div class="rating">
+              <span class="demand high">High </span>
+            </div>
+            <p class="harvest">Category:Grains</p>
+            <div class="buttons">
+              <a href="../HTML/edit-f.html"
+                ><button class="edit-btn">Edit</button></a
+              >
+              <a href="../HTML/orders-f.html"
+                ><button class="delete-btn">Delete Orders</button></a
+              >
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="product-card">
-        <div class="image">
-          <img src="../ASSETS/Corn (Makka Cholam).jpg" />
-          <span class="tag premium">Fresh</span>
-        </div>
-        <div class="content">
-          <h3>Corn (Makka Cholam)</h3>
-          <p>650 kg available</p>
-          <p class="price">₹80/kg</p>
-          <p class="market">Market: ₹230/kg</p>
-          <div class="rating">
-            <span class="demand high">High </span>
+        <div class="product-card">
+          <div class="image">
+            <img src="../ASSETS/Foxtail millet (thinai).avif" />
+            <span class="tag premium">Fresh</span>
           </div>
-          <p class="harvest">Category: Grains</p>
-          <div class="buttons">
-            <a href="../HTML/edit-f.html"
-              ><button class="edit-btn">Edit</button></a
-            >
-            <a href="../HTML/orders-f.html"
-              ><button class="view-btn">View Orders</button></a
-            >
+          <div class="content">
+            <h3>Foxtail millet (Thinai)</h3>
+            <p>800 kg available</p>
+            <p class="price">₹75/kg</p>
+            <p class="market">Market: ₹125/kg</p>
+            <div class="rating">
+              <span class="demand high">High </span>
+            </div>
+            <p class="harvest">Category:Grains</p>
+            <div class="buttons">
+              <a href="../HTML/edit-f.html"
+                ><button class="edit-btn">Edit</button></a
+              >
+              <a href="../HTML/orders-f.html"
+                ><button class="delete-btn">Delete Orders</button></a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </main>
-    </div>
+
+        <div class="product-card">
+          <div class="image">
+            <img src="../ASSETS/Kodo Millet (Varagu).jpg" />
+            <span class="tag premium">Fresh</span>
+          </div>
+          <div class="content">
+            <h3>Kodo Millet (Varagu)</h3>
+            <p>400 kg available</p>
+            <p class="price">₹80/kg</p>
+            <p class="market">Market: ₹120/kg</p>
+            <div class="rating">
+              <span class="demand high">High </span>
+            </div>
+            <p class="harvest">Category: Grains</p>
+            <div class="buttons">
+              <a href="../HTML/edit-f.html"
+                ><button class="edit-btn">Edit</button></a
+              >
+              <a href="../HTML/orders-f.html"
+                ><button class="delete-btn">Delete Orders</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="image">
+            <img src="../ASSETS/Corn (Makka Cholam).jpg" />
+            <span class="tag premium">Fresh</span>
+          </div>
+          <div class="content">
+            <h3>Corn (Makka Cholam)</h3>
+            <p>650 kg available</p>
+            <p class="price">₹80/kg</p>
+            <p class="market">Market: ₹230/kg</p>
+            <div class="rating">
+              <span class="demand high">High </span>
+            </div>
+            <p class="harvest">Category: Grains</p>
+            <div class="buttons">
+              <a href="../HTML/edit-f.html"
+                ><button class="edit-btn">Edit</button></a
+              >
+              <a href="../HTML/orders-f.html"
+                ><button class="delete-btn">Delete Orders</button></a
+              >
+            </div>
+          </div>
+        </div> -->
+      </main> 
+    </section>
+    </div> 
+   <script src="../JS/products-f.js"></script>
   </body>
 </html>

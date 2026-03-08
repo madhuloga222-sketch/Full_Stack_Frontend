@@ -9,7 +9,8 @@ body {
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
     Cantarell, sans-serif;
   background-color: #f5f5f5;
-  padding: 40px 20px;
+  /* padding: 40px ; */
+  margin: 0;
 }
 
 /* Header Navigation */
@@ -64,276 +65,192 @@ nav a:hover {
 }
 
 .btn-login {
-  background: #4caf50;
-  color: white;
+  /* background: #4caf50; */
+  color: #4caf50;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   font-weight: 600;
   transition: background 0.3s;
+  font-size: 24px;
 }
 
 .btn-login:hover {
   background: #16a34a;
 }
 
-.container {
+/* Layout */
+.layout {
   display: flex;
   min-height: 100vh;
 }
 
-/* Sticky Sidebar */
+/* Sidebar */
 .sidebar {
-  width: 280px;
-  background-color: #ffffff;
-  padding: 20px;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  overflow-y: auto;
-  border-right: 1px solid #e0e0e0;
-
-  overflow-y: auto;
-  z-index: 100;
+  width: 320px;
+  background: #ffffff;
+  margin-top: 50px;
 }
 
-.nav-item {
+a {
+  text-decoration: none;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-top: 60px;
+}
+
+.sidebar li {
   display: flex;
   align-items: center;
-  padding: 14px 16px;
+  gap: 12px;
+  padding: 12px 14px;
   margin-bottom: 8px;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.2s;
   color: #333;
-  text-decoration: none;
-  font-size: 15px;
+  margin-left: 20px;
 }
 
-.nav-item:hover {
-  background-color: #f0f0f0;
+.sidebar li svg {
+  width: 20px;
+  height: 20px;
 }
 
-.nav-item.active {
-  background-color: #c8f4d9;
-  color: #059669;
-  font-weight: 500;
+.sidebar li.active {
+  background: #dffbe7;
+  color: #0a9f4e;
 }
 
-.nav-item svg {
-  width: 22px;
-  height: 22px;
-  margin-right: 12px;
-}
-
-.nav-item img {
-  width: 22px;
-  height: 22px;
-  margin-right: 12px;
+.sidebar li.active svg {
+  fill: #0a9f4e;
 }
 
 /* Main Content */
-.main-content {
-  margin-left: 30px;
+.content {
   flex: 1;
-  padding: 40px;
+  padding: 30px 40px;
+  margin-top: 120px;
 }
 
-/* Page Header */
-.page-header {
-  margin-bottom: 32px;
+.subtitle {
+  color: #777;
+  margin-bottom: 24px;
 }
 
-.page-header h1 {
-  font-size: 36px;
-  margin-bottom: 8px;
-  color: #1a1a1a;
-  font-weight: 700;
+/* Cards */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
 }
 
-.page-header p {
-  color: #666;
-  font-size: 16px;
-}
-
-/* Profile Grid */
-.profile-grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+.top-cards {
+  display: flex;
   gap: 24px;
   margin-bottom: 24px;
 }
 
 /* Profile Card */
 .profile-card {
-  background: white;
-  border-radius: 16px;
-  padding: 48px 32px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 260px;
   text-align: center;
 }
 
-.profile-avatar {
-  width: 120px;
-  height: 120px;
+.avatar {
+  width: 90px;
+  height: 90px;
+  background: #00c853;
+  color: #fff;
   border-radius: 50%;
-  background-color: #10b981;
-  color: white;
+  font-size: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 56px;
-  font-weight: 700;
-  margin: 0 auto 24px;
+  margin: 0 auto 10px;
 }
 
-.profile-name {
-  font-size: 24px;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin-bottom: 8px;
-}
-
-.profile-email {
-  font-size: 15px;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-.profile-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
-  background-color: #d1fae5;
-  color: #059669;
+.badge {
+  display: inline-block;
+  background: #dffbe7;
+  color: #0a9f4e;
+  padding: 6px 16px;
   border-radius: 20px;
+  margin-top: 10px;
   font-size: 14px;
-  font-weight: 500;
 }
 
-.profile-badge svg {
-  width: 16px;
-  height: 16px;
-}
-
-/* Account Details Card */
+/* Details */
 .details-card {
-  background: white;
-  border-radius: 16px;
-  padding: 32px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  position: relative;
+  flex: 1;
 }
 
-.details-header {
+.card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 18px;
 }
 
-.details-card h2 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #1a1a1a;
+.field {
+  margin-bottom: 16px;
 }
 
-.edit-btn {
-  padding: 10px 24px;
-  background-color: #10b981;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.edit-btn:hover {
-  background-color: #059669;
-}
-
-.detail-item {
-  margin-bottom: 28px;
-}
-
-.detail-item:last-child {
-  margin-bottom: 0;
-}
-
-.detail-label {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  color: #555;
   font-size: 14px;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin-bottom: 8px;
 }
 
-.detail-label svg {
-  width: 18px;
-  height: 18px;
-  stroke: #666;
+.field input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #f2f2f2;
 }
 
-.detail-value {
-  font-size: 15px;
-  color: #666;
-  padding-left: 26px;
+/* Buttons */
+.btn {
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
 }
 
-/* Statistics Section */
-.statistics-section {
-  background: white;
-  border-radius: 16px;
-  padding: 32px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+.cancel {
+  background: #eee;
 }
 
-.statistics-section h2 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin-bottom: 24px;
+.save {
+  background: #00c853;
+  color: #fff;
 }
 
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-
-.stat-item {
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
 }
 
-.stat-value {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 8px;
+.stats div {
+  flex: 1;
 }
 
-.stat-value.green {
-  color: #10b981;
+.stats h2 {
+  margin-bottom: 6px;
 }
 
-.stat-value.blue {
-  color: #2563eb;
+.green {
+  color: #00c853;
 }
-
-.stat-value.orange {
-  color: #d97706;
+.blue {
+  color: #2979ff;
 }
-
-.stat-value.black {
-  color: #1a1a1a;
+.orange {
+  color: #ff9800;
 }
-
-.stat-label {
-  font-size: 15px;
-  color: #666;
-}
-
-

@@ -189,67 +189,32 @@ body {
   position: relative;
 }
 
-.dropdown-btn {
-  padding: 10px 20px;
-  background-color: white;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Wrapper */
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-right: 5px; 
+}
+
+/* Select box */
+.add-dropdown {
+  padding: 10px;
   font-size: 15px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #333;
-  min-width: 150px;
-  justify-content: space-between;
-}
-
-.dropdown-btn:hover {
-  background-color: #f9f9f9;
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  margin-top: 8px;
-  background: white;
-  border: 1px solid #e0e0e0;
+  border: 2px solid #333;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  min-width: 180px;
-  display: none;
-  z-index: 1000;
-}
-
-.dropdown-menu.active {
-  display: block;
-}
-
-.dropdown-item {
-  padding: 12px 16px;
+  background-color: #fff;
   cursor: pointer;
-  transition: background-color 0.2s;
-  font-size: 15px;
-  color: #333;
+  outline: none;
+  min-width: 170px;
 }
 
-.dropdown-item:first-child {
-  border-radius: 8px 8px 0 0;
-}
-
-.dropdown-item:last-child {
-  border-radius: 0 0 8px 8px;
-}
-
-.dropdown-item:hover {
-  background-color: #f5f5f5;
-}
-
-.dropdown-item.selected {
-  background-color: #c8f4d9;
-  color: #059669;
-  font-weight: 500;
+.add-dropdown:hover {
+  border-color: #4caf50;
 }
 
 /* Stats Grid */
@@ -282,11 +247,11 @@ body {
   color: #ea580c;
 }
 
-.stat-number.blue {
+.stat-number.bl {
   color: #2563eb;
 }
 
-.stat-number.green {
+.stat-number.grn {
   color: #059669;
 }
 
@@ -295,44 +260,85 @@ body {
   color: #666;
 }
 
-/* Orders Section */
-.orders-section {
-  background: white;
-  padding: 60px 40px;
-  border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  min-height: 400px;
+.order-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 25px;
+  border: 1px solid #eee;
 }
 
-.empty-state {
-  text-align: center;
-  max-width: 400px;
-  margin: 0 auto;
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.empty-icon {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 24px;
-  opacity: 0.3;
+.top h2 {
+  font-size: 22px;
 }
 
-.empty-icon svg {
-  width: 100%;
-  height: 100%;
-  stroke: #999;
+.order-id {
+  color: gray;
+  margin-top: 6px;
 }
 
-.empty-state h2 {
-  font-size: 24px;
-  color: #1a1a1a;
-  margin-bottom: 12px;
-  font-weight: 600;
+.amount {
+  text-align: right;
 }
 
-.empty-state p {
-  font-size: 16px;
-  color: #666;
+.amount h2 {
+  color: green;
+}
+
+.paid {
+  color: green;
+  font-size: 14px;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.confirmed {
+  background: #e6f0ff;
+  color: #1d4ed8;
+}
+
+.shipped {
+  background: #f3e8ff;
+  color: #7e22ce;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 25px 0;
+  gap: 20px;
+}
+
+.details small {
+  color: gray;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.blue {
+  background: #1d4ed8;
+}
+
+.green {
+  background: #16a34a;
 }
 
 /* Chevron icon */

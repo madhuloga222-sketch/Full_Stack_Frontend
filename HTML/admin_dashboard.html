@@ -1,28 +1,346 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Platform Analytics Dashboard</title>
-    <link rel="stylesheet" href="/CSS/admin_dashboard.css">
-    <link rel="icon" href="/ASSETS/image.png">
-</head>
-<body>
-   <header class="top-header">
-        <div class="logo-section">
-            <div class="logo">
-                <a href="/index.html"><img src="./ASSETS/image.png" width="60px" height="60px"></a>
-            </div>
-            <div class="logo-text">
-                <h1>AgriDirect</h1>
-            </div>
+    <link rel="stylesheet" href="../CSS/admin_dashboard.css" />
+    <link rel="icon" href="../ASSETS/image.png" />
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="logo-section">
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../ASSETS/image.png" width="60px" height="60px"
+          /></a>
         </div>
+        <div class="logo-text">
+          <h1>AgriDirect</h1>
+        </div>
+      </div>
 
-        <div class="user-section">
-            <a href="/index.html" class="logout-btn"><span>Logout</span></a>
-          </div>
+      <div class="user-section">
+        <a href="../index.html" class="logout-btn"><span>Logout</span></a>
+      </div>
     </header>
 
-   
-</body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <nav class="nav-menu">
+          <a href="../HTML/" class="nav-item active">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+              />
+            </svg>
+            <span>Dashboard</span>
+          </a>
+          <a href="../HTML/user-management_admin.html" class="nav-item">
+            <img src="../ASSETS/user.png" width="25px" height="25px" />
+            <span>User Management</span>
+          </a>
+          <a href="../HTML/products_admin.html" class="nav-item">
+            <img src="../ASSETS/box-open.png" width="25px" height="25px" />
+            <span>Products</span>
+          </a>
+          <a href="../HTML/orders_admin.html" class="nav-item">
+            <img src="../ASSETS/cart.png1.png" width="25px" height="25px" />
+            <span>Orders</span>
+          </a>
+          <a href="../HTML/" class="nav-item">
+            <img
+              src="../ASSETS/Data-Driven Insights1.png"
+              width="25px"
+              height="25px"
+            />
+            <span>Analytics</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+          <h1 class="page-title">Admin Dashboard</h1>
+          <p class="page-subtitle">
+            Monitor and manage your AgriDirect platform
+          </p>
+        </header>
+
+        <!-- Stats Cards -->
+        <section class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-content">
+              <h3 class="stat-label">Total Users</h3>
+              <p class="stat-value">8</p>
+              <p class="stat-detail">5 Farmers • 3 Vendors</p>
+            </div>
+            <div class="stat-icon blue">
+              <img src="../ASSETS/user (3).png" width="25px" height="25px" />
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-content">
+              <h3 class="stat-label">Total Products</h3>
+              <p class="stat-value">6</p>
+              <p class="stat-detail">Active listings</p>
+            </div>
+            <div class="stat-icon green">
+              <img src="../ASSETS/box-open.png" width="25px" height="25px" />
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-content">
+              <h3 class="stat-label">Total Orders</h3>
+              <p class="stat-value">3</p>
+              <p class="stat-detail">1 pending</p>
+            </div>
+            <div class="stat-icon orange">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path
+                  d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                ></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-content">
+              <h3 class="stat-label">Platform Revenue</h3>
+              <p class="stat-value">₹8,000</p>
+              <p class="stat-detail">From completed orders</p>
+            </div>
+            <div class="stat-icon purple">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path
+                  d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bottom Section -->
+        <section class="bottom-section">
+          <!-- Recent Activity -->
+          <div class="activity-card">
+            <h2 class="section-title">Recent Activity</h2>
+            <div class="activity-list">
+              <div class="activity-item">
+                <div class="activity-icon green">
+                  <img
+                    src="../ASSETS/box-open.png"
+                    width="25px"
+                    height="25px"
+                  />
+                </div>
+                <div class="activity-content">
+                  <h4 class="activity-title">New product listed</h4>
+                  <p class="activity-description">
+                    Rajesh Kumar added Fresh Tomatoes
+                  </p>
+                  <p class="activity-time">2 hours ago</p>
+                </div>
+              </div>
+
+              <div class="activity-item">
+                <div class="activity-icon blue">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path
+                      d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="activity-content">
+                  <h4 class="activity-title">New order placed</h4>
+                  <p class="activity-description">
+                    Suresh Traders ordered 100kg Tomatoes
+                  </p>
+                  <p class="activity-time">3 hours ago</p>
+                </div>
+              </div>
+
+              <div class="activity-item">
+                <div class="activity-icon purple">
+                  <img src="../ASSETS/user.png" width="25px" height="25px" />
+                </div>
+                <div class="activity-content">
+                  <h4 class="activity-title">New vendor registered</h4>
+                  <p class="activity-description">
+                    Mumbai Fresh Mart joined the platform
+                  </p>
+                  <p class="activity-time">5 hours ago</p>
+                </div>
+              </div>
+
+              <div class="activity-item">
+                <div class="activity-icon orange">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="9 11 12 14 22 4"></polyline>
+                    <path
+                      d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="activity-content">
+                  <h4 class="activity-title">Order completed</h4>
+                  <p class="activity-description">
+                    Order #ORD002 delivered successfully
+                  </p>
+                  <p class="activity-time">6 hours ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- System Alerts -->
+          <div class="alerts-card">
+            <h2 class="section-title">System Alerts</h2>
+            <div class="alerts-list">
+              <div class="alert-item">
+                <div class="alert-icon orange">
+                  <img
+                    src="../ASSETS/low-stock.png"
+                    width="25px"
+                    height="25px"
+                  />
+                </div>
+                <div class="alert-content">
+                  <h4 class="alert-title">Low Stock Alert</h4>
+                  <p class="alert-description">
+                    3 products have low stock levels
+                  </p>
+                </div>
+              </div>
+
+              <div class="alert-item">
+                <div class="alert-icon yellow">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                </div>
+                <div class="alert-content">
+                  <h4 class="alert-title">Pending Approvals</h4>
+                  <p class="alert-description">
+                    2 new farmer registrations awaiting approval
+                  </p>
+                </div>
+              </div>
+
+              <div class="alert-item">
+                <div class="alert-icon blue">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                </div>
+                <div class="alert-content">
+                  <h4 class="alert-title">Payment Processing</h4>
+                  <p class="alert-description">
+                    1 pending payment needs review
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="wrapper">
+          <div class="performance-section">
+            <h2 class="heading-performance">Platform Performance</h2>
+
+            <div class="stats-container">
+              <!-- Platform Commission -->
+              <div class="stat-box">
+                <div class="number-display green-text">₹400</div>
+                <div class="stat-title">Platform Commission (5%)</div>
+                <div class="growth-indicator positive-trend">
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                    <polyline points="17 6 23 6 23 12"></polyline>
+                  </svg>
+                  <span>+12% from last month</span>
+                </div>
+              </div>
+
+              <!-- Order Success Rate -->
+              <div class="stat-box">
+                <div class="number-display blue-text">92%</div>
+                <div class="stat-title">Order Success Rate</div>
+                <div class="stat-description blue-badge">
+                  Excellent performance
+                </div>
+              </div>
+
+              <!-- Average Rating -->
+              <div class="stat-box">
+                <div class="number-display purple-text">4.7</div>
+                <div class="stat-title">Average Rating</div>
+                <div class="stat-description purple-badge">Platform wide</div>
+              </div>
+
+              <!-- Avg. Response Time -->
+              <div class="stat-box">
+                <div class="number-display orange-text">24h</div>
+                <div class="stat-title">Avg. Response Time</div>
+                <div class="stat-description orange-badge">Support tickets</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

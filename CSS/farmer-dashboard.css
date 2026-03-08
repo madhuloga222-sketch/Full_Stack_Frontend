@@ -124,7 +124,7 @@ a {
 
 .nav-item.active {
   background-color: #c8f4d9;
-  color: #059669;
+  color: #4caf50;
   font-weight: 500;
 }
 
@@ -185,7 +185,7 @@ a {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background-color: #10b981;
+  background-color: #4caf50;
   color: white;
   display: flex;
   align-items: center;
@@ -214,7 +214,7 @@ a {
   gap: 8px;
   padding: 8px 16px;
   background-color: #d1fae5;
-  color: #059669;
+  color: #4caf50;
   border-radius: 20px;
   font-size: 14px;
   font-weight: 500;
@@ -249,7 +249,7 @@ a {
 
 .edit-btn {
   padding: 10px 24px;
-  background-color: #10b981;
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 8px;
@@ -260,7 +260,7 @@ a {
 }
 
 .edit-btn:hover {
-  background-color: #059669;
+  background-color: #4caf50;
 }
 
 .detail-item {
@@ -325,7 +325,7 @@ a {
 }
 
 .stat-value.green {
-  color: #10b981;
+  color: #4caf50;
 }
 
 .stat-value.blue {

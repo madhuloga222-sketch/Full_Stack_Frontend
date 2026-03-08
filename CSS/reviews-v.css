@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: #e8efe0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Backdrop */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Modal */
+.modal {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+  animation: slideUp 0.3s ease;
+  position: relative;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+  font-size: 1.4rem;
+  line-height: 1;
+  transition: color 0.2s;
+}
+.close-btn:hover {
+  color: #333;
+}
+
+/* Title */
+h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 1.4rem;
+}
+
+/* Label */
+label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.45rem;
+}
+
+/* Select */
+.select-wrapper {
+  position: relative;
+  margin-bottom: 1.3rem;
+}
+.select-wrapper select {
+  width: 100%;
+  appearance: none;
+  background: #f4f4f4;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 2.5rem 0.8rem 1rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #999;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.2s;
+}
+.select-wrapper select:focus {
+  background: #ebebeb;
+}
+.select-wrapper::after {
+  content: "▾";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  pointer-events: none;
+}
+
+/* Star rating */
+.rating-group {
+  margin-bottom: 1.3rem;
+}
+.stars {
+  display: flex;
+  gap: 0.3rem;
+}
+.stars input[type="radio"] {
+  display: none;
+}
+.stars label {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ddd;
+  transition:
+    color 0.15s,
+    transform 0.15s;
+  margin: 0;
+}
+/* RTL trick for star hover */
+.stars {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.stars label:hover,
+.stars label:hover ~ label,
+.stars input:checked ~ label {
+  color: #f5c518;
+}
+.stars label:hover {
+  transform: scale(1.15);
+}
+
+/* Textarea */
+.review-group {
+  margin-bottom: 1.5rem;
+}
+textarea {
+  width: 100%;
+  background: #f4f4f4;
+  border: none;
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #333;
+  resize: none;
+  height: 110px;
+  outline: none;
+  transition: background 0.2s;
+}
+textarea::placeholder {
+  color: #bbb;
+}
+textarea:focus {
+  background: #ebebeb;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 100%;
+  background: #2da84e;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition:
+    background 0.2s,
+    transform 0.15s,
+    box-shadow 0.2s;
+  box-shadow: 0 4px 16px rgba(45, 168, 78, 0.35);
+}
+.submit-btn:hover {
+  background: #248f41;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(45, 168, 78, 0.4);
+}
+.submit-btn:active {
+  transform: translateY(0);
+}

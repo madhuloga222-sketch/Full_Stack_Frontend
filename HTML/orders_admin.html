@@ -1,28 +1,259 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ORDERS_ADMIN</title>
-    <link rel="stylesheet"  href="/CSS/orders_admin.css">
-    <link rel="stylesheet" href="/ASSETS/image.png">
-</head>
-<body>
-     <header class="top-header">
-        <div class="logo-section">
-            <div class="logo">
-                <a href="/INDEX.HTML"><img src="/ASSETS/image.png" width="60px" height="60px"></a>
-            </div>
-            <div class="logo-text">
-                <h1>AgriDirect</h1>
-            </div>
+    <link rel="stylesheet" href="/CSS/orders_admin.css" />
+    <link rel="stylesheet" href="/ASSETS/image.png" />
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="logo-section">
+        <div class="logo">
+          <a href="/INDEX.HTML"
+            ><img src="/ASSETS/image.png" width="60px" height="60px"
+          /></a>
         </div>
+        <div class="logo-text">
+          <h1>AgriDirect</h1>
+        </div>
+      </div>
 
-        <div class="user-section">
-            <a href="/INDEX.HTML" class="logout-btn"><span>Logout</span></a>
-          </div>
+      <div class="user-section">
+        <a href="/INDEX.HTML" class="logout-btn"><span>Logout</span></a>
+      </div>
     </header>
 
-    
-</body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <nav class="nav-menu">
+          <a href="#" class="nav-item">
+            <i class="fas fa-th-large"></i>
+            <span>Dashboard</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="fas fa-users"></i>
+            <span>User Management</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="fas fa-box"></i>
+            <span>Products</span>
+          </a>
+          <a href="#" class="nav-item active">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Orders</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="fas fa-chart-bar"></i>
+            <span>Analytics</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Header -->
+        <header class="page-header">
+          <div>
+            <h1>Order Management</h1>
+            <p class="subtitle">Monitor all platform orders</p>
+          </div>
+          <div class="filter-wrapper">
+            <select class="filter-select">
+              <option>All Orders</option>
+              <option>Pending</option>
+              <option>Confirmed</option>
+              <option>Shipped</option>
+              <option>Delivered</option>
+            </select>
+          </div>
+        </header>
+
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" style="color: #111827">3</div>
+            <div class="stat-label">Total</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" style="color: #f97316">1</div>
+            <div class="stat-label">Pending</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" style="color: #3b82f6">1</div>
+            <div class="stat-label">Confirmed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" style="color: #8b5cf6">1</div>
+            <div class="stat-label">Shipped</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" style="color: #10b981">0</div>
+            <div class="stat-label">Delivered</div>
+          </div>
+        </div>
+
+        <!-- Order Cards -->
+        <div class="order-list">
+          <!-- Order 1 -->
+          <div class="order-card">
+            <div class="order-header">
+              <div class="order-title-section">
+                <h3 class="order-title">Fresh Tomatoes</h3>
+                <span class="status-badge status-confirmed">CONFIRMED</span>
+              </div>
+              <div class="order-price-section">
+                <div class="order-price">₹3,000</div>
+                <div class="payment-status paid">Paid</div>
+              </div>
+            </div>
+            <div class="order-id">Order ID: ORD001</div>
+            <div class="order-details">
+              <div class="detail-item">
+                <i class="fas fa-user"></i>
+                <div class="detail-content">
+                  <div class="detail-label">Farmer</div>
+                  <div class="detail-value">Rajesh Kumar</div>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-store"></i>
+                <div class="detail-content">
+                  <div class="detail-label">Vendor</div>
+                  <div class="detail-value">Suresh Traders</div>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-weight"></i>
+                <div class="detail-content">
+                  <div class="detail-label">Quantity</div>
+                  <div class="detail-value">100 kg</div>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-calendar"></i>
+                <div class="detail-content">
+                  <div class="detail-label">Order Date</div>
+                  <div class="detail-value">28/01/2026</div>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-truck"></i>
+                <div class="detail-content">
+                  <div class="detail-label">Delivery</div>
+                  <div class="detail-value">01/02/2026</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Order 2 -->
+          <div class="order-card">
+            <div class="order-header">
+              <div class="order-title-section">
+                <h3 class="order-title">Organic Potatoes</h3>
+                <span class="status-badge status-shipped">SHIPPED</span>
+              </div>
+              <div class="order-price-section">
+                <div class="order-price">₹5,000</div>
+                <div class="payment-status paid">Paid</div>
+              </div>
+            </div>
+            <div class="order-id">Order ID: ORD002</div>
+            <div class="order-details">
+              <div class="detail-item">
+                <i class="fas fa-user"></i>
+                <div class="detail-content">
+                  <div class="detail-label">Farmer</div>
+                  <div class="detail-value">Rajesh Kumar</div>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-store"></i>
+                <div class="detail-content">
+                  <div class="detail-label">Vendor</div>
+                  <div class="detail-value">Suresh Traders</div>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-weight"></i>
+                <div class="detail-content">
+                  <div class="detail-label">Quantity</div>
+                  <div class="detail-value">200 kg</div>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-calendar"></i>
+                <div class="detail-content">
+                  <div class="detail-label">Order Date</div>
+                  <div class="detail-value">27/01/2026</div>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-truck"></i>
+                <div class="detail-content">
+                  <div class="detail-label">Delivery</div>
+                  <div class="detail-value">31/01/2026</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Order 3 -->
+          <div class="order-card">
+            <div class="order-header">
+              <div class="order-title-section">
+                <h3 class="order-title">Fresh Mangoes</h3>
+                <span class="status-badge status-pending">PENDING</span>
+              </div>
+              <div class="order-price-section">
+                <div class="order-price">₹4,000</div>
+                <div class="payment-status pending">Payment Pending</div>
+              </div>
+            </div>
+            <div class="order-id">Order ID: ORD003</div>
+            <div class="order-details">
+              <div class="detail-item">
+                <i class="fas fa-user"></i>
+                <div class="detail-content">
+                  <div class="detail-label">Farmer</div>
+                  <div class="detail-value">Lakshmi Farms</div>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-store"></i>
+                <div class="detail-content">
+                  <div class="detail-label">Vendor</div>
+                  <div class="detail-value">Suresh Traders</div>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-weight"></i>
+                <div class="detail-content">
+                  <div class="detail-label">Quantity</div>
+                  <div class="detail-value">50 kg</div>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-calendar"></i>
+                <div class="detail-content">
+                  <div class="detail-label">Order Date</div>
+                  <div class="detail-value">29/01/2026</div>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-truck"></i>
+                <div class="detail-content">
+                  <div class="detail-label">Delivery</div>
+                  <div class="detail-value">TBD</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

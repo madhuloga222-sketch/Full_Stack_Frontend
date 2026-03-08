@@ -80,88 +80,128 @@
 
       <!-- Main Content -->
       <main class="main-content">
-        <!-- Page Header -->
+      <!-- Orders Container -->
+      <div id="ordersContainer">
         <div class="page-header">
           <div class="page-title-section">
             <h1>Orders</h1>
             <p>Manage incoming orders from vendors</p>
           </div>
           <div class="filter-dropdown">
-            <button class="dropdown-btn">
-              All Orders
-              <svg
-                class="chevron"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-
-            <div class="dropdown-menu" id="dropdownMenu">
-              <div class="dropdown-item selected" data-value="all">
-                All Orders
-              </div>
-              <div class="dropdown-item" data-value="pending">
-                Pending Orders
-              </div>
-              <div class="dropdown-item" data-value="confirmed">
-                Confirmed Orders
-              </div>
-              <div class="dropdown-item" data-value="delivered">
-                Delivered Orders
-              </div>
-              <div class="dropdown-item" data-value="cancelled">
-                Cancelled Orders
-              </div>
+            <div class="select-wrapper">
+              <select class="add-dropdown">
+                <option value="all">All Orders</option>
+                <option value="pending">Pending Orders</option> 
+                <option value="confirmed">Confirmed Orders</option>
+                <option value="delivered">Delivered Orders</option>
+                <option value="cancelled">Cancelled Orders</option>
+              </select>
             </div>
           </div>
         </div>
 
         <!-- Stats Grid -->
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-number black">23</div>
-            <div class="stat-label">Total Orders</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number orange">12</div>
-            <div class="stat-label">Pending</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number blue">4</div>
-            <div class="stat-label">Confirmed</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number green">8</div>
-            <div class="stat-label">Delivered</div>
-          </div>
-        </div>
-
-        <!-- Orders Section -->
-        <div class="orders-section">
-          <div class="empty-state">
-            <div class="empty-icon">
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
-                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
-                />
-              </svg>
+          <!-- <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number black">23</div>
+              <div class="stat-label">Total Orders</div>
             </div>
-            <h2>No orders found</h2>
-            <p>You haven't received any orders yet</p>
+            <div class="stat-card">
+              <div class="stat-number orange">12</div>
+              <div class="stat-label">Pending</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number bl">4</div>
+              <div class="stat-label">Confirmed</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number grn">8</div>
+              <div class="stat-label">Delivered</div>
+            </div>
           </div>
-        </div>
+
+          Order 1
+          <div class="order-card">
+            <div class="top">
+              <div>
+                <h2>
+                  Fresh Tomatoes <span class="badge confirmed">CONFIRMED</span>
+                </h2>
+                <p class="order-id">Order ID: ORD001</p>
+              </div>
+              <div class="amount">
+                <h2>₹3,000</h2>
+                <span class="paid">Paid</span>
+              </div>
+            </div>
+
+            <div class="details">
+              <div>
+                <small>Vendor</small>
+                <p><strong>Suresh Traders</strong></p>
+              </div>
+
+              <div>
+                <small>Quantity</small>
+                <p><strong>100 kg</strong></p>
+              </div>
+
+              <div>
+                <small>Order Date</small>
+                <p><strong>28/01/2026</strong></p>
+              </div>
+
+              <div>
+                <small>Price/Unit</small>
+                <p><strong>₹30</strong></p>
+              </div>
+            </div>
+
+            <button class="btn blue">Mark as Shipped</button>
+          </div>
+
+          Order 2
+          <div class="order-card">
+            <div class="top">
+              <div>
+                <h2>
+                  Organic Potatoes <span class="badge shipped">SHIPPED</span>
+                </h2>
+                <p class="order-id">Order ID: ORD002</p>
+              </div>
+              <div class="amount">
+                <h2>₹5,000</h2>
+                <span class="paid">Paid</span>
+              </div>
+            </div>
+
+            <div class="details">
+              <div>
+                <small>Vendor</small>
+                <p><strong>Suresh Traders</strong></p>
+              </div>
+
+              <div>
+                <small>Quantity</small>
+                <p><strong>200 kg</strong></p>
+              </div>
+
+              <div>
+                <small>Order Date</small>
+                <p><strong>27/01/2026</strong></p>
+              </div>
+
+              <div>
+                <small>Price/Unit</small>
+                <p><strong>₹25</strong></p>
+              </div>
+            </div>
+
+            <button class="btn green">Mark as Delivered</button>
+          </div>
+        </div> -->
       </main>
     </div>
+    <script src="../JS/orders-f.js"></script>
   </body>
 </html>

@@ -63,8 +63,28 @@
         </nav>
       </aside>
 
-      <main class="product-container">
-        <div class="product-card">
+      <section class="main-content">
+      <div class="content-wrapper">
+      <div class="top-bar">
+        <div class="top-left">
+          <h1>My Products</h1>
+          <input type="search" id="searchInput" placeholder="Search" />
+          <button type="button" id="btnId">Search</button>
+        </div>
+
+        <!-- RIGHT -->
+        <!-- <div class="top-right">
+          <select class="add-dropdown">
+            <option value="filter">Filter</option>
+            <option value="veg">Vegetable</option>
+            <option value="fruit">Fruit</option>
+            <option value="grain">Grain</option>
+          </select>
+        </div> -->
+      </div>
+
+      <main class="product-container" id="productContainer">
+        <!-- <div class="product-card">
           <div class="image">
             <img src="../ASSETS/fs1.jpg" alt="Tomato" />
             <span class="tag premium">Fresh</span>
@@ -362,8 +382,10 @@
               >
             </div>
           </div>
-        </div>
+        </div> -->
       </main>
+     </section>
     </div>
+    <script src="../JS/products-v.js"></script>
   </body>
 </html>

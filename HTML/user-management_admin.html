@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin-User-management</title>
+    <link rel="stylesheet" href="../CSS/user-management_admin.css" />
+    <link rel="icon" href="../ASSETS/image.png" />
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="logo-section">
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../ASSETS/image.png" width="60px" height="60px"
+          /></a>
+        </div>
+        <div class="logo-text">
+          <h1>AgriDirect</h1>
+        </div>
+      </div>
+
+      <div class="user-section">
+        <a href="../index.html" class="logout-btn"><span>Logout</span></a>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <nav class="nav-menu">
+          <a href="../HTML/admin_dashboard.html" class="nav-item">
+            <i class="fas fa-th-large"></i>
+            <span>Dashboard</span>
+          </a>
+          <a href="../HTML/user-management_admin.html" class="nav-item active">
+            <i class="fas fa-users"></i>
+            <span>User Management</span>
+          </a>
+          <a href="../HTML/products_admin.html" class="nav-item">
+            <i class="fas fa-box"></i>
+            <span>Products</span>
+          </a>
+          <a href="../HTML/orders_admin.html" class="nav-item">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Orders</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="fas fa-chart-bar"></i>
+            <span>Analytics</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Header -->
+        <header class="page-header">
+          <div>
+            <h1>User Management</h1>
+            <p class="subtitle">Manage farmers and vendors on your platform</p>
+          </div>
+        </header>
+
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" style="color: #3b82f6">3</div>
+            <div class="stat-label">Total Users</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" style="color: #10b981">2</div>
+            <div class="stat-label">Farmers</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" style="color: #8b5cf6">1</div>
+            <div class="stat-label">Vendors</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" style="color: #f97316">3</div>
+            <div class="stat-label">Active</div>
+          </div>
+        </div>
+
+        <!-- Search and Filter -->
+        <div class="search-bar">
+          <div class="search-input-wrapper">
+            <i class="fas fa-search"></i>
+            <input
+              type="text"
+              placeholder="Search users..."
+              class="search-input"
+            />
+          </div>
+          <div class="filter-wrapper">
+            <i class="fas fa-filter"></i>
+            <select class="filter-select">
+              <option>All Users</option>
+              <option>Farmers</option>
+              <option>Vendors</option>
+              <option>Active</option>
+              <option>Inactive</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- User Cards -->
+        <div class="user-list">
+          <!-- User 1 -->
+          <div class="user-card">
+            <div class="user-info">
+              <div class="user-avatar" style="background-color: #10b981">R</div>
+              <div class="user-details">
+                <div class="user-header">
+                  <h3 class="user-name">Rajesh Kumar</h3>
+                  <span class="badge badge-dark">farmer</span>
+                  <span class="badge badge-success">active</span>
+                </div>
+                <div class="user-contact">
+                  <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>farmer@test.com</span>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 98765 43210</span>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Punjab, India</span>
+                  </div>
+                </div>
+                <div class="user-meta">
+                  <span>Joined: 15/10/2025</span>
+                  <span>Products: 6</span>
+                </div>
+              </div>
+            </div>
+            <button class="deactivate-btn">
+              <i class="fas fa-times-circle"></i>
+              Deactivate
+            </button>
+          </div>
+
+          <!-- User 2 -->
+          <div class="user-card">
+            <div class="user-info">
+              <div class="user-avatar" style="background-color: #10b981">S</div>
+              <div class="user-details">
+                <div class="user-header">
+                  <h3 class="user-name">Suresh Traders</h3>
+                  <span class="badge badge-light">vendor</span>
+                  <span class="badge badge-success">active</span>
+                </div>
+                <div class="user-contact">
+                  <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>vendor@test.com</span>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 98765 43211</span>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Mumbai, India</span>
+                  </div>
+                </div>
+                <div class="user-meta">
+                  <span>Joined: 20/11/2025</span>
+                  <span>Orders: 3</span>
+                </div>
+              </div>
+            </div>
+            <button class="deactivate-btn">
+              <i class="fas fa-times-circle"></i>
+              Deactivate
+            </button>
+          </div>
+
+          <!-- User 3 -->
+          <div class="user-card">
+            <div class="user-info">
+              <div class="user-avatar" style="background-color: #10b981">L</div>
+              <div class="user-details">
+                <div class="user-header">
+                  <h3 class="user-name">Lakshmi Farms</h3>
+                  <span class="badge badge-dark">farmer</span>
+                  <span class="badge badge-success">active</span>
+                </div>
+                <div class="user-contact">
+                  <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>lakshmi@farms.com</span>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 98765 43212</span>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Maharashtra, India</span>
+                  </div>
+                </div>
+                <div class="user-meta">
+                  <span>Joined: 10/09/2025</span>
+                  <span>Products: 4</span>
+                </div>
+              </div>
+            </div>
+            <button class="deactivate-btn">
+              <i class="fas fa-times-circle"></i>
+              Deactivate
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
