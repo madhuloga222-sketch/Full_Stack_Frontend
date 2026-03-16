@@ -1,55 +1,113 @@
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", async function () {
   const params = new URLSearchParams(window.location.search);
-  const id = params.get("id");
+  const productId = params.get("id");
+  const token = localStorage.getItem("token");
 
-  console.log("Product ID:", id);
+  const BASE_URL = "https://full-stack-backend-omega.vercel.app";
+  try {
+    const response = await fetch(
+      `${BASE_URL}/products/products/${productId}`,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      },
+    );
+// https://full-stack-backend-omega.vercel.app/products/products/
 
-  if (!id) {
-    alert("No product selected!");
-    return;
-  }
+    const product = await response.json();
+    console.log(" Product loaded:", product);
 
-  fetch(`http://127.0.0.1:8000/products/products/${id}/`)
-    .then((res) => res.json())
-    .then((product) => {
-      console.log("Product data:", product);
+    setValue("productName", product.name);
+    setValue("category", product.category);
+    setValue("quantity", product.quantity_kg);
+    setValue("price", product.price_per_kg);
+    setValue("market-price", product.market_price_per_kg);
+    setValue("image_url", product.image_url);
+    setValue("description", product.description);
 
-      document.getElementById("productName").value = product.name;
-      document.getElementById("category").value =
-        product.category.toLowerCase();
-      document.getElementById("quantity").value = product.quantity_kg;
-      document.getElementById("price").value = product.price_per_kg;
-      document.getElementById("market-price").value =
-        product.market_price_per_kg;
-      document.getElementById("quality").value =
-        product.quality_grade.toLowerCase();
-      document.getElementById("image_url").value = product.image_url;
-    })
-    .catch((err) => console.log("Fetch error:", err));
+    const rawGrade = (product.quality_grade || "").toLowerCase().trim();
 
-  document.querySelector(".btn-save").addEventListener("click", function (e) {
-    e.preventDefault();
-
-    const updatedData = {
-      name: document.getElementById("productName").value,
-      category: document.getElementById("category").value,
-      quantity_kg: document.getElementById("quantity").value,
-      price_per_kg: document.getElementById("price").value,
-      market_price_per_kg: document.getElementById("market-price").value,
-      quality_grade: document.getElementById("quality").value,
-      image_url: document.getElementById("image_url").value,
+    const gradeMap = {
+      premium: "high",
+      "grade-a": "high",
+      "grade-b": "medium",
+      "grade-c": "standard",
+      high: "high",
+      medium: "medium",
+      standard: "standard",
     };
 
-    fetch(`http://127.0.0.1:8000/products/products/${id}/`, {
-      method: "PUT",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(updatedData),
-    })
-      .then((res) => res.json())
-      .then(() => {
-        alert("Product updated successfully!");
-        window.location.href = "../HTML/products-f.html";
-      })
-      .catch((err) => console.log("Update error:", err));
-  });
-};
+    const normalizedGrade = gradeMap[rawGrade] || rawGrade;
+    setValue("quality", normalizedGrade);
+  } catch (err) {
+    console.error(" Load error:", err);
+    alert("Failed to load product details.");
+  }
+
+  document
+    .getElementById("productFormEdit")
+    .addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const token = localStorage.getItem("token");
+      const farmerId = parseInt(localStorage.getItem("farmer_id")) || 1;
+
+      const qualityValue = document.getElementById("quality").value;
+
+      if (!qualityValue) {
+        alert("Please select a quality grade.");
+        return;
+      }
+
+      const updatedData = {
+        name: document.getElementById("productName").value,
+        category: document.getElementById("category").value,
+        quantity_kg: parseFloat(document.getElementById("quantity").value),
+        price_per_kg: parseFloat(document.getElementById("price").value),
+        market_price_per_kg: parseFloat(
+          document.getElementById("market-price").value,
+        ),
+        image_url: document.getElementById("image_url").value,
+        quality_grade: qualityValue,
+        farmer_id: farmerId,
+      };
+
+      console.log(" Saving:", updatedData);
+
+      try {
+        const res = await fetch(
+          `${BASE_URL}/products/products/${productId}`,
+          {
+            method: "PUT",
+            headers: {
+              Authorization: `Bearer ${token}`,
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(updatedData),
+          },
+        );
+
+        // https://full-stack-backend-omega.vercel.app/products/products/
+
+        if (res.ok) {
+          alert(" Product updated successfully!");
+          window.location.href = "../HTML/products-f.html";
+        } else {
+          const err = await res.json();
+          console.error(" Update failed:", err);
+          alert("Update failed: " + (err.detail || "Unknown error"));
+        }
+      } catch (err) {
+        console.error(" Error:", err);
+        alert("Something went wrong. Please try again.");
+      }
+    });
+});
+
+function setValue(id, value) {
+  const el = document.getElementById(id);
+  if (el && value !== undefined && value !== null) {
+    el.value = value;
+  }
+}

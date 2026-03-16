@@ -19,8 +19,6 @@ header {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-
-  /* Sticky navbar */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -89,7 +87,6 @@ a {
   min-height: 100vh;
 }
 
-/* Sticky Sidebar */
 .sidebar {
   width: 280px;
   background-color: #ffffff;
@@ -139,7 +136,6 @@ a {
   margin-right: 12px;
 }
 
-/* Main Content */
 .main-content {
   flex: 1;
   padding: 40px;
@@ -160,7 +156,6 @@ a {
   font-size: 16px;
 }
 
-/* Stats Grid */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -217,7 +212,6 @@ a {
   background-color: #fef3c7;
 }
 
-/* Quick Actions */
 .quick-actions {
   background: white;
   padding: 30px;
@@ -347,7 +341,6 @@ hr {
   gap: 20px;
 }
 
-/* Products */
 .product {
   display: flex;
   align-items: center;
@@ -374,7 +367,6 @@ hr {
   font-weight: bold;
 }
 
-/* Insights */
 .insight {
   display: flex;
   align-items: center;

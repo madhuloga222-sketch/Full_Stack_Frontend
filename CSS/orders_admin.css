@@ -69,7 +69,6 @@ body {
   min-height: 100vh;
 }
 
-/* Sidebar Styles */
 .sidebar {
   width: 280px;
   background-color: #ffffff;
@@ -113,14 +112,12 @@ body {
   text-align: center;
 }
 
-/* Main Content */
 .main-content {
   flex: 1;
   padding: 40px 48px;
   overflow-y: auto;
 }
 
-/* Page Header */
 .page-header {
   display: flex;
   justify-content: space-between;
@@ -160,7 +157,6 @@ body {
   font-weight: 500;
 }
 
-/* Stats Grid */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -187,7 +183,6 @@ body {
   font-weight: 500;
 }
 
-/* Order List */
 .order-list {
   display: flex;
   flex-direction: column;

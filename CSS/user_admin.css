@@ -137,7 +137,6 @@ body {
   margin-top: 6px;
 }
 
-/* BUTTONS */
 .btn-primary {
   background: #18a558;
   color: #fff;
@@ -164,7 +163,6 @@ body {
   border-radius: 10px;
 }
 
-/* SEARCH */
 .search-box {
   width: 100%;
   margin: 20px 0;
@@ -174,7 +172,6 @@ body {
   outline: none;
 }
 
-/* USER CARD */
 .user-card {
   display: flex;
   justify-content: space-between;
@@ -200,7 +197,6 @@ body {
   margin-right: 15px;
 }
 
-/* BADGES */
 .badge {
   padding: 4px 10px;
   font-size: 12px;
@@ -223,7 +219,6 @@ body {
   color: #fff;
 }
 
-/* RIGHT */
 .user-right {
   text-align: right;
 }

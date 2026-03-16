@@ -9,11 +9,9 @@ body {
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
     Cantarell, sans-serif;
   background-color: #f5f5f5;
-  /* padding: 40px ; */
   margin: 0;
 }
 
-/* Header Navigation */
 header {
   background: white;
   padding: 1rem 5%;
@@ -65,7 +63,6 @@ nav a:hover {
 }
 
 .btn-login {
-  /* background: #4caf50; */
   color: #4caf50;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
@@ -78,13 +75,11 @@ nav a:hover {
   background: #16a34a;
 }
 
-/* Layout */
 .layout {
   display: flex;
   min-height: 100vh;
 }
 
-/* Sidebar */
 .sidebar {
   width: 320px;
   background: #ffffff;
@@ -126,7 +121,6 @@ a {
   fill: #0a9f4e;
 }
 
-/* Main Content */
 .content {
   flex: 1;
   padding: 30px 40px;
@@ -138,7 +132,6 @@ a {
   margin-bottom: 24px;
 }
 
-/* Cards */
 .card {
   background: #ffffff;
   border-radius: 16px;
@@ -152,7 +145,6 @@ a {
   margin-bottom: 24px;
 }
 
-/* Profile Card */
 .profile-card {
   width: 260px;
   text-align: center;
@@ -181,7 +173,6 @@ a {
   font-size: 14px;
 }
 
-/* Details */
 .details-card {
   flex: 1;
 }
@@ -212,7 +203,6 @@ a {
   background: #f2f2f2;
 }
 
-/* Buttons */
 .btn {
   padding: 8px 16px;
   border-radius: 10px;
@@ -230,7 +220,6 @@ a {
   color: #fff;
 }
 
-/* Stats */
 .stats {
   display: flex;
   justify-content: space-between;

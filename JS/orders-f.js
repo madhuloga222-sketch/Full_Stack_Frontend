@@ -1,233 +1,123 @@
-// const orders = [
-//   {
-//     product: "Tomatoes",
-//     status: "confirmed",
-//     orderId: "ORD001",
-//     amount: 3000,
-//     payment: "Paid",
-//     vendor: "Suresh Traders",
-//     quantity: 100,
-//     date: "28/01/2026",
-//     price: 30,
-//   },
-//   {
-//     product: "Potatoes",
-//     status: "shipped",
-//     orderId: "ORD002",
-//     amount: 5000,
-//     payment: "Paid",
-//     vendor: "Suresh Traders",
-//     quantity: 200,
-//     date: "27/01/2026",
-//     price: 25,
-//   }
-// ];
-
-// const container = document.getElementById("ordersContainer");
-
-// orders.forEach((order) => {
-
-//   const card = document.createElement("div");
-//   card.className = "order-card";
-
-//   // TOP SECTION
-//   const top = document.createElement("div");
-//   top.className = "top";
-
-//   const left = document.createElement("div");
-
-//   const title = document.createElement("h2");
-
-//   const badge = document.createElement("span");
-//   badge.className = "badge " + order.status;
-//   badge.innerText = order.status.toUpperCase();
-
-//   title.append(order.product + " ");
-//   title.appendChild(badge);
-
-//   const orderId = document.createElement("p");
-//   orderId.className = "order-id";
-//   orderId.innerText = "Order ID: " + order.orderId;
-
-//   left.appendChild(title);
-//   left.appendChild(orderId);
-
-//   const amountDiv = document.createElement("div");
-//   amountDiv.className = "amount";
-
-//   const amount = document.createElement("h2");
-//   amount.innerText = "₹" + order.amount.toLocaleString();
-
-//   const payment = document.createElement("span");
-//   payment.className = "paid";
-//   payment.innerText = order.payment;
-
-//   amountDiv.appendChild(amount);
-//   amountDiv.appendChild(payment);
-
-//   top.appendChild(left);
-//   top.appendChild(amountDiv);
-
-//   // DETAILS SECTION
-//   const details = document.createElement("div");
-//   details.className = "details";
-
-//   details.innerHTML = `
-//     <div>
-//       <small>Vendor</small>
-//       <p><strong>${order.vendor}</strong></p>
-//     </div>
-//     <div>
-//       <small>Quantity</small>
-//       <p><strong>${order.quantity} kg</strong></p>
-//     </div>
-//     <div>
-//       <small>Order Date</small>
-//       <p><strong>${order.date}</strong></p>
-//     </div>
-//     <div>
-//       <small>Price/Unit</small>
-//       <p><strong>₹${order.price}</strong></p>
-//     </div>
-//   `;
-
-//   // BUTTON
-//   const button = document.createElement("button");
-
-//   if (order.status === "confirmed") {
-//     button.className = "btn blue";
-//     button.innerText = "Mark as Shipped";
-//   } else if (order.status === "shipped") {
-//     button.className = "btn green";
-//     button.innerText = "Mark as Delivered";
-//   } else {
-//     button.className = "btn";
-//     button.innerText = "View Details";
-//   }
-
-//   // APPEND EVERYTHING
-//   card.appendChild(top);
-//   card.appendChild(details);
-//   card.appendChild(button);
-
-//   container.appendChild(card);
-
-// });
-
 document.addEventListener("DOMContentLoaded", loadOrders);
 
-const BASE_URL = "http://127.0.0.1:8000";
+const BASE_URL = "https://full-stack-backend-omega.vercel.app";
 
 async function loadOrders() {
   const container = document.getElementById("ordersContainer");
 
   if (!container) {
-    console.error("ordersContainer not found in HTML");
+    console.error("ordersContainer not found");
     return;
   }
 
   try {
-    const response = await fetch(`${BASE_URL}/orders/orders`);
-
-    if (!response.ok) {
-      throw new Error("Failed to fetch orders");
-    }
+    const response = await fetch(`${BASE_URL}/orders/orders/`);
+    if (!response.ok) throw new Error("Failed to fetch orders");
 
     const orders = await response.json();
+    console.log("All orders:", orders);
+
+    const farmerOrders = orders;
 
     container.innerHTML = "";
 
-    if (orders.length === 0) {
-      container.innerHTML = "<p>No orders available</p>";
+    if (farmerOrders.length === 0) {
+      container.innerHTML = "<p style='padding:20px'>No orders yet</p>";
       return;
     }
 
-    orders.forEach((order) => {
-      const card = document.createElement("div");
-      card.className = "order-card";
-
-      // TOP SECTION
-      const top = document.createElement("div");
-      top.className = "top";
-
-      const left = document.createElement("div");
-
-      const title = document.createElement("h2");
-      title.textContent = order.product_name;
-
-      const badge = document.createElement("span");
-      badge.className = "badge " + order.status;
-      badge.textContent = order.status.toUpperCase();
-
-      title.appendChild(badge);
-
-      const orderId = document.createElement("p");
-      orderId.className = "order-id";
-      orderId.textContent = "Order ID: " + order.id;
-
-      left.appendChild(title);
-      left.appendChild(orderId);
-
-      const amountDiv = document.createElement("div");
-      amountDiv.className = "amount";
-
-      const amount = document.createElement("h2");
-      amount.textContent = "₹" + order.total_amount;
-
-      const payment = document.createElement("span");
-      payment.className = "paid";
-      payment.textContent = "Paid";
-
-      amountDiv.appendChild(amount);
-      amountDiv.appendChild(payment);
-
-      top.appendChild(left);
-      top.appendChild(amountDiv);
-
-      // DETAILS
-      const details = document.createElement("div");
-      details.className = "details";
-
-      details.innerHTML = `
-        <div>
-          <small>Vendor</small>
-          <p><strong>${order.vendor_name}</strong></p>
-        </div>
-
-        <div>
-          <small>Quantity</small>
-          <p><strong>${order.quantity} kg</strong></p>
-        </div>
-
-        <div>
-          <small>Price</small>
-          <p><strong>₹${order.price}</strong></p>
-        </div>
-      `;
-
-      // BUTTON
-      const button = document.createElement("button");
-
-      if (order.status === "confirmed") {
-        button.className = "btn blue";
-        button.textContent = "Mark as Shipped";
-      } else if (order.status === "shipped") {
-        button.className = "btn green";
-        button.textContent = "Mark as Delivered";
-      } else {
-        button.className = "btn";
-        button.textContent = "View Details";
-      }
-
-      // APPEND
-      card.appendChild(top);
-      card.appendChild(details);
-      card.appendChild(button);
-
-      container.appendChild(card);
-    });
+    farmerOrders.forEach((order) => renderOrder(order, container));
   } catch (error) {
     console.error("Error loading orders:", error);
     container.innerHTML = "<p>Failed to load orders</p>";
+  }
+}
+
+function getBadgeClass(status) {
+  if (status === "confirmed" || status === "comformed") return "confirmed";
+  if (status === "shipped") return "shipped";
+  if (status === "delivered") return "delivered";
+  if (status === "pending") return "pending";
+  return "";
+}
+
+function renderOrder(order, container) {
+  const card = document.createElement("div");
+  card.className = "order-card";
+  card.id = `order-${order.id}`;
+
+  const badgeClass = getBadgeClass(order.status);
+
+  card.innerHTML = `
+    <div class="top">
+      <div>
+        <h2>Order #${String(order.id).padStart(4, "0")}
+          <span class="badge ${badgeClass}">${order.status.toUpperCase()}</span>
+        </h2>
+        <p class="order-id">Order ID: ${String(order.id).padStart(4, "0")}</p>
+      </div>
+      <div class="amount">
+        <h2>₹${order.total_price}</h2>
+        <span class="paid">Paid</span>
+      </div>
+    </div>
+
+    <div class="details">
+      <div>
+        <small>Vendor Name</small>
+        <p><strong>${order.vendor_name || "N/A"}</strong></p>
+      </div>
+      <div>
+        <small>Farmer ID</small>
+        <p><strong>${order.farmer_id}</strong></p>
+      </div>
+      <div>
+        <small>Total Price</small>
+        <p><strong>₹${order.total_price}</strong></p>
+      </div>
+      <div>
+        <small>Status</small>
+        <p><strong>${order.status}</strong></p>
+      </div>
+    </div>
+
+    ${getButton(order.status, order.id)}
+  `;
+
+  container.appendChild(card);
+}
+
+function getButton(status, orderId) {
+  if (status === "pending") {
+    return `<button class="btn blue" onclick="updateStatus(${orderId}, 'confirmed')">Mark as Confirmed</button>`;
+  } else if (status === "confirmed" || status === "comformed") {
+    return `<button class="btn blue" onclick="updateStatus(${orderId}, 'shipped')">Mark as Shipped</button>`;
+  } else if (status === "shipped") {
+    return `<button class="btn green" onclick="updateStatus(${orderId}, 'delivered')">Mark as Delivered</button>`;
+  } else {
+    return `<button class="btn" style="background:#999" disabled>Delivered</button>`;
+  }
+}
+
+async function updateStatus(orderId, newStatus) {
+  try {
+    const res = await fetch(`${BASE_URL}/orders/orders/${orderId}/status`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ status: newStatus }),
+    });
+
+    if (res.ok) {
+      alert(`Order marked as ${newStatus}!`);
+      loadOrders();
+    } else {
+      const err = await res.json();
+      console.error("Update failed:", err);
+      alert("Status update failed!");
+    }
+  } catch (err) {
+    console.error("Error:", err);
   }
 }

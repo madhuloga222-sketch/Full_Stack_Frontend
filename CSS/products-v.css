@@ -26,7 +26,6 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  /* gap: 0.5rem; */
   gap: 12px;
 }
 
@@ -86,9 +85,7 @@ a {
   min-height: 100vh;
 }
 
-/* Sticky Sidebar */
 .sidebar {
-  /* width: 450px; */
   width: 20vw;
   background-color: #ffffff;
   padding: 20px;
@@ -185,14 +182,6 @@ a {
   margin-top: 10px;
 }
 
-/* .product-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  justify-content: center;
-  margin-top: 10px;
-} */
-
 .top-bar {
   display: flex;
   justify-content: space-between;
@@ -206,14 +195,12 @@ a {
   margin-left: 115px;
 }
 
-/* Search container */
 .search-box {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-/* Search Input */
 #searchInput {
   padding: 10px 15px;
   width: 875px;
@@ -221,11 +208,9 @@ a {
   border: 1px solid #ccc;
   outline: none;
   font-size: 14px;
-  /* margin-left: 5px; */
   margin-left: 115px;
 }
 
-/* Search Button */
 #btnId {
   padding: 10px 18px;
   background-color: #4caf50;

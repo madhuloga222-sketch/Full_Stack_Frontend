@@ -102,7 +102,6 @@ body {
   min-height: 100vh;
 }
 
-/* Sticky Sidebar */
 .sidebar {
   width: 280px;
   background-color: #ffffff;
@@ -158,14 +157,12 @@ body {
   margin-right: 12px;
 }
 
-/* Main Content */
 .main-content {
   margin-left: 30px;
   flex: 1;
   padding: 40px;
 }
 
-/* Page Header */
 .page-header {
   margin-bottom: 32px;
 }
@@ -182,7 +179,6 @@ body {
   font-size: 16px;
 }
 
-/* Top Cards Grid */
 .top-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -190,7 +186,6 @@ body {
   margin-bottom: 32px;
 }
 
-/* Overall Rating Card */
 .rating-card {
   background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
   border: 2px solid #fcd34d;
@@ -223,7 +218,6 @@ body {
   color: #666;
 }
 
-/* Rating Breakdown Card */
 .breakdown-card {
   background: white;
   border-radius: 16px;
@@ -287,7 +281,6 @@ body {
   color: #666;
 }
 
-/* All Reviews Section */
 .reviews-section {
   background: white;
   border-radius: 16px;
@@ -374,7 +367,6 @@ body {
   padding-left: 64px;
 }
 
-/* Empty State */
 .empty-state {
   text-align: center;
   padding: 60px 20px;

@@ -9,7 +9,6 @@ body {
     Ubuntu, Cantarell, sans-serif;
 }
 
-/* Header Navigation */
 header {
   background: white;
   padding: 1rem 5%;
@@ -530,7 +529,6 @@ nav a:hover {
   line-height: 1.6;
 }
 
-/* Footer Section */
 .footer {
   background-color: #ffffff;
   padding: 60px 20px 30px;

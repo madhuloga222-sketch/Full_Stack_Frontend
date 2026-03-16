@@ -9,7 +9,6 @@ body {
   color: #333;
 }
 
-/* Header Navigation */
 header {
   background: white;
   padding: 1rem 5%;
@@ -76,7 +75,6 @@ nav a:hover {
   background: #16a34a;
 }
 
-/* Hero Section */
 .hero-section {
   background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
   color: white;
@@ -98,7 +96,6 @@ nav a:hover {
   margin: 0 auto;
 }
 
-/* Story Section */
 .story-section {
   padding: 100px 5%;
   display: grid;
@@ -134,7 +131,6 @@ nav a:hover {
   object-fit: cover;
 }
 
-/* Mission & Vision Section */
 .mission-vision-section {
   background: linear-gradient(to bottom, #f0fdf4, #dcfce7);
   padding: 100px 5%;
@@ -185,7 +181,6 @@ nav a:hover {
   color: #16a34a;
 }
 
-/* Core Values Section */
 .core-values-section {
   background: white;
   padding: 100px 5%;
@@ -241,7 +236,6 @@ nav a:hover {
   color: #16a34a;
 }
 
-/* Impact Section */
 .impact-section {
   background: linear-gradient(to bottom, #f0fdf4, #dcfce7);
   padding: 100px 5%;
@@ -297,7 +291,6 @@ nav a:hover {
   color: #16a34a;
 }
 
-/* Footer Section */
 .footer {
   background-color: #ffffff;
   padding: 60px 20px 30px;

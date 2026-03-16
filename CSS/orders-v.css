@@ -18,8 +18,6 @@ body {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-  /* Sticky navbar */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -42,8 +40,6 @@ body {
 }
 
 .brand h1 {
-  /* display: flex;
-    flex-direction: column; */
   font-size: 22px;
   color: #4caf50;
   font-weight: 700;
@@ -119,7 +115,6 @@ a {
   min-height: 100vh;
 }
 
-/* Sticky Sidebar */
 .sidebar {
   width: 280px;
   background-color: #ffffff;
@@ -169,13 +164,11 @@ a {
   margin-right: 12px;
 }
 
-/* Main Area */
 .content-area {
   flex: 1;
   padding: 25px;
 }
 
-/* Header */
 .page-header {
   display: flex;
   justify-content: space-between;
@@ -191,7 +184,6 @@ a {
   bottom: 3px solid black;
 }
 
-/* Stats */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -230,7 +222,6 @@ a {
   color:#059669;
 }
 
-/* Orders */
 .orders-stack {
   display: flex;
   flex-direction: column;
@@ -285,7 +276,6 @@ a {
   gap: 10px;
 }
 
-/* Progress line */
 .progress-line {
   display: flex;
   justify-content: space-between;

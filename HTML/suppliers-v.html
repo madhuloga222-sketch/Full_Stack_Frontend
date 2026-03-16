@@ -3,38 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AgriDirect - Vendor Dashboard</title>
+    <title>AgriDirect - Reviews</title>
     <link rel="stylesheet" href="../CSS/suppliers-v.css" />
     <link rel="icon" href="../ASSETS/image.png" />
   </head>
-
   <body>
-    <!-- HEADER -->
     <header class="header">
       <div class="logo-section">
-        <div class="logo">
-          <a href="../index.html">
-            <img src="../ASSETS/image.png" width="60" height="60" />
-          </a>
+        <div class="logo-icon">
+          <img src="../ASSETS/image.png" width="60px" height="60px" />
         </div>
-        <div class="logo-text">
-          <h1>AgriDirect</h1>
-        </div>
+        <div class="logo-text"><h1>AgriDirect</h1></div>
       </div>
-
       <div class="user-section">
-        <a href="vendor-dashboard.html">
-          <div class="avatar">V</div>
-        </a>
+        <div class="avatar">S</div>
         <a href="../index.html" class="logout-btn">Logout</a>
       </div>
     </header>
 
-    <!-- Sidebar -->
     <aside class="dashboard-sidebar">
       <nav class="dashboard-sidebar__nav">
         <a href="../HTML/vendor_md.html" class="dashboard-sidebar__nav-item">
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+          >
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -42,36 +38,34 @@
               d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
             />
           </svg>
-          <span>Dashboard</span>
+          Dashboard
         </a>
         <a href="../HTML/products-v.html" class="dashboard-sidebar__nav-item">
           <img src="../ASSETS/box-open.png" width="22px" height="22px" />
-          <span>Browse Products</span>
+          Browse Products
         </a>
         <a href="../HTML/orders-v.html" class="dashboard-sidebar__nav-item">
           <img src="../ASSETS/cart.png1.png" width="22px" height="22px" />
-          <span>My Orders</span>
+          My Orders
         </a>
         <a
           href="../HTML/suppliers-v.html"
           class="dashboard-sidebar__nav-item dashboard-sidebar__nav-item--active"
         >
           <img src="../ASSETS/feedback.png" width="22px" height="22px" />
-          <span>Write Reviews</span>
+          Write Reviews
         </a>
         <a
           href="../HTML/vendor-dashboard.html"
           class="dashboard-sidebar__nav-item"
         >
           <img src="../ASSETS/user.png" width="22px" height="22px" />
-          <span>Profile</span>
+          Profile
         </a>
       </nav>
     </aside>
 
-    <!-- Main Content -->
     <main class="reviews-main-content">
-      <!-- Page Header -->
       <div class="reviews-page-header">
         <div class="reviews-page-header__title-section">
           <h1>Reviews</h1>
@@ -79,65 +73,151 @@
             Rate your experience with farmers
           </p>
         </div>
-        <button class="reviews-page-header__write-btn">
-          <span class="reviews-page-header__write-btn-icon">+</span>
-          <a href="../HTML/reviews-v.html"><span>Write Review</span></a>
+        <button class="reviews-page-header__write-btn" onclick="openModal()">
+          + Write Review
         </button>
       </div>
 
-      <!-- Reviews Container -->
       <div class="reviews-container">
         <h2 class="reviews-container__title">My Reviews</h2>
-
-        <div class="reviews-list">
-          <!-- Review Item 1 -->
-          <div class="review-item-card">
+        <div class="reviews-list" id="reviewsList">
+          <div class="review-item-card" id="card-1">
             <div class="review-item-card__avatar">R</div>
             <div class="review-item-card__content">
               <div class="review-item-card__header">
-                <h3 class="review-item-card__reviewer-name">Rajesh Kumar</h3>
+                <h3 class="review-item-card__reviewer-name">ragul</h3>
+                <button class="delete-btn" onclick="deleteCard('card-1')">
+                  <img src="../ASSETS/Delete.png" width="20px" height="20px" />
+                </button>
               </div>
               <div class="review-item-card__rating-section">
                 <div class="review-item-card__stars">
                   <span class="review-item-card__star">⭐</span>
                   <span class="review-item-card__star">⭐</span>
-                  <span class="review-item-card__star">⭐</span>
-                  <span class="review-item-card__star">⭐</span>
-                  <span class="review-item-card__star">⭐</span>
+                  <span class="review-item-card__star" style="opacity: 0.3"
+                    >⭐</span
+                  >
+                  <span class="review-item-card__star" style="opacity: 0.3"
+                    >⭐</span
+                  >
+                  <span class="review-item-card__star" style="opacity: 0.3"
+                    >⭐</span
+                  >
                 </div>
-                <span class="review-item-card__date">25 Jan 2026</span>
               </div>
-              <p class="review-item-card__text">
-                Excellent quality produce! Always fresh and delivered on time.
-                Highly recommended!
-              </p>
+              <p class="review-item-card__text">good</p>
             </div>
           </div>
 
-          <!-- Review Item 2 -->
-          <div class="review-item-card">
-            <div class="review-item-card__avatar">L</div>
+          <div class="review-item-card" id="card-2">
+            <div class="review-item-card__avatar">R</div>
             <div class="review-item-card__content">
               <div class="review-item-card__header">
-                <h3 class="review-item-card__reviewer-name">Lakshmi Farms</h3>
+                <h3 class="review-item-card__reviewer-name">ragul</h3>
+                <button class="delete-btn" onclick="deleteCard('card-2')">
+                  <img src="../ASSETS/Delete.png" width="20px" height="20px" />
+                </button>
               </div>
               <div class="review-item-card__rating-section">
                 <div class="review-item-card__stars">
                   <span class="review-item-card__star">⭐</span>
                   <span class="review-item-card__star">⭐</span>
                   <span class="review-item-card__star">⭐</span>
-                  <span class="review-item-card__star">⭐</span>
-                  <span class="review-item-card__star">⭐</span>
+                  <span class="review-item-card__star" style="opacity: 0.3"
+                    >⭐</span
+                  >
+                  <span class="review-item-card__star" style="opacity: 0.3"
+                    >⭐</span
+                  >
                 </div>
-                <span class="review-item-card__date">26 Jan 2026</span>
               </div>
-              <p class="review-item-card__text">
-                Best mangoes I have purchased. Great taste and quality.
-              </p>
+              <p class="review-item-card__text">poor product</p>
+            </div>
+          </div>
+
+          <div class="review-item-card" id="card-3">
+            <div class="review-item-card__avatar">R</div>
+            <div class="review-item-card__content">
+              <div class="review-item-card__header">
+                <h3 class="review-item-card__reviewer-name">Ravi</h3>
+                <button class="delete-btn" onclick="deleteCard('card-3')">
+                  <img src="../ASSETS/Delete.png" width="20px" height="20px" />
+                </button>
+              </div>
+              <div class="review-item-card__rating-section">
+                <div class="review-item-card__stars">
+                  <span class="review-item-card__star">⭐</span>
+                  <span class="review-item-card__star">⭐</span>
+                  <span class="review-item-card__star">⭐</span>
+                  <span class="review-item-card__star" style="opacity: 0.3"
+                    >⭐</span
+                  >
+                  <span class="review-item-card__star" style="opacity: 0.3"
+                    >⭐</span
+                  >
+                </div>
+              </div>
+              <p class="review-item-card__text">your product was very poor</p>
+            </div>
+          </div>
+
+          <div class="review-item-card" id="card-4">
+            <div class="review-item-card__avatar">R</div>
+            <div class="review-item-card__content">
+              <div class="review-item-card__header">
+                <h3 class="review-item-card__reviewer-name">Ravi</h3>
+                <button class="delete-btn" onclick="deleteCard('card-4')">
+                  <img src="../ASSETS/Delete.png" width="20px" height="20px" />
+                </button>
+              </div>
+              <div class="review-item-card__rating-section">
+                <div class="review-item-card__stars">
+                  <span class="review-item-card__star">⭐</span>
+                  <span class="review-item-card__star">⭐</span>
+                  <span class="review-item-card__star">⭐</span>
+                  <span class="review-item-card__star" style="opacity: 0.3"
+                    >⭐</span
+                  >
+                  <span class="review-item-card__star" style="opacity: 0.3"
+                    >⭐</span
+                  >
+                </div>
+              </div>
+              <p class="review-item-card__text">not satisfy for me</p>
             </div>
           </div>
         </div>
       </div>
     </main>
+
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <h2>Write a Review</h2>
+        <p>Share your experience with the farmer</p>
+        <label>Your Name</label>
+        <input type="text" id="reviewerName" placeholder="Enter your name" />
+        <label>Rating</label>
+        <div class="star-selector" id="starSelector">
+          <span onclick="setRating(1)">⭐</span>
+          <span onclick="setRating(2)">⭐</span>
+          <span onclick="setRating(3)">⭐</span>
+          <span onclick="setRating(4)">⭐</span>
+          <span onclick="setRating(5)">⭐</span>
+        </div>
+        <label>Review</label>
+        <textarea
+          id="reviewText"
+          placeholder="Write your review here..."
+        ></textarea>
+        <div class="modal-actions">
+          <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+          <button class="btn-submit" onclick="submitReview()">
+            Submit Review
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../JS/suppliers-v.js"></script>
   </body>
 </html>

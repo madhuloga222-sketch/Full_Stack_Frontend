@@ -11,24 +11,21 @@
     <header>
       <div class="logo-section">
         <div class="logo-icon">
-          <a href="../index.html"
-            ><img src="../ASSETS/image.png" width="60px" height="60px"
-          /></a>
+          <img src="../ASSETS/image.png" width="60px" height="60px" />
         </div>
         <div class="logo-text">
           <h1>AgriDirect</h1>
         </div>
       </div>
       <div class="user-section">
-        <a href="../HTML/farmer-dashboard.html"
-          ><div class="user-avatar">F</div></a
-        >
+        <a href="../HTML/farmer-dashboard.html">
+          <div class="user-avatar">F</div>
+        </a>
         <a href="../index.html" class="logout-btn"><span>Logout</span></a>
       </div>
     </header>
 
     <div class="container">
-      <!-- Sticky Sidebar -->
       <aside class="sidebar">
         <nav>
           <a href="../HTML/farmer.html" class="nav-item active">
@@ -50,14 +47,6 @@
             <img src="../ASSETS/cart.png1.png" width="22px" height="22px" />
             Orders
           </a>
-          <a href="/HTML/analytics.html" class="nav-item">
-            <img
-              src="../ASSETS/Data-Driven Insights1.png"
-              width="22px"
-              height="22px"
-            />
-            Earnings
-          </a>
           <a href="../HTML/reviews-f.html" class="nav-item">
             <img src="../ASSETS/feedback.png" width="22px" height="22px" />
             Reviews
@@ -69,10 +58,9 @@
         </nav>
       </aside>
 
-      <!-- Main Content -->
       <main class="main-content">
         <div class="welcome">
-          <h1>Welcome back, Madhuhasan! 👋</h1>
+          <h1>Welcome back, Farmer! 👋</h1>
           <p>Here's what's happening with your farm today.</p>
         </div>
 
@@ -80,16 +68,17 @@
           <div class="stat-card">
             <h3>Total Products</h3>
             <div class="stat-value">
-              <span>12</span>
+              <span id="stat-total-products">—</span>
               <div class="stat-icon icon-blue">
                 <img src="../ASSETS/box-open.png" width="28px" height="28px" />
               </div>
             </div>
           </div>
+
           <div class="stat-card">
             <h3>Active Orders</h3>
             <div class="stat-value">
-              <span>6</span>
+              <span id="stat-active-orders">—</span>
               <div class="stat-icon icon-orange">
                 <img
                   src="../ASSETS/order-history.png"
@@ -99,23 +88,18 @@
               </div>
             </div>
           </div>
-          <div class="stat-card">
-            <h3>Total Earnings</h3>
-            <div class="stat-value">
-              <span>₹120</span>
-              <div class="stat-icon icon-green">
-                <img
-                  src="../ASSETS/Fair & Transparent Pricing1.png"
-                  width="38px"
-                  height="38px"
-                />
-              </div>
-            </div>
-          </div>
+
           <div class="stat-card">
             <h3>Avg Rating</h3>
             <div class="stat-value">
-              <span>4.8</span>
+              <div
+                id="stat-avg-rating"
+                style="display: flex; flex-direction: column; gap: 2px"
+              >
+                <span style="font-size: 32px; font-weight: 700; color: #1a1a1a"
+                  >—</span
+                >
+              </div>
               <div class="stat-icon icon-yellow">
                 <img src="../ASSETS/star (1).png" width="38px" height="38px" />
               </div>
@@ -126,82 +110,48 @@
         <div class="quick-actions">
           <h2>Quick Actions</h2>
           <div class="action-buttons">
-            <a href="../HTML/addproduct-f.html"
-              ><button class="btn btn-primary">
+            <a href="../HTML/addproduct-f.html">
+              <button class="btn btn-primary">
                 <img
                   src="../ASSETS/add-product.png"
                   width="30px"
                   height="30px"
                 />
                 Add New Product
-              </button></a
-            >
-            <a href="../HTML/orders-f.html"
-              ><button class="btn btn-secondary">
+              </button>
+            </a>
+            <a href="../HTML/orders-f.html">
+              <button class="btn btn-secondary">
                 <img
                   src="../ASSETS/view-orders.png"
                   width="30px"
                   height="30px"
                 />
                 View Orders
-              </button></a
-            >
-            <a href="../HTML/analytics.html"
-              ><button class="btn btn-secondary">
-                <img src="../ASSETS/earning.png" width="30px" height="30px" />
-                Check Earnings
-              </button></a
-            >
+              </button>
+            </a>
           </div>
         </div>
 
         <div class="dashboard">
-          <!-- Recent Orders -->
           <div class="card full">
             <div class="card-header">
               <h3>Recent Orders</h3>
-              <a href="#">View All</a>
-            </div>
-
-            <div class="order">
-              <div>
-                <h4>Fresh Tomatoes</h4>
-                <p>Suresh Traders • 100 kg</p>
-              </div>
-              <div class="order-right">
-                <span class="price">₹3,000</span>
-                <span class="status confirmed">CONFIRMED</span>
-              </div>
-            </div>
-
-            <hr />
-
-            <div class="order">
-              <div>
-                <h4>Fresh Potatoes</h4>
-                <p>Suresh Traders • 200 kg</p>
-              </div>
-              <div class="order-right">
-                <span class="price">₹5,000</span>
-                <span class="status shipped">SHIPPED</span>
-              </div>
+              <a href="../HTML/orders-f.html">View All</a>
             </div>
           </div>
 
-          <!-- Bottom Section -->
           <div class="grid">
             <div class="card">
               <h3>Top Selling Products</h3>
-
               <div class="product">
-                <img src="../ASSETS/fs1.jpg" width="50px" height="50px"/>
+                <img src="../ASSETS/fs1.jpg" width="50px" height="50px" />
                 <div>
                   <h4>Fresh Tomatoes</h4>
                   <p>₹30/kg</p>
                 </div>
                 <span class="rank">#1</span>
               </div>
-
               <div class="product">
                 <img src="../ASSETS/fs2.jpeg" width="50px" height="50px" />
                 <div>
@@ -210,9 +160,12 @@
                 </div>
                 <span class="rank">#2</span>
               </div>
-
               <div class="product">
-                <img src="../ASSETS/full stack img4.webp" width="50px" height="50px" />
+                <img
+                  src="../ASSETS/full stack img4.webp"
+                  width="50px"
+                  height="50px"
+                />
                 <div>
                   <h4>Fresh Carrot</h4>
                   <p>₹35/kg</p>
@@ -221,10 +174,8 @@
               </div>
             </div>
 
-            <!-- Market Insights -->
             <div class="card">
               <h3>Market Insights</h3>
-
               <div class="insight">
                 <span class="icon green">
                   <img
@@ -238,7 +189,6 @@
                   <p>Tomatoes and Potatoes are trending in your area</p>
                 </div>
               </div>
-
               <div class="insight">
                 <span class="icon blue">
                   <img src="../ASSETS/price.png" width="20px" height="20px" />
@@ -253,5 +203,7 @@
         </div>
       </main>
     </div>
+
+    <script src="../JS/farmer.js"></script>
   </body>
 </html>

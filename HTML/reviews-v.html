@@ -14,29 +14,22 @@
   <body>
     <div class="backdrop">
       <div class="modal">
-       <a href="../HTML/suppliers-v.html"> <button
-          class="close-btn"
-          onclick="this.closest('.backdrop').style.display = 'none'"
+        <a href="../HTML/suppliers-v.html">
+          <button
+            class="close-btn"
+            onclick="this.closest('.backdrop').style.display = 'none'"
+          >
+            ✕
+          </button></a
         >
-          ✕
-        </button></a>
-
         <h2>Write a Review</h2>
 
-        <!-- Farmer Select -->
-        <div>
-          <label for="farmer">Select Farmer</label>
-          <div class="select-wrapper">
-            <select id="farmer">
-              <option value="" disabled selected>Choose a farmer</option>
-              <option>Rajesh Kumar</option>
-              <option>Aaks Singh</option>
-              <option>Priya Sharma</option>
-            </select>
-          </div>
+        <div class="form-group">
+          <label for="farmer">Type the Farmer name</label>
+          <!-- <div class="select-wrapper"></div> -->
+          <input type="text" id="product-name" required />
         </div>
 
-        <!-- Star Rating -->
         <div class="rating-group">
           <label>Rating</label>
           <div class="stars">
@@ -53,7 +46,6 @@
           </div>
         </div>
 
-        <!-- Review Text -->
         <div class="review-group">
           <label for="review">Your Review</label>
           <textarea
@@ -63,8 +55,14 @@
         </div>
 
         <!-- Submit -->
-        <a href="../HTML/suppliers-v.html"><button class="submit-btn">Submit Review</button></a>
+        <!-- <a href="../HTML/suppliers-v.html"
+          ><button class="submit-btn">Submit Review</button></a
+        > -->
+
+        <button class="submit-btn">Submit Review</button>
+
       </div>
     </div>
+    <script src="../JS/reviews-v.js"></script>
   </body>
 </html>

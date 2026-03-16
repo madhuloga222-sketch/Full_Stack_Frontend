@@ -9,7 +9,6 @@ body {
     "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Header Navigation */
 header {
   background: white;
   padding: 1rem 5%;
@@ -73,7 +72,6 @@ nav a:hover {
   background: #16a34a;
 }
 
-/* Mobile Menu Toggle */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -90,7 +88,6 @@ nav a:hover {
   transition: 0.3s;
 }
 
-/* CTA Section */
 .cta-section {
   background: linear-gradient(135deg, #00a651 0%, #00d66a 100%);
   padding: 80px 40px;
@@ -211,7 +208,6 @@ button:hover {
   display: flex;
   gap: 25px;
   background: #fff;
-  /* align-items: center; */
   margin: 40px auto;
 }
 
@@ -234,7 +230,6 @@ button:hover {
   font-size: 16px;
 }
 
-/* Footer Section */
 .footer {
   background-color: #ffffff;
   padding: 60px 20px 30px;
@@ -331,11 +326,4 @@ button:hover {
 
 .footer-bottom a:hover {
   text-decoration: underline;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .contact-container {
-    flex-direction: column;
-  }
 }
