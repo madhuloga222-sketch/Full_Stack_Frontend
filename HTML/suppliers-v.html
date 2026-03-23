@@ -81,7 +81,8 @@
       <div class="reviews-container">
         <h2 class="reviews-container__title">My Reviews</h2>
         <div class="reviews-list" id="reviewsList">
-          <div class="review-item-card" id="card-1">
+
+          <!-- <div class="review-item-card" id="card-1">
             <div class="review-item-card__avatar">R</div>
             <div class="review-item-card__content">
               <div class="review-item-card__header">
@@ -185,7 +186,9 @@
               </div>
               <p class="review-item-card__text">not satisfy for me</p>
             </div>
-          </div>
+          </div> -->
+
+
         </div>
       </div>
     </main>
@@ -194,8 +197,8 @@
       <div class="modal">
         <h2>Write a Review</h2>
         <p>Share your experience with the farmer</p>
-        <label>Your Name</label>
-        <input type="text" id="reviewerName" placeholder="Enter your name" />
+        <label>Farmer Name</label>
+        <input type="text" id="reviewerName" placeholder="Enter farmer name" />
         <label>Rating</label>
         <div class="star-selector" id="starSelector">
           <span onclick="setRating(1)">⭐</span>
@@ -211,7 +214,7 @@
         ></textarea>
         <div class="modal-actions">
           <button class="btn-cancel" onclick="closeModal()">Cancel</button>
-          <button class="btn-submit" onclick="submitReview()">
+          <button class="btn-submit" id="submitReviewBtn">
             Submit Review
           </button>
         </div>

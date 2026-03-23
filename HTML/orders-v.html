@@ -47,7 +47,7 @@
           </a>
           <a href="../HTML/orders-f.html" class="nav-item active">
             <img src="../ASSETS/cart.png1.png" width="22px" height="22px" />
-            Orders
+            My Orders
           </a>
           <a href="../HTML/suppliers-v.html" class="nav-item">
             <img src="../ASSETS/feedback.png" width="22px" height="22px" />
@@ -67,35 +67,35 @@
             <p>Track your purchases and deliveries</p>
           </div>
 
-          <select class="order-filter">
+          <!-- <select class="order-filter">
             <option>All Orders</option>
             <option>Pending</option>
             <option>Shipped</option>
             <option>Delivered</option>
-          </select>
+          </select> -->
         </header>
 
         <section class="stats-grid">
           <div class="stat-box">
-            <h2>3</h2>
+            <h2 id="totalOrders">0</h2>
             <p>Total Orders</p>
           </div>
           <div class="stat-box-p">
-            <h2>1</h2>
+            <h2 id="pendingOrders">0</h2>
             <p>Pending</p>
           </div>
-          <div class="stat-box-t">
-            <h2>1</h2>
+          <!-- <div class="stat-box-t">
+            <h2 id="shippedOrders">0</h2>
             <p>In Transit</p>
-          </div>
+          </div> -->
           <div class="stat-box-d">
-            <h2>0</h2>
+            <h2 id="deliveredOrders">0</h2>
             <p>Delivered</p>
           </div>
         </section>
 
         <section class="orders-stack" id="ordersContainer">
-          <div class="order-card">
+          <!-- <div class="order-card">
             <div class="order-top">
               <div>
                 <h3>Tomatoes <span class="badge confirmed">CONFIRMED</span></h3>
@@ -165,7 +165,7 @@
               <span>Shipped</span>
               <span>Delivered</span>
             </div>
-          </div>
+          </div> -->
         </section>
       </main>
     </div>

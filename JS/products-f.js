@@ -37,7 +37,7 @@ function display(products) {
   container.innerHTML = "";
 
   if (products.length === 0) {
-    container.innerHTML = "<h3>No products yet. Add your first product!</h3>";
+    container.innerHTML = "<h3>No products yet.</h3>";
     return;
   }
 

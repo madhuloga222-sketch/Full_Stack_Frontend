@@ -12,18 +12,12 @@
     <header class="header">
       <div class="logo-section">
         <div class="logo">
-          <img
-            src="../ASSETS/image.png"
-            width="60"
-            height="60"
-            alt="AgriDirect Logo"
-          />
+          <img src="../ASSETS/image.png" width="60" height="60" alt="AgriDirect Logo" />
         </div>
         <div class="brand-text">
           <h1>AgriDirect</h1>
         </div>
       </div>
-
       <div class="user-section">
         <a href="./farmer-dashboard.html">
           <div class="user-avatar">V</div>
@@ -44,38 +38,35 @@
         <div class="details-grid">
           <div class="detail-item">
             <div class="detail-label">Product:</div>
-            <div class="detail-value">Betroot</div>
+            <!-- ✅ id சேர்த்தோம் — JS dynamic-ஆ fill பண்ணும் -->
+            <div class="detail-value" id="detail-product">Loading...</div>
           </div>
           <div class="detail-item">
             <div class="detail-label">Farmer:</div>
-            <div class="detail-value">ragul</div>
+            <div class="detail-value" id="detail-farmer">Loading...</div>
           </div>
           <div class="detail-item">
             <div class="detail-label">Location:</div>
-            <div class="detail-value">nagai</div>
+            <div class="detail-value" id="detail-location">Loading...</div>
           </div>
           <div class="detail-item">
             <div class="detail-label">Price:</div>
-            <div class="detail-value">₹67/kg</div>
+            <div class="detail-value" id="detail-price">Loading...</div>
           </div>
           <div class="detail-item">
             <div class="detail-label">Available:</div>
-            <div class="detail-value">800 kg</div>
+            <div class="detail-value" id="detail-available">Loading...</div>
           </div>
           <div class="detail-item">
             <div class="detail-label">Quality:</div>
-            <div class="detail-value">Premium</div>
+            <div class="detail-value" id="detail-quality">Loading...</div>
           </div>
         </div>
       </div>
 
       <div class="form-group">
         <label for="name">Your Name/Business Name</label>
-        <input
-          type="text"
-          id="name"
-          placeholder="Enter your name or business name"
-        />
+        <input type="text" id="name" placeholder="Enter your name or business name" />
       </div>
 
       <div class="form-group">
@@ -85,24 +76,20 @@
 
       <div class="form-group">
         <label for="quantity">Quantity Needed (kg)</label>
-        <input type="number" id="quantity" placeholder="e.g., 100" />
+        <input type="number" id="quantity" placeholder="e.g., 100" min="1" />
       </div>
 
       <div class="form-group">
         <label for="message">Message</label>
-        <textarea
-          id="message"
-          placeholder="Write your message to the farmer. Include details about delivery preferences, timing, or any specific requirements..."
-        ></textarea>
+        <textarea id="message" placeholder="Write your message to the farmer. Include details about delivery preferences, timing, or any specific requirements..."></textarea>
       </div>
 
       <div class="btn-row">
         <a href="../HTML/products-v.html">
-          <button class="btn btn-cancel">Cancel</button></a
-        >
-        <a href="../HTML/products-v.html"
-          ><button class="btn btn-place">Place Order</button></a
-        >
+          <button class="btn btn-cancel">Cancel</button>
+        </a>
+        <!-- ✅ href போக்கி JS handle பண்றோம் -->
+        <button class="btn btn-place">Place Order</button>
       </div>
     </div>
 

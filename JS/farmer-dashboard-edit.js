@@ -1,4 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
+  const BASE_URL = "https://full-stack-backend-omega.vercel.app";
+
   const farmerName = localStorage.getItem("farmer_name");
   const farmerEmail = localStorage.getItem("farmer_email");
   const farmerPhone = localStorage.getItem("farmer_phone");
@@ -29,6 +31,50 @@ document.addEventListener("DOMContentLoaded", function () {
     .addEventListener("click", async function () {
       await updateProfile(farmerId);
     });
+
+  try {
+    const id = parseInt(farmerId);
+
+    const [productsRes, ordersRes, reviewsRes] = await Promise.all([
+      fetch(`${BASE_URL}/products/products/`),
+      fetch(`${BASE_URL}/orders/orders/`),
+      fetch(`${BASE_URL}/review/reviews/`),
+    ]);
+
+    const allProducts = await productsRes.json();
+    const allOrders = await ordersRes.json();
+    const allReviews = await reviewsRes.json();
+
+    const farmerProducts = id
+      ? allProducts.filter((p) => p.farmer_id === id)
+      : allProducts;
+    const farmerOrders = id
+      ? allOrders.filter((o) => o.farmer_id === id)
+      : allOrders;
+    const farmerReviews = id
+      ? allReviews.filter((r) => r.farmer_id === id)
+      : allReviews;
+
+    const greenEl = document.querySelector(".card.stats .green");
+    if (greenEl) greenEl.textContent = farmerProducts.length;
+
+    const blueEl = document.querySelector(".card.stats .blue");
+    if (blueEl) blueEl.textContent = farmerOrders.length;
+
+    const orangeEl = document.querySelector(".card.stats .orange");
+    if (orangeEl) {
+      if (farmerReviews.length > 0) {
+        const avg =
+          farmerReviews.reduce((sum, r) => sum + (r.rating || 0), 0) /
+          farmerReviews.length;
+        orangeEl.textContent = (Math.round(avg * 10) / 10).toFixed(1);
+      } else {
+        orangeEl.textContent = "0.0";
+      }
+    }
+  } catch (err) {
+    console.error("Statistics error:", err);
+  }
 });
 
 async function updateProfile(farmerId) {
@@ -44,21 +90,16 @@ async function updateProfile(farmerId) {
 
   try {
     const BASE_URL = "https://full-stack-backend-omega.vercel.app";
-    const response = await fetch(
-      `${BASE_URL}/farmers/farmers/${farmerId}`,
-      {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          full_name: updatedName,
-          email: updatedEmail,
-          phone: updatedPhone,
-          location: updatedLocation,
-        }),
-      },
-    );
-    // https://full-stack-backend-omega.vercel.app/farmers/farmers/
-
+    const response = await fetch(`${BASE_URL}/farmers/farmers/${farmerId}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        full_name: updatedName,
+        email: updatedEmail,
+        phone: updatedPhone,
+        location: updatedLocation,
+      }),
+    });
 
     if (response.ok) {
       localStorage.setItem("farmer_name", updatedName);

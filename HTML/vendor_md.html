@@ -68,58 +68,35 @@
           <div class="stat-card">
             <div class="stat-content">
               <h3>Total Orders</h3>
-              <p class="stat-number">3</p>
+              <p class="stat-number" id="stat-total-orders">—</p>
             </div>
           </div>
 
           <div class="stat-card">
             <div class="stat-content">
               <h3>Active Orders</h3>
-              <p class="stat-number">3</p>
+              <p class="stat-number" id="stat-active-orders">—</p>
             </div>
           </div>
-
-          <!-- <div class="stat-card">
-            <div class="stat-content">
-              <h3>Total Spent</h3>
-              <p class="stat-number">₹8,000</p>
-            </div>
-            <div class="stat-icon green">
-              <i class="fas fa-dollar-sign"></i>
-            </div>
-          </div> -->
-
-          <!-- <div class="stat-card">
-            <div class="stat-content">
-              <h3>Saved on Costs</h3>
-              <p class="stat-number">25%</p>
-            </div>
-            <div class="stat-icon purple">
-              <i class="fas fa-chart-line"></i>
-            </div>
-          </div> -->
         </div>
 
         <section class="quick-actions">
           <h2>Quick Actions</h2>
-
           <div class="action-buttons">
-            <a href="../HTML/products-v.html"
-              ><button class="btn btn-primary">
+            <a href="../HTML/products-v.html">
+              <button class="btn btn-primary">
                 <i class="fas fa-box"></i>
                 Browse Products
-              </button></a
-            >
-
-            <a href="../HTML/orders-v.html"
-              ><button class="btn btn-secondary">
+              </button>
+            </a>
+            <a href="../HTML/orders-v.html">
+              <button class="btn btn-secondary">
                 <i class="fas fa-clipboard-list"></i>
                 View Orders
-              </button></a
-            >
-
-            <a href="../HTML/suppliers-v.html"
-              ><button class="btn btn-secondary">
+              </button>
+            </a>
+            <a href="../HTML/suppliers-v.html">
+              <button class="btn btn-secondary">
                 <i class="fas fa-star"></i>
                 Write Review
               </button>
@@ -130,39 +107,16 @@
         <section class="recent-orders">
           <div class="section-header">
             <h2>Recent Orders</h2>
-            <a href="#" class="view-all">View All</a>
+            <a href="../HTML/orders-v.html" class="view-all">View All</a>
           </div>
 
-          <div class="orders-list">
+          <div class="orders-list" id="recent-orders-list">
             <div class="order-item">
               <div class="order-info">
-                <h3>Fresh Tomatoes</h3>
-                <p class="order-details">Rajesh Kumar • 100 kg</p>
+                <h3>Order #0001</h3>
+                <p class="order-details">Farmer Name</p>
               </div>
-              <div class="order-price-status">
-                <p class="order-price">₹3,000</p>
-                <span class="status status-confirmed">CONFIRMED</span>
-              </div>
-            </div>
-
-            <div class="order-item">
-              <div class="order-info">
-                <h3>Organic Potatoes</h3>
-                <p class="order-details">Rajesh Kumar • 200 kg</p>
-              </div>
-              <div class="order-price-status">
-                <p class="order-price">₹5,000</p>
-                <span class="status status-shipped">SHIPPED</span>
-              </div>
-            </div>
-
-            <div class="order-item">
-              <div class="order-info">
-                <h3>Fresh Mangoes</h3>
-                <p class="order-details">Lakshmi Farms • 50 kg</p>
-              </div>
-              <div class="order-price-status">
-                <p class="order-price">₹4,000</p>
+              <div class="order-status-only">
                 <span class="status status-pending">PENDING</span>
               </div>
             </div>
